@@ -1,0 +1,113 @@
+# FunSize: Cocoa, but smaller.
+
+FunSize is an Objective-C framework comprised entirely of categories and
+intended to make Cocoa code shorter, while maintaining expressiveness. Here
+are a few approaches taken:
+
+* Use blocks, a lot. They're pretty cool.
+* Make `NSNumber` and `NSValue` as invisible as possible. They are ugly and
+  provide no additional information. Instead, provide messages for low-level
+  data types (`int`, `NSRect`, `CATransform3D`, etc).
+* Replace absurdly long messages. `CAMediaTimingFunction`'s
+  `+functionWithName:` takes one of five constants, each of which is prefixed
+  with `kCAMediaTimingFunction`. `[CAMediaTimingFunction easeOut]` is much more
+  succinct.
+* Use reasonable defaults. Why is there no simple `-CGImage` or `-drawInRect:`
+  for `NSImage`? There is now. Additionally, 99% of `NSNotificationCenter`
+  usage is on the `-defaultCenter`. So, FunSize has class-level versions of all
+  `NSNotificationCenter` (and `NSUserDefaults`) instance messages.
+
+## Current Status
+
+FunSize was written while writing a Mac OS X application. Most of it presumably
+works on iOS, but some `#ifdef`s are probably needed for classes that don't
+exist (`NSView`). I used garbage collection in that application, and while
+I attempted to insert `retain`, `release`, and `autorelease` where applicable,
+I haven't tested it extensively without GC (for this reason, I will not be
+using GC in my next application).
+
+## Usage
+
+The Xcode project target is a framework. Honestly, I haven't really used it, I
+simply added the source files to my project. Either way should work, however. I
+don't think Apple will be shipping FunSize any time soon, so you'll have to
+distribute it with each application anyways.
+
+`FunSize.h` imports all of the other headers. Personally, I added it to my
+prefix header so that FunSize feels like part of Cocoa. Actually, while I was 
+writing this, I was surprised to learn that `-[NSImage CGImage]` *isn't* part
+of Cocoa.
+
+## Style
+
+If you would like to contribute to FunSize, please follow this style.
+
+### What FunSize does and does not do
+
+* FunSize adds category methods.
+* FunSize does not do anything else.
+
+Note that this rule only applies to "public" things. "Helper" classes are
+perfectly acceptable (see `NSTimer+FunSize.m`), but they cannot be included in
+any header files that are included with a compiled copy of FunSize. The same
+applies to structs, typedefs, and anything else that isn't a category method.
+
+### Documentation
+
+Everything should be documented in
+[appledoc](http://www.gentlebytes.com/home/appledocapp/) style. There's no need
+to go overkill documenting parameters or returns that are really obvious to
+anyone smart enough to be the type of software developer that seeks out
+Objective-C category frameworks. But at least say something, since the appledoc
+pages look really ugly otherwise. Also, although appledoc warns about it, the
+classes that categories are being added to don't need to be documented.
+
+Separate sections in header files like this:
+
+    #pragma mark -
+    #pragma mark Recursive Subview Operations
+    /** @name Recursive Subview Operations */
+    
+The final line is for appledoc, and should be left off in the implementation
+file.
+
+Reasonably current documentation is available
+[here](http://funsize.natestedman.com/documentation).
+
+### Naming Things
+
+Boring and easy things first: filenames are `Class+FunSize.h` and
+`Class+FunSize.m`. Category declarations are `Class (FunSize)`.
+
+For naming actual messages, try to stay within Apple style (within reason). An
+example is the usage of `CATransform3D`. `CA*` classes refer to it as a
+"transform", so I added `-setFromTransform` to `CABasicAnimation`. `NSValue`,
+however, has `-CATransform3DValue`. Therefore, when I added key/value messages
+to `NSObject` to support `CATransform3D`, I used the style
+`-CATransform3DForKey:`.
+
+### Braces and Spaces
+
+In general, just look at the current style and copy it. But basically, use
+four spaces for indentation, since Xcode is bad at handling tabs. Use Allman
+style for everything except blocks, which use K&R (why? I think it's most
+readable like that).Declare pointers like this: `NSImage*`. Put spaces in math
+(`2 + 2`, not `2+2`), because it's good if math is actually readable.
+
+## License
+
+FunSize is licensed under the ISC license.
+
+    Copyright (c) 2011, Nate Stedman <natesm@gmail.com>
+
+    Permission to use, copy, modify, and/or distribute this software for any
+    purpose with or without fee is hereby granted, provided that the above
+    copyright notice and this permission notice appear in all copies.
+
+    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+    WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+    MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+    ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+    ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
