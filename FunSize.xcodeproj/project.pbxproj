@@ -36,6 +36,50 @@
 		4311A78613D7444200820313 /* FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A78513D7444200820313 /* FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		432A5AEF140A92ED00E27789 /* NSNumber+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 432A5AED140A92ED00E27789 /* NSNumber+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		432A5AF0140A92ED00E27789 /* NSNumber+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 432A5AEE140A92ED00E27789 /* NSNumber+FunSize.m */; };
+		4339C608142222D300C21E14 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4311A74713D7429E00820313 /* Cocoa.framework */; };
+		4339C6171422233700C21E14 /* CABasicAnimation+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4357FDD813D8FC9E007E580D /* CABasicAnimation+FunSize.m */; };
+		4339C6181422233700C21E14 /* CAKeyframeAnimation+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B531A613F8621F007A521C /* CAKeyframeAnimation+FunSize.h */; };
+		4339C6191422233700C21E14 /* CAKeyframeAnimation+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B531A713F8621F007A521C /* CAKeyframeAnimation+FunSize.m */; };
+		4339C61A1422233700C21E14 /* CALayer+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4357FDD113D8EE96007E580D /* CALayer+FunSize.h */; };
+		4339C61B1422233700C21E14 /* CALayer+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4357FDD213D8EE96007E580D /* CALayer+FunSize.m */; };
+		4339C61C1422233700C21E14 /* CAMediaTimingFunction+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4357FDDB13D8FCF3007E580D /* CAMediaTimingFunction+FunSize.h */; };
+		4339C61D1422233700C21E14 /* CAMediaTimingFunction+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4357FDDC13D8FCF4007E580D /* CAMediaTimingFunction+FunSize.m */; };
+		4339C61E1422233700C21E14 /* CATransaction+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 436973A013F259DB007CC51E /* CATransaction+FunSize.h */; };
+		4339C61F1422233700C21E14 /* CATransaction+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 436973A113F259DB007CC51E /* CATransaction+FunSize.m */; };
+		4339C6201422233700C21E14 /* NSArray+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A75913D7442B00820313 /* NSArray+FunSize.h */; };
+		4339C6211422233700C21E14 /* NSArray+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A75A13D7442B00820313 /* NSArray+FunSize.m */; };
+		4339C6221422233700C21E14 /* NSBezierPath+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4343F8AB13EC81010012C361 /* NSBezierPath+FunSize.h */; };
+		4339C6231422233700C21E14 /* NSBezierPath+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4343F8AC13EC81010012C361 /* NSBezierPath+FunSize.m */; };
+		4339C6241422233700C21E14 /* NSColor+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A75B13D7442B00820313 /* NSColor+FunSize.h */; };
+		4339C6251422233700C21E14 /* NSColor+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A75C13D7442B00820313 /* NSColor+FunSize.m */; };
+		4339C6261422233700C21E14 /* NSEvent+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4304C74C13F477C1002C9888 /* NSEvent+FunSize.h */; };
+		4339C6271422233700C21E14 /* NSEvent+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4304C74D13F477C1002C9888 /* NSEvent+FunSize.m */; };
+		4339C6281422233700C21E14 /* NSGradient+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A75D13D7442B00820313 /* NSGradient+FunSize.h */; };
+		4339C6291422233700C21E14 /* NSGradient+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A75E13D7442B00820313 /* NSGradient+FunSize.m */; };
+		4339C62A1422233700C21E14 /* NSImage+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A75F13D7442B00820313 /* NSImage+FunSize.h */; };
+		4339C62B1422233700C21E14 /* NSImage+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A76013D7442B00820313 /* NSImage+FunSize.m */; };
+		4339C62C1422233700C21E14 /* NSMutableArray+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A76113D7442B00820313 /* NSMutableArray+FunSize.h */; };
+		4339C62D1422233700C21E14 /* NSMutableArray+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A76213D7442B00820313 /* NSMutableArray+FunSize.m */; };
+		4339C62E1422233700C21E14 /* NSNotificationCenter+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A76313D7442B00820313 /* NSNotificationCenter+FunSize.h */; };
+		4339C62F1422233700C21E14 /* NSNotificationCenter+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A76413D7442B00820313 /* NSNotificationCenter+FunSize.m */; };
+		4339C6301422233700C21E14 /* NSNumber+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 432A5AED140A92ED00E27789 /* NSNumber+FunSize.h */; };
+		4339C6311422233700C21E14 /* NSNumber+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 432A5AEE140A92ED00E27789 /* NSNumber+FunSize.m */; };
+		4339C6321422233700C21E14 /* NSObject+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A76513D7442B00820313 /* NSObject+FunSize.h */; };
+		4339C6331422233700C21E14 /* NSObject+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A76613D7442C00820313 /* NSObject+FunSize.m */; };
+		4339C6341422233700C21E14 /* NSSet+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43DD7BCA13D9F59600CA78AC /* NSSet+FunSize.h */; };
+		4339C6351422233700C21E14 /* NSSet+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DD7BCB13D9F59600CA78AC /* NSSet+FunSize.m */; };
+		4339C6361422233700C21E14 /* NSString+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A76713D7442C00820313 /* NSString+FunSize.h */; };
+		4339C6371422233700C21E14 /* NSString+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A76813D7442C00820313 /* NSString+FunSize.m */; };
+		4339C6381422233700C21E14 /* NSTextField+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A76913D7442C00820313 /* NSTextField+FunSize.h */; };
+		4339C6391422233700C21E14 /* NSTextField+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A76A13D7442C00820313 /* NSTextField+FunSize.m */; };
+		4339C63A1422233700C21E14 /* NSTimer+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A76B13D7442C00820313 /* NSTimer+FunSize.h */; };
+		4339C63B1422233700C21E14 /* NSTimer+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A76C13D7442C00820313 /* NSTimer+FunSize.m */; };
+		4339C63C1422233700C21E14 /* NSURL+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43AE837F13E05F2D00FA5A8A /* NSURL+FunSize.h */; };
+		4339C63D1422233700C21E14 /* NSURL+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AE838013E05F2D00FA5A8A /* NSURL+FunSize.m */; };
+		4339C63E1422233700C21E14 /* NSUserDefaults+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4357FDA713D85ED0007E580D /* NSUserDefaults+FunSize.h */; };
+		4339C63F1422233700C21E14 /* NSUserDefaults+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4357FDA813D85ED0007E580D /* NSUserDefaults+FunSize.m */; };
+		4339C6401422233700C21E14 /* NSView+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A76D13D7442C00820313 /* NSView+FunSize.h */; };
+		4339C6411422233700C21E14 /* NSView+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A76E13D7442C00820313 /* NSView+FunSize.m */; };
 		4343F8AD13EC81010012C361 /* NSBezierPath+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4343F8AB13EC81010012C361 /* NSBezierPath+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4343F8AE13EC81010012C361 /* NSBezierPath+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4343F8AC13EC81010012C361 /* NSBezierPath+FunSize.m */; };
 		4357FDA913D85ED0007E580D /* NSUserDefaults+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4357FDA713D85ED0007E580D /* NSUserDefaults+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -92,6 +136,10 @@
 		4311A78513D7444200820313 /* FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunSize.h; sourceTree = "<group>"; };
 		432A5AED140A92ED00E27789 /* NSNumber+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+FunSize.h"; sourceTree = "<group>"; };
 		432A5AEE140A92ED00E27789 /* NSNumber+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+FunSize.m"; sourceTree = "<group>"; };
+		4339C607142222D300C21E14 /* libFunSize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFunSize.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4339C60A142222D300C21E14 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4339C60B142222D300C21E14 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4339C60C142222D300C21E14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4343F8AB13EC81010012C361 /* NSBezierPath+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+FunSize.h"; sourceTree = "<group>"; };
 		4343F8AC13EC81010012C361 /* NSBezierPath+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+FunSize.m"; sourceTree = "<group>"; };
 		4357FDA713D85ED0007E580D /* NSUserDefaults+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+FunSize.h"; sourceTree = "<group>"; };
@@ -124,6 +172,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4339C604142222D300C21E14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4339C608142222D300C21E14 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -141,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				4311A74413D7429E00820313 /* FunSize.framework */,
+				4339C607142222D300C21E14 /* libFunSize.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +210,7 @@
 				43B327E513EC4A1900CFECB2 /* CoreData.framework */,
 				4311A74C13D7429E00820313 /* Foundation.framework */,
 				4357FDD513D8EF71007E580D /* Quartz.framework */,
+				4339C609142222D300C21E14 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,6 +278,16 @@
 			path = FunSize;
 			sourceTree = "<group>";
 		};
+		4339C609142222D300C21E14 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4339C60A142222D300C21E14 /* AppKit.framework */,
+				4339C60B142222D300C21E14 /* CoreData.framework */,
+				4339C60C142222D300C21E14 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -253,6 +321,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4339C605142222D300C21E14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4339C6181422233700C21E14 /* CAKeyframeAnimation+FunSize.h in Headers */,
+				4339C61A1422233700C21E14 /* CALayer+FunSize.h in Headers */,
+				4339C61C1422233700C21E14 /* CAMediaTimingFunction+FunSize.h in Headers */,
+				4339C61E1422233700C21E14 /* CATransaction+FunSize.h in Headers */,
+				4339C6201422233700C21E14 /* NSArray+FunSize.h in Headers */,
+				4339C6221422233700C21E14 /* NSBezierPath+FunSize.h in Headers */,
+				4339C6241422233700C21E14 /* NSColor+FunSize.h in Headers */,
+				4339C6261422233700C21E14 /* NSEvent+FunSize.h in Headers */,
+				4339C6281422233700C21E14 /* NSGradient+FunSize.h in Headers */,
+				4339C62A1422233700C21E14 /* NSImage+FunSize.h in Headers */,
+				4339C62C1422233700C21E14 /* NSMutableArray+FunSize.h in Headers */,
+				4339C62E1422233700C21E14 /* NSNotificationCenter+FunSize.h in Headers */,
+				4339C6301422233700C21E14 /* NSNumber+FunSize.h in Headers */,
+				4339C6321422233700C21E14 /* NSObject+FunSize.h in Headers */,
+				4339C6341422233700C21E14 /* NSSet+FunSize.h in Headers */,
+				4339C6361422233700C21E14 /* NSString+FunSize.h in Headers */,
+				4339C6381422233700C21E14 /* NSTextField+FunSize.h in Headers */,
+				4339C63A1422233700C21E14 /* NSTimer+FunSize.h in Headers */,
+				4339C63C1422233700C21E14 /* NSURL+FunSize.h in Headers */,
+				4339C63E1422233700C21E14 /* NSUserDefaults+FunSize.h in Headers */,
+				4339C6401422233700C21E14 /* NSView+FunSize.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -273,6 +369,23 @@
 			productName = FunSize;
 			productReference = 4311A74413D7429E00820313 /* FunSize.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		4339C606142222D300C21E14 /* FunSize-Static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4339C615142222D400C21E14 /* Build configuration list for PBXNativeTarget "FunSize-Static" */;
+			buildPhases = (
+				4339C603142222D300C21E14 /* Sources */,
+				4339C604142222D300C21E14 /* Frameworks */,
+				4339C605142222D300C21E14 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FunSize-Static";
+			productName = "FunSize-Static";
+			productReference = 4339C607142222D300C21E14 /* libFunSize.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -296,6 +409,7 @@
 			projectRoot = "";
 			targets = (
 				4311A74313D7429E00820313 /* FunSize */,
+				4339C606142222D300C21E14 /* FunSize-Static */,
 			);
 		};
 /* End PBXProject section */
@@ -338,6 +452,35 @@
 				4304C74F13F477C1002C9888 /* NSEvent+FunSize.m in Sources */,
 				43B531AA13F8621F007A521C /* CAKeyframeAnimation+FunSize.m in Sources */,
 				432A5AF0140A92ED00E27789 /* NSNumber+FunSize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4339C603142222D300C21E14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4339C6171422233700C21E14 /* CABasicAnimation+FunSize.m in Sources */,
+				4339C6191422233700C21E14 /* CAKeyframeAnimation+FunSize.m in Sources */,
+				4339C61B1422233700C21E14 /* CALayer+FunSize.m in Sources */,
+				4339C61D1422233700C21E14 /* CAMediaTimingFunction+FunSize.m in Sources */,
+				4339C61F1422233700C21E14 /* CATransaction+FunSize.m in Sources */,
+				4339C6211422233700C21E14 /* NSArray+FunSize.m in Sources */,
+				4339C6231422233700C21E14 /* NSBezierPath+FunSize.m in Sources */,
+				4339C6251422233700C21E14 /* NSColor+FunSize.m in Sources */,
+				4339C6271422233700C21E14 /* NSEvent+FunSize.m in Sources */,
+				4339C6291422233700C21E14 /* NSGradient+FunSize.m in Sources */,
+				4339C62B1422233700C21E14 /* NSImage+FunSize.m in Sources */,
+				4339C62D1422233700C21E14 /* NSMutableArray+FunSize.m in Sources */,
+				4339C62F1422233700C21E14 /* NSNotificationCenter+FunSize.m in Sources */,
+				4339C6311422233700C21E14 /* NSNumber+FunSize.m in Sources */,
+				4339C6331422233700C21E14 /* NSObject+FunSize.m in Sources */,
+				4339C6351422233700C21E14 /* NSSet+FunSize.m in Sources */,
+				4339C6371422233700C21E14 /* NSString+FunSize.m in Sources */,
+				4339C6391422233700C21E14 /* NSTextField+FunSize.m in Sources */,
+				4339C63B1422233700C21E14 /* NSTimer+FunSize.m in Sources */,
+				4339C63D1422233700C21E14 /* NSURL+FunSize.m in Sources */,
+				4339C63F1422233700C21E14 /* NSUserDefaults+FunSize.m in Sources */,
+				4339C6411422233700C21E14 /* NSView+FunSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -429,6 +573,46 @@
 			};
 			name = Release;
 		};
+		4339C613142222D400C21E14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FunSize/FunSize-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = FunSize;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4339C614142222D400C21E14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FunSize/FunSize-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = FunSize;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -449,6 +633,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4339C615142222D400C21E14 /* Build configuration list for PBXNativeTarget "FunSize-Static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4339C613142222D400C21E14 /* Debug */,
+				4339C614142222D400C21E14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
