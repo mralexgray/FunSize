@@ -26,7 +26,7 @@
 
 -(void)setRect:(NSRect)value forKey:(NSString*)defaultName
 {
-    [self setValue:NSStringFromRect(value) forKey:defaultName];
+    [self setObject:NSStringFromRect(value) forKey:defaultName];
 }
 
 -(CGRect)CGRectForKey:(NSString*)defaultName
@@ -36,7 +36,7 @@
 
 -(void)setCGRect:(CGRect)value forKey:(NSString*)defaultName
 {
-    [self setValue:NSStringFromRect(NSRectFromCGRect(value)) forKey:defaultName];
+    [self setObject:NSStringFromRect(NSRectFromCGRect(value)) forKey:defaultName];
 }
 
 #pragma mark -
@@ -48,7 +48,7 @@
 
 -(void)setPoint:(NSPoint)value forKey:(NSString*)defaultName
 {
-    [self setValue:NSStringFromPoint(value) forKey:defaultName];
+    [self setObject:NSStringFromPoint(value) forKey:defaultName];
 }
 
 -(CGPoint)CGPointForKey:(NSString*)defaultName
@@ -58,7 +58,7 @@
 
 -(void)setCGPoint:(CGPoint)value forKey:(NSString*)defaultName
 {
-    [self setValue:NSStringFromPoint(NSPointFromCGPoint(value)) forKey:defaultName];
+    [self setObject:NSStringFromPoint(NSPointFromCGPoint(value)) forKey:defaultName];
 }
 
 #pragma mark -
@@ -70,7 +70,7 @@
 
 -(void)setSize:(NSSize)value forKey:(NSString*)defaultName
 {
-    [self setValue:NSStringFromSize(value) forKey:defaultName];
+    [self setObject:NSStringFromSize(value) forKey:defaultName];
 }
 
 -(CGSize)CGSizeForKey:(NSString*)defaultName
@@ -80,7 +80,7 @@
 
 -(void)setCGSize:(CGSize)value forKey:(NSString*)defaultName
 {
-    [self setValue:NSStringFromSize(NSSizeFromCGSize(value)) forKey:defaultName];
+    [self setObject:NSStringFromSize(NSSizeFromCGSize(value)) forKey:defaultName];
 }
 
 #pragma mark -
@@ -92,7 +92,7 @@
 
 -(void)setRange:(NSRange)value forKey:(NSString*)defaultName
 {
-    [self setValue:NSStringFromRange(value) forKey:defaultName];
+    [self setObject:NSStringFromRange(value) forKey:defaultName];
 }
 
 #pragma mark -
@@ -192,7 +192,7 @@
 
 +(void)setRect:(NSRect)value forKey:(NSString*)defaultName
 {
-    [[self standardUserDefaults] setValue:NSStringFromRect(value) forKey:defaultName];
+    [[self standardUserDefaults] setObject:NSStringFromRect(value) forKey:defaultName];
 }
 
 +(CGRect)CGRectForKey:(NSString*)defaultName
@@ -202,7 +202,7 @@
 
 +(void)setCGRect:(CGRect)value forKey:(NSString*)defaultName
 {
-    [[self standardUserDefaults] setValue:NSStringFromRect(NSRectFromCGRect(value)) forKey:defaultName];
+    [[self standardUserDefaults] setObject:NSStringFromRect(NSRectFromCGRect(value)) forKey:defaultName];
 }
 
 #pragma mark -
@@ -214,7 +214,7 @@
 
 +(void)setPoint:(NSPoint)value forKey:(NSString*)defaultName
 {
-    [[self standardUserDefaults] setValue:NSStringFromPoint(value) forKey:defaultName];
+    [[self standardUserDefaults] setObject:NSStringFromPoint(value) forKey:defaultName];
 }
 
 +(CGPoint)CGPointForKey:(NSString*)defaultName
@@ -224,7 +224,7 @@
 
 +(void)setCGPoint:(CGPoint)value forKey:(NSString*)defaultName
 {
-    [[self standardUserDefaults] setValue:NSStringFromPoint(NSPointFromCGPoint(value)) forKey:defaultName];
+    [[self standardUserDefaults] setObject:NSStringFromPoint(NSPointFromCGPoint(value)) forKey:defaultName];
 }
 
 #pragma mark -
@@ -236,7 +236,7 @@
 
 +(void)setSize:(NSSize)value forKey:(NSString*)defaultName
 {
-    [[self standardUserDefaults] setValue:NSStringFromSize(value) forKey:defaultName];
+    [[self standardUserDefaults] setObject:NSStringFromSize(value) forKey:defaultName];
 }
 
 +(CGSize)CGSizeForKey:(NSString*)defaultName
@@ -246,7 +246,7 @@
 
 +(void)setCGSize:(CGSize)value forKey:(NSString*)defaultName
 {
-    [[self standardUserDefaults] setValue:NSStringFromSize(NSSizeFromCGSize(value)) forKey:defaultName];
+    [[self standardUserDefaults] setObject:NSStringFromSize(NSSizeFromCGSize(value)) forKey:defaultName];
 }
 
 #pragma mark -
@@ -258,7 +258,7 @@
 
 +(void)setRange:(NSRange)value forKey:(NSString*)defaultName
 {
-    [[self standardUserDefaults] setValue:NSStringFromRange(value) forKey:defaultName];
+    [[self standardUserDefaults] setObject:NSStringFromRange(value) forKey:defaultName];
 }
 
 @end
