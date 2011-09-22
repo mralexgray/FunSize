@@ -67,6 +67,16 @@
     return dict;
 }
 
+-(NSDictionary*)mapToDictionaryKeys:(id(^)(id))mapBlock
+{
+    NSMutableDictionary* dict = [NSMutableDictionary dictionaryWithCapacity:[self count]];
+    
+    for (id item in self)
+        [dict setValue:item forKey:NSNULL(mapBlock(item))];
+    
+    return dict;
+}
+
 -(NSArray*)filter:(BOOL(^)(id))filterBlock
 {
     NSMutableArray* filtered = [NSMutableArray arrayWithCapacity:[self count]];
