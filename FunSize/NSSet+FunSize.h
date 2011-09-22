@@ -22,7 +22,7 @@
  *
  * @param block A block, which will receive each element as a parameter.
  */
--(BOOL)all:(BOOL(^)(id))block;
+-(BOOL)all:(BOOL(^)(id object))block;
 
 /**
  * Passes each element to the block, and returns `YES` if the block returns `YES` for any element.
@@ -30,7 +30,7 @@
  * @param block A block, which will receive elements as a parameter until it returns `YES` (or the elements are
  * exhausted).
  */
--(BOOL)any:(BOOL(^)(id))block;
+-(BOOL)any:(BOOL(^)(id object))block;
 
 /**
  * Returns an set of mapped values.
@@ -38,7 +38,7 @@
  * @param mapBlock A block to map with. The block will receive each element of
  * the set, and should return a mapped value to be inserted into the returned set.
  */
--(NSSet*)map:(id(^)(id))mapBlock;
+-(NSSet*)map:(id(^)(id object))mapBlock;
 
 /**
  * Returns an array of mapped values.
@@ -46,7 +46,7 @@
  * @param mapBlock A block to map with. The block will receive each element of
  * the set, and should return a mapped value to be inserted into the returned array.
  */
--(NSArray*)mapToArray:(id(^)(id))mapBlock;
+-(NSArray*)mapToArray:(id(^)(id object))mapBlock;
 
 /**
  * Similar to map:, but instead returns a dictionary, where the elements of
@@ -55,7 +55,7 @@
  * @param mapBlock A block to map with. The block will receive each element of
  * the set, and should return a mapped value to be inserted into the returned dictionary.
  */
--(NSDictionary*)mapToDictionary:(id(^)(id))mapBlock;
+-(NSDictionary*)mapToDictionary:(id(^)(id object))mapBlock;
 
 /**
  * Filters a set, returning an set with the filtered contents.
@@ -64,7 +64,7 @@
  * element of this set, and should return `YES` if the element should be
  * included in the filtered set, and `NO` if it should not.
  */
--(NSSet*)filter:(BOOL(^)(id))filterBlock;
+-(NSSet*)filter:(BOOL(^)(id object))filterBlock;
 
 /**
  * Filters a set, returning a set with the filtered contents.
@@ -73,6 +73,6 @@
  * element of this set, and should return `YES` if the element should be
  * included in the filtered array, and `NO` if it should not.
  */
--(NSArray*)filterToArray:(BOOL(^)(id))filterBlock;
+-(NSArray*)filterToArray:(BOOL(^)(id object))filterBlock;
 
 @end

@@ -26,7 +26,7 @@
  *
  * @param block The block, which will receive each subview as a parameter.
  */
--(void)subviewsBlock:(void (^)(id))block;
+-(void)subviewsBlock:(void (^)(id view))block;
 
 /**
  * Recursively executes a block on this view and its subviews (and their subviews, etc.). The block can abort the 
@@ -34,14 +34,14 @@
  *
  * @param block The block, which will receive each subview as a parameter.
  */
--(BOOL)subviewsBlockWithAbort:(BOOL (^)(id))block;
+-(BOOL)subviewsBlockWithAbort:(BOOL (^)(id view))block;
 
 /**
  * Recursively executes a block on this view's subviews (and their subviews, etc.).
  *
  * @param block The block, which will receive each subview as a parameter.
  */
--(void)subviewsBlockSkippingSelf:(void (^)(id))block;
+-(void)subviewsBlockSkippingSelf:(void (^)(id view))block;
 
 /**
  * Recursively executes a block on this view's subviews (and their subviews, etc.). The block can abort the 
@@ -49,7 +49,7 @@
  *
  * @param block The block, which will receive each subview as a parameter.
  */
--(BOOL)subviewsBlockWithAbortSkippingSelf:(BOOL (^)(id))block;
+-(BOOL)subviewsBlockWithAbortSkippingSelf:(BOOL (^)(id view))block;
 
 /**
  * Returns whether or not the view is a subview of the specified view.
@@ -67,28 +67,28 @@
  *
  * @param block The block, which will receive each view as a parameter.
  */
--(void)superviewBlock:(void (^)(id))block;
+-(void)superviewBlock:(void (^)(id view))block;
 
 /**
  * Executes a block on this view and its superviews. The block can stop the upward recursion by returning `NO`.
  *
  * @param block The block, which will receive each view as a parameter.
  */
--(BOOL)superviewBlockWithAbort:(BOOL (^)(id))block;
+-(BOOL)superviewBlockWithAbort:(BOOL (^)(id view))block;
 
 /**
  * Executes a block on this view's superviews.
  *
  * @param block The block, which will receive each view as a parameter.
  */
--(void)superviewBlockSkippingSelf:(void (^)(id))block;
+-(void)superviewBlockSkippingSelf:(void (^)(id view))block;
 
 /**
  * Executes a block on this view's superviews. The block can stop the upward recursion by returning `NO`.
  *
  * @param block The block, which will receive each view as a parameter.
  */
--(BOOL)superviewBlockWithAbortSkippingSelf:(BOOL (^)(id))block;
+-(BOOL)superviewBlockWithAbortSkippingSelf:(BOOL (^)(id view))block;
 
 /**
  * Finds a superview of the view with the specified class. If the view is of the specified class, it will be returned.

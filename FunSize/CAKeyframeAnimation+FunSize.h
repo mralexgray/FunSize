@@ -24,7 +24,7 @@
  * @param count The number of keyframes.
  * @param block A block to construct and return each keyframe value.
  */
-+(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count function:(id (^)(double))block;
++(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count function:(id (^)(double fraction))block;
 
 /**
  * Returns an animation with _count_ keyframes. The block will be sent values from 0 to 1, and should return the
@@ -33,7 +33,7 @@
  * @param count The number of keyframes.
  * @param block A block to construct and return each keyframe value.
  */
-+(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count doubleFunction:(double (^)(double))block;
++(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count doubleFunction:(double (^)(double fraction))block;
 
 /**
  * Returns an animation with _count_ keyframes. The block will be sent values from 0 to 1, and should return the
@@ -42,7 +42,7 @@
  * @param count The number of keyframes.
  * @param block A block to construct and return each keyframe value.
  */
-+(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count rectFunction:(CGRect (^)(double))block;
++(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count rectFunction:(CGRect (^)(double fraction))block;
 
 /**
  * Returns an animation with _count_ keyframes. The block will be sent values from 0 to 1, and should return the
@@ -51,6 +51,7 @@
  * @param count The number of keyframes.
  * @param block A block to construct and return each keyframe value.
  */
-+(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count transformFunction:(CATransform3D (^)(double))block;
++(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count
+                            transformFunction:(CATransform3D (^)(double fraction))block;
 
 @end

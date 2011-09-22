@@ -22,7 +22,7 @@
  *
  * @param block A block, which will receive each element as a parameter.
  */
--(BOOL)all:(BOOL(^)(id))block;
+-(BOOL)all:(BOOL(^)(id object))block;
 
 /**
  * Passes each element to the block, and returns `YES` if the block returns `YES` for any element.
@@ -30,7 +30,7 @@
  * @param block A block, which will receive elements as a parameter until it returns `YES` (or the elements are
  * exhausted).
  */
--(BOOL)any:(BOOL(^)(id))block;
+-(BOOL)any:(BOOL(^)(id object))block;
 
 /**
  * Returns an array of mapped values.
@@ -39,7 +39,7 @@
  * the array, and should return a mapped value to be inserted into the returned
  * array.
  */
--(NSArray*)map:(id(^)(id))mapBlock;
+-(NSArray*)map:(id(^)(id object))mapBlock;
 
 /**
  * Returns an set of mapped values.
@@ -48,7 +48,7 @@
  * the array, and should return a mapped value to be inserted into the returned
  * set.
  */
--(NSSet*)mapToSet:(id(^)(id))mapBlock;
+-(NSSet*)mapToSet:(id(^)(id object))mapBlock;
 
 /**
  * Similar to `map:`, but instead returns a dictionary, where the elements of
@@ -57,7 +57,7 @@
  * @param mapBlock A block to map with. The block will receive each element of
  * the array, and should return a mapped value to be inserted into the returned dictionary.
  */
--(NSDictionary*)mapToDictionary:(id(^)(id))mapBlock;
+-(NSDictionary*)mapToDictionary:(id(^)(id object))mapBlock;
 
 /**
  * Similar to `mapToDictionary:`, except the values of the array are used as the values of the dictionary, while
@@ -66,7 +66,7 @@
  * @param mapBlock A block to map with. The block will receive each element of
  * the array, and should return a mapped value to be used as a key in the resulting dictionary.
  */
--(NSDictionary*)mapToDictionaryKeys:(id(^)(id))mapBlock;
+-(NSDictionary*)mapToDictionaryKeys:(id(^)(id object))mapBlock;
 
 /**
  * Filters an array, returning an array with the filtered contents.
@@ -75,7 +75,7 @@
  * element of this array, and should return `YES` if the element should be
  * included in the filtered array, and `NO` if it should not.
  */
--(NSArray*)filter:(BOOL(^)(id))filterBlock;
+-(NSArray*)filter:(BOOL(^)(id object))filterBlock;
 
 /**
  * Filters an array, returning a set with the filtered contents.
@@ -84,7 +84,7 @@
  * element of this array, and should return `YES` if the element should be
  * included in the filtered set, and `NO` if it should not.
  */
--(NSSet*)filterToSet:(BOOL(^)(id))filterBlock;
+-(NSSet*)filterToSet:(BOOL(^)(id object))filterBlock;
 
 /**
  * Produces an array of two-element arrays from the array the message is sent
@@ -100,7 +100,7 @@
  * 
  * @param zipWithBlock A block, which will receive each element of this array.
  */
--(NSArray*)zipWith:(id(^)(id))zipWithBlock;
+-(NSArray*)zipWith:(id(^)(id object))zipWithBlock;
 
 /**
  * Returns a subset of this array from the start until the block returns `NO`.
@@ -108,7 +108,7 @@
  * @param untilBlock A block, which will receive elements of the array until
  * it returns `NO`, at which point the subset will end.
  */
--(NSArray*)subarrayUntil:(BOOL(^)(id))untilBlock;
+-(NSArray*)subarrayUntil:(BOOL(^)(id object))untilBlock;
 
 /**
  * Returns a subset of this array from the element where the block returns `YES`
@@ -117,7 +117,7 @@
  * @param fromBlock A block, which will receive elements of the array until it
  * returns `YES`, at which point the subset will start.
  */
--(NSArray*)subarrayFrom:(BOOL(^)(id))fromBlock;
+-(NSArray*)subarrayFrom:(BOOL(^)(id object))fromBlock;
 
 /**
  * Returns an reversed array.

@@ -26,7 +26,7 @@
  *
  * @param block The block, which will receive each sublayer as a parameter.
  */
--(void)sublayersBlock:(void (^)(CALayer*))block;
+-(void)sublayersBlock:(void (^)(CALayer* layer))block;
 
 /**
  * Recursively executes a block on this layer and its sublayers (and their sublayers, etc.). The block can abort the 
@@ -34,14 +34,14 @@
  *
  * @param block The block, which will receive each sublayer as a parameter.
  */
--(BOOL)sublayersBlockWithAbort:(BOOL (^)(CALayer*))block;
+-(BOOL)sublayersBlockWithAbort:(BOOL (^)(CALayer* layer))block;
 
 /**
  * Recursively executes a block on this layer's sublayers (and their sublayers, etc.).
  *
  * @param block The block, which will receive each sublayer as a parameter.
  */
--(void)sublayersBlockSkippingSelf:(void (^)(CALayer*))block;
+-(void)sublayersBlockSkippingSelf:(void (^)(CALayer* layer))block;
 
 /**
  * Recursively executes a block on this layer's sublayers (and their sublayers, etc.). The block can abort the 
@@ -49,7 +49,7 @@
  *
  * @param block The block, which will receive each sublayer as a parameter.
  */
--(BOOL)sublayersBlockWithAbortSkippingSelf:(BOOL (^)(CALayer*))block;
+-(BOOL)sublayersBlockWithAbortSkippingSelf:(BOOL (^)(CALayer* layer))block;
 
 #pragma mark -
 #pragma mark Superlayer Actions
@@ -60,28 +60,28 @@
  *
  * @param block The block, which will receive each layer as a parameter.
  */
--(void)superlayerBlock:(void (^)(CALayer*))block;
+-(void)superlayerBlock:(void (^)(CALayer* layer))block;
 
 /**
  * Executes a block on this layer and its superlayers. The block can stop the upward recursion by returning `NO`.
  *
  * @param block The block, which will receive each layer as a parameter.
  */
--(BOOL)superlayerBlockWithAbort:(BOOL (^)(CALayer*))block;
+-(BOOL)superlayerBlockWithAbort:(BOOL (^)(CALayer* layer))block;
 
 /**
  * Executes a block on this layer's superlayers.
  *
  * @param block The block, which will receive each layer as a parameter.
  */
--(void)superlayerBlockSkippingSelf:(void (^)(CALayer*))block;
+-(void)superlayerBlockSkippingSelf:(void (^)(CALayer* layer))block;
 
 /**
  * Executes a block on this layer's superlayers. The block can stop the upward recursion by returning `NO`.
  *
  * @param block The block, which will receive each layer as a parameter.
  */
--(BOOL)superlayerBlockWithAbortSkippingSelf:(BOOL (^)(CALayer*))block;
+-(BOOL)superlayerBlockWithAbortSkippingSelf:(BOOL (^)(CALayer* layer))block;
 
 /**
  * Finds a superlayer of the layer with the specified class. If the layer is of the specified class, it will be
