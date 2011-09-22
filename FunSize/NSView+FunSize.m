@@ -63,7 +63,7 @@
 
 -(BOOL)isSubviewOfView:(NSView*)superview
 {
-    for (NSView* view = self; view != nil; view = [view superview])
+    for (NSView* view = [self superview]; view != nil; view = [view superview])
         if (view == superview)
             return YES;
     return NO;
