@@ -19,12 +19,12 @@
 
 -(NSString*)stringByURLEncoding
 {
-    CFStringRef result = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-                                                                 (CFStringRef)self,
-                                                                 NULL,
-                                                                 CFSTR("!*'();:@&=+$,/?%#[]"),
-                                                                 kCFStringEncodingUTF8);
-    return [(NSString*)result autorelease];
+    id result = NSMakeCollectable(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                                          (CFStringRef)self,
+                                                                          NULL,
+                                                                          CFSTR("!*'();:@&=+$,/?%#[]"),
+                                                                          kCFStringEncodingUTF8));
+    return [result autorelease];
 }
 
 -(NSSize)sizeWithSize:(NSSize)size attributes:(NSDictionary*)attributes
