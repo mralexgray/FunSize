@@ -13,27 +13,18 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#import "CABasicAnimation+FunSize.h"
-#import "CAKeyframeAnimation+FunSize.h"
-#import "CALayer+FunSize.h"
-#import "CAMediaTimingFunction+FunSize.h"
-#import "CATransaction+FunSize.h"
+#import <Foundation/Foundation.h>
 
-#import "NSArray+FunSize.h"
-#import "NSBezierPath+FunSize.h"
-#import "NSColor+FunSize.h"
-#import "NSDictionary+FunSize.h"
-#import "NSEvent+FunSize.h"
-#import "NSGradient+FunSize.h"
-#import "NSImage+FunSize.h"
-#import "NSMutableArray+FunSize.h"
-#import "NSNotificationCenter+FunSize.h"
-#import "NSNumber+FunSize.h"
-#import "NSObject+FunSize.h"
-#import "NSSet+FunSize.h"
-#import "NSString+FunSize.h"
-#import "NSTextField+FunSize.h"
-#import "NSTimer+FunSize.h"
-#import "NSURL+FunSize.h"
-#import "NSUserDefaults+FunSize.h"
-#import "NSView+FunSize.h"
+@interface NSDictionary (FunSize)
+
+/**
+ * Creates a new dictionary by adding values and keys from a second dictionary.
+ *
+ * If the other dictionary has any keys in common with this dictionary, the values from the
+ * other dictionary will be used.
+ *
+ * @param other A dictionary to combine with this dictionary.
+ */
+-(NSDictionary*)dictionaryByAddingEntriesFromDictionary:(NSDictionary*)other;
+
+@end

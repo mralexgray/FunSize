@@ -93,6 +93,10 @@
 		4357FDDE13D8FCF5007E580D /* CAMediaTimingFunction+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4357FDDC13D8FCF4007E580D /* CAMediaTimingFunction+FunSize.m */; };
 		436973A213F259DB007CC51E /* CATransaction+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 436973A013F259DB007CC51E /* CATransaction+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		436973A313F259DB007CC51E /* CATransaction+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 436973A113F259DB007CC51E /* CATransaction+FunSize.m */; };
+		43845135142D65E0003324C9 /* NSDictionary+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43845133142D65E0003324C9 /* NSDictionary+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43845136142D65E0003324C9 /* NSDictionary+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43845134142D65E0003324C9 /* NSDictionary+FunSize.m */; };
+		4384513A142D65F8003324C9 /* NSDictionary+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43845133142D65E0003324C9 /* NSDictionary+FunSize.h */; };
+		4384513B142D65F8003324C9 /* NSDictionary+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43845134142D65E0003324C9 /* NSDictionary+FunSize.m */; };
 		43AE838113E05F2D00FA5A8A /* NSURL+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43AE837F13E05F2D00FA5A8A /* NSURL+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43AE838213E05F2D00FA5A8A /* NSURL+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AE838013E05F2D00FA5A8A /* NSURL+FunSize.m */; };
 		43B531A813F8621F007A521C /* CAKeyframeAnimation+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B531A613F8621F007A521C /* CAKeyframeAnimation+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -153,6 +157,8 @@
 		4357FDDC13D8FCF4007E580D /* CAMediaTimingFunction+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAMediaTimingFunction+FunSize.m"; sourceTree = "<group>"; };
 		436973A013F259DB007CC51E /* CATransaction+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+FunSize.h"; sourceTree = "<group>"; };
 		436973A113F259DB007CC51E /* CATransaction+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+FunSize.m"; sourceTree = "<group>"; };
+		43845133142D65E0003324C9 /* NSDictionary+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FunSize.h"; sourceTree = "<group>"; };
+		43845134142D65E0003324C9 /* NSDictionary+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FunSize.m"; sourceTree = "<group>"; };
 		43AE837F13E05F2D00FA5A8A /* NSURL+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+FunSize.h"; sourceTree = "<group>"; };
 		43AE838013E05F2D00FA5A8A /* NSURL+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+FunSize.m"; sourceTree = "<group>"; };
 		43B327E513EC4A1900CFECB2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -235,6 +241,8 @@
 				4343F8AC13EC81010012C361 /* NSBezierPath+FunSize.m */,
 				4311A75B13D7442B00820313 /* NSColor+FunSize.h */,
 				4311A75C13D7442B00820313 /* NSColor+FunSize.m */,
+				43845133142D65E0003324C9 /* NSDictionary+FunSize.h */,
+				43845134142D65E0003324C9 /* NSDictionary+FunSize.m */,
 				4304C74C13F477C1002C9888 /* NSEvent+FunSize.h */,
 				4304C74D13F477C1002C9888 /* NSEvent+FunSize.m */,
 				4311A75D13D7442B00820313 /* NSGradient+FunSize.h */,
@@ -318,6 +326,7 @@
 				4343F8AD13EC81010012C361 /* NSBezierPath+FunSize.h in Headers */,
 				43B531A813F8621F007A521C /* CAKeyframeAnimation+FunSize.h in Headers */,
 				432A5AEF140A92ED00E27789 /* NSNumber+FunSize.h in Headers */,
+				43845135142D65E0003324C9 /* NSDictionary+FunSize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +355,7 @@
 				4339C63C1422233700C21E14 /* NSURL+FunSize.h in Headers */,
 				4339C63E1422233700C21E14 /* NSUserDefaults+FunSize.h in Headers */,
 				4339C6401422233700C21E14 /* NSView+FunSize.h in Headers */,
+				4384513A142D65F8003324C9 /* NSDictionary+FunSize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +462,7 @@
 				4304C74F13F477C1002C9888 /* NSEvent+FunSize.m in Sources */,
 				43B531AA13F8621F007A521C /* CAKeyframeAnimation+FunSize.m in Sources */,
 				432A5AF0140A92ED00E27789 /* NSNumber+FunSize.m in Sources */,
+				43845136142D65E0003324C9 /* NSDictionary+FunSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +492,7 @@
 				4339C63D1422233700C21E14 /* NSURL+FunSize.m in Sources */,
 				4339C63F1422233700C21E14 /* NSUserDefaults+FunSize.m in Sources */,
 				4339C6411422233700C21E14 /* NSView+FunSize.m in Sources */,
+				4384513B142D65F8003324C9 /* NSDictionary+FunSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
