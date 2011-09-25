@@ -13,28 +13,28 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#import "CABasicAnimation+FunSize.h"
-#import "CAKeyframeAnimation+FunSize.h"
-#import "CALayer+FunSize.h"
-#import "CAMediaTimingFunction+FunSize.h"
-#import "CATransaction+FunSize.h"
-
-#import "NSArray+FunSize.h"
-#import "NSBezierPath+FunSize.h"
-#import "NSColor+FunSize.h"
-#import "NSDictionary+FunSize.h"
-#import "NSEvent+FunSize.h"
-#import "NSGradient+FunSize.h"
-#import "NSImage+FunSize.h"
-#import "NSMutableArray+FunSize.h"
-#import "NSNotificationCenter+FunSize.h"
-#import "NSNumber+FunSize.h"
-#import "NSObject+FunSize.h"
-#import "NSSet+FunSize.h"
 #import "NSShadow+FunSize.h"
-#import "NSString+FunSize.h"
-#import "NSTextField+FunSize.h"
-#import "NSTimer+FunSize.h"
-#import "NSURL+FunSize.h"
-#import "NSUserDefaults+FunSize.h"
-#import "NSView+FunSize.h"
+
+@implementation NSShadow (NSShadow_FunSize)
+
++(NSShadow*)insetUpWithColor:(NSColor*)color
+{
+    NSShadow* shadow = [[self alloc] init];
+    [shadow setShadowBlurRadius:0];
+    [shadow setShadowColor:color];
+    [shadow setShadowOffset:NSMakeSize(0, 1)];
+    
+    return [shadow autorelease];
+}
+
++(NSShadow*)insetDownWithColor:(NSColor*)color
+{
+    NSShadow* shadow = [[self alloc] init];
+    [shadow setShadowBlurRadius:0];
+    [shadow setShadowColor:color];
+    [shadow setShadowOffset:NSMakeSize(0, -1)];
+    
+    return [shadow autorelease];
+}
+
+@end

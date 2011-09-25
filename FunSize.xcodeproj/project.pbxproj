@@ -103,6 +103,10 @@
 		43B531AA13F8621F007A521C /* CAKeyframeAnimation+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B531A713F8621F007A521C /* CAKeyframeAnimation+FunSize.m */; };
 		43DD7BCC13D9F59700CA78AC /* NSSet+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43DD7BCA13D9F59600CA78AC /* NSSet+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43DD7BCD13D9F59700CA78AC /* NSSet+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DD7BCB13D9F59600CA78AC /* NSSet+FunSize.m */; };
+		43E75A95142FDED60018DDB7 /* NSShadow+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E75A93142FDED60018DDB7 /* NSShadow+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43E75A96142FDED60018DDB7 /* NSShadow+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E75A93142FDED60018DDB7 /* NSShadow+FunSize.h */; };
+		43E75A97142FDED60018DDB7 /* NSShadow+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E75A94142FDED60018DDB7 /* NSShadow+FunSize.m */; };
+		43E75A98142FDED60018DDB7 /* NSShadow+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E75A94142FDED60018DDB7 /* NSShadow+FunSize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +170,8 @@
 		43B531A713F8621F007A521C /* CAKeyframeAnimation+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAKeyframeAnimation+FunSize.m"; sourceTree = "<group>"; };
 		43DD7BCA13D9F59600CA78AC /* NSSet+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+FunSize.h"; sourceTree = "<group>"; };
 		43DD7BCB13D9F59600CA78AC /* NSSet+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+FunSize.m"; sourceTree = "<group>"; };
+		43E75A93142FDED60018DDB7 /* NSShadow+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSShadow+FunSize.h"; sourceTree = "<group>"; };
+		43E75A94142FDED60018DDB7 /* NSShadow+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSShadow+FunSize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +265,8 @@
 				4311A76613D7442C00820313 /* NSObject+FunSize.m */,
 				43DD7BCA13D9F59600CA78AC /* NSSet+FunSize.h */,
 				43DD7BCB13D9F59600CA78AC /* NSSet+FunSize.m */,
+				43E75A93142FDED60018DDB7 /* NSShadow+FunSize.h */,
+				43E75A94142FDED60018DDB7 /* NSShadow+FunSize.m */,
 				4311A76713D7442C00820313 /* NSString+FunSize.h */,
 				4311A76813D7442C00820313 /* NSString+FunSize.m */,
 				4311A76913D7442C00820313 /* NSTextField+FunSize.h */,
@@ -327,6 +335,7 @@
 				43B531A813F8621F007A521C /* CAKeyframeAnimation+FunSize.h in Headers */,
 				432A5AEF140A92ED00E27789 /* NSNumber+FunSize.h in Headers */,
 				43845135142D65E0003324C9 /* NSDictionary+FunSize.h in Headers */,
+				43E75A95142FDED60018DDB7 /* NSShadow+FunSize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +365,7 @@
 				4339C63E1422233700C21E14 /* NSUserDefaults+FunSize.h in Headers */,
 				4339C6401422233700C21E14 /* NSView+FunSize.h in Headers */,
 				4384513A142D65F8003324C9 /* NSDictionary+FunSize.h in Headers */,
+				43E75A96142FDED60018DDB7 /* NSShadow+FunSize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +473,7 @@
 				43B531AA13F8621F007A521C /* CAKeyframeAnimation+FunSize.m in Sources */,
 				432A5AF0140A92ED00E27789 /* NSNumber+FunSize.m in Sources */,
 				43845136142D65E0003324C9 /* NSDictionary+FunSize.m in Sources */,
+				43E75A97142FDED60018DDB7 /* NSShadow+FunSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +504,7 @@
 				4339C63F1422233700C21E14 /* NSUserDefaults+FunSize.m in Sources */,
 				4339C6411422233700C21E14 /* NSView+FunSize.m in Sources */,
 				4384513B142D65F8003324C9 /* NSDictionary+FunSize.m in Sources */,
+				43E75A98142FDED60018DDB7 /* NSShadow+FunSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

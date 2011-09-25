@@ -13,28 +13,22 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#import "CABasicAnimation+FunSize.h"
-#import "CAKeyframeAnimation+FunSize.h"
-#import "CALayer+FunSize.h"
-#import "CAMediaTimingFunction+FunSize.h"
-#import "CATransaction+FunSize.h"
+#import <AppKit/AppKit.h>
 
-#import "NSArray+FunSize.h"
-#import "NSBezierPath+FunSize.h"
-#import "NSColor+FunSize.h"
-#import "NSDictionary+FunSize.h"
-#import "NSEvent+FunSize.h"
-#import "NSGradient+FunSize.h"
-#import "NSImage+FunSize.h"
-#import "NSMutableArray+FunSize.h"
-#import "NSNotificationCenter+FunSize.h"
-#import "NSNumber+FunSize.h"
-#import "NSObject+FunSize.h"
-#import "NSSet+FunSize.h"
-#import "NSShadow+FunSize.h"
-#import "NSString+FunSize.h"
-#import "NSTextField+FunSize.h"
-#import "NSTimer+FunSize.h"
-#import "NSURL+FunSize.h"
-#import "NSUserDefaults+FunSize.h"
-#import "NSView+FunSize.h"
+@interface NSShadow (NSShadow_FunSize)
+
+/**
+ * Returns an "inset" shadow, ideal for rendering text. The shadow has a offset of (0, 1) and a radius of 0.
+ *
+ * @param color The color to use for the shadow, typically a partially transparent white or black.
+ */
++(NSShadow*)insetUpWithColor:(NSColor*)color;
+
+/**
+ * Returns an "inset" shadow, ideal for rendering text. The shadow has a offset of (0, -1) and a radius of 0.
+ *
+ * @param color The color to use for the shadow, typically a partially transparent white or black.
+ */
++(NSShadow*)insetDownWithColor:(NSColor*)color;
+
+@end
