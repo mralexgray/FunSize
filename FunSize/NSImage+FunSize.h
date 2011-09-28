@@ -29,4 +29,12 @@
  */
 -(void)drawInRect:(NSRect)rect;
 
+/**
+ * Simply draws the image in a rect, with "reasonable default" settings.
+ *
+ * @param rect The rect to draw in.
+ * @param fraction The transparency to draw the image with.
+ */
+-(void)drawInRect:(NSRect)rect fraction:(CGFloat)fraction;
+
 @end

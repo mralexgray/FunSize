@@ -32,4 +32,14 @@
                hints:nil];
 }
 
+-(void)drawInRect:(NSRect)rect fraction:(CGFloat)fraction
+{
+    [self drawInRect:rect
+            fromRect:NSZeroRect
+           operation:NSCompositeSourceOver
+            fraction:fraction
+      respectFlipped:YES
+               hints:nil];
+}
+
 @end
