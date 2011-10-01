@@ -15,9 +15,11 @@
 
 #import "NSShadow+FunSize.h"
 
-@implementation NSShadow (NSShadow_FunSize)
+#import "NSColor+FunSize.h"
 
-+(NSShadow*)insetUpWithColor:(NSColor*)color
+@implementation NSShadow (FunSize)
+
++(NSShadow*)shadowInsetUpWithColor:(NSColor*)color
 {
     NSShadow* shadow = [[self alloc] init];
     [shadow setShadowBlurRadius:0];
@@ -27,7 +29,7 @@
     return [shadow autorelease];
 }
 
-+(NSShadow*)insetDownWithColor:(NSColor*)color
++(NSShadow*)shadowInsetDownWithColor:(NSColor*)color
 {
     NSShadow* shadow = [[self alloc] init];
     [shadow setShadowBlurRadius:0];
@@ -35,6 +37,21 @@
     [shadow setShadowOffset:NSMakeSize(0, -1)];
     
     return [shadow autorelease];
+}
+
++(NSShadow*)shadowWithColor:(NSColor*)color offset:(NSSize)offset radius:(CGFloat)radius
+{
+    NSShadow* shadow = [[self alloc] init];
+    [shadow setShadowColor:color];
+    [shadow setShadowOffset:offset];
+    [shadow setShadowBlurRadius:radius];
+    
+    return [shadow autorelease];
+}
+
++(NSShadow*)shadowWithHex:(NSString*)hex offset:(NSSize)offset radius:(CGFloat)radius
+{
+    return [self shadowWithColor:[NSColor colorWithHex:hex] offset:offset radius:radius];
 }
 
 @end
