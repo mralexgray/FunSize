@@ -124,4 +124,18 @@
  */
 -(NSArray*)reversedArray;
 
+/**
+ * Returns a copy of this array with a single element removed.
+ *
+ * @param object The object to remove.
+ */
+-(NSArray*)arrayByRemovingObject:(id)object;
+
+/**
+ * Returns a copy of this array with an array of elements removed.
+ *
+ * @param objects An array of objects to remove.
+ */
+-(NSArray*)arrayByRemovingObjectsFromArray:(NSArray*)objects;
+
 @end

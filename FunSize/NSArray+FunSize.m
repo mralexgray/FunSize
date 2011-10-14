@@ -165,4 +165,18 @@
     return array;
 }
 
+-(NSArray*)arrayByRemovingObject:(id)object
+{
+    NSMutableArray* mutable = [NSMutableArray arrayWithArray:self];
+    [mutable removeObject:object];
+    return [NSArray arrayWithArray:mutable];
+}
+
+-(NSArray*)arrayByRemovingObjectsFromArray:(NSArray*)objects
+{
+    NSMutableArray* mutable = [NSMutableArray arrayWithArray:self];
+    [mutable removeObjectsInArray:objects];
+    return [NSArray arrayWithArray:mutable];
+}
+
 @end
