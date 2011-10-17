@@ -34,6 +34,10 @@
 		4311A78313D7442C00820313 /* NSView+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A76D13D7442C00820313 /* NSView+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4311A78413D7442C00820313 /* NSView+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A76E13D7442C00820313 /* NSView+FunSize.m */; };
 		4311A78613D7444200820313 /* FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A78513D7444200820313 /* FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4314A860144B528E0071B341 /* NSGraphicsContext+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4314A85E144B528E0071B341 /* NSGraphicsContext+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4314A861144B528E0071B341 /* NSGraphicsContext+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4314A85E144B528E0071B341 /* NSGraphicsContext+FunSize.h */; };
+		4314A862144B528E0071B341 /* NSGraphicsContext+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4314A85F144B528E0071B341 /* NSGraphicsContext+FunSize.m */; };
+		4314A863144B528E0071B341 /* NSGraphicsContext+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4314A85F144B528E0071B341 /* NSGraphicsContext+FunSize.m */; };
 		432A5AEF140A92ED00E27789 /* NSNumber+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 432A5AED140A92ED00E27789 /* NSNumber+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		432A5AF0140A92ED00E27789 /* NSNumber+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 432A5AEE140A92ED00E27789 /* NSNumber+FunSize.m */; };
 		4339C608142222D300C21E14 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4311A74713D7429E00820313 /* Cocoa.framework */; };
@@ -142,6 +146,8 @@
 		4311A76D13D7442C00820313 /* NSView+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+FunSize.h"; sourceTree = "<group>"; };
 		4311A76E13D7442C00820313 /* NSView+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+FunSize.m"; sourceTree = "<group>"; };
 		4311A78513D7444200820313 /* FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunSize.h; sourceTree = "<group>"; };
+		4314A85E144B528E0071B341 /* NSGraphicsContext+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSGraphicsContext+FunSize.h"; sourceTree = "<group>"; };
+		4314A85F144B528E0071B341 /* NSGraphicsContext+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSGraphicsContext+FunSize.m"; sourceTree = "<group>"; };
 		432A5AED140A92ED00E27789 /* NSNumber+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+FunSize.h"; sourceTree = "<group>"; };
 		432A5AEE140A92ED00E27789 /* NSNumber+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+FunSize.m"; sourceTree = "<group>"; };
 		4339C607142222D300C21E14 /* libFunSize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFunSize.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,6 +259,8 @@
 				4304C74D13F477C1002C9888 /* NSEvent+FunSize.m */,
 				4311A75D13D7442B00820313 /* NSGradient+FunSize.h */,
 				4311A75E13D7442B00820313 /* NSGradient+FunSize.m */,
+				4314A85E144B528E0071B341 /* NSGraphicsContext+FunSize.h */,
+				4314A85F144B528E0071B341 /* NSGraphicsContext+FunSize.m */,
 				4311A75F13D7442B00820313 /* NSImage+FunSize.h */,
 				4311A76013D7442B00820313 /* NSImage+FunSize.m */,
 				4311A76113D7442B00820313 /* NSMutableArray+FunSize.h */,
@@ -336,6 +344,7 @@
 				432A5AEF140A92ED00E27789 /* NSNumber+FunSize.h in Headers */,
 				43845135142D65E0003324C9 /* NSDictionary+FunSize.h in Headers */,
 				43E75A95142FDED60018DDB7 /* NSShadow+FunSize.h in Headers */,
+				4314A860144B528E0071B341 /* NSGraphicsContext+FunSize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +375,7 @@
 				4339C6401422233700C21E14 /* NSView+FunSize.h in Headers */,
 				4384513A142D65F8003324C9 /* NSDictionary+FunSize.h in Headers */,
 				43E75A96142FDED60018DDB7 /* NSShadow+FunSize.h in Headers */,
+				4314A861144B528E0071B341 /* NSGraphicsContext+FunSize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +484,7 @@
 				432A5AF0140A92ED00E27789 /* NSNumber+FunSize.m in Sources */,
 				43845136142D65E0003324C9 /* NSDictionary+FunSize.m in Sources */,
 				43E75A97142FDED60018DDB7 /* NSShadow+FunSize.m in Sources */,
+				4314A862144B528E0071B341 /* NSGraphicsContext+FunSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +516,7 @@
 				4339C6411422233700C21E14 /* NSView+FunSize.m in Sources */,
 				4384513B142D65F8003324C9 /* NSDictionary+FunSize.m in Sources */,
 				43E75A98142FDED60018DDB7 /* NSShadow+FunSize.m in Sources */,
+				4314A863144B528E0071B341 /* NSGraphicsContext+FunSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
