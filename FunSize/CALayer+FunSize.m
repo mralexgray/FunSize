@@ -995,4 +995,85 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
        completion:block];
 }
 
+#pragma mark -
+#pragma mark Transforms
+-(void)animate:(NSString*)key
+ fromTransform:(CATransform3D)fromValue
+            to:(CATransform3D)toValue
+          time:(NSTimeInterval)seconds
+{
+    [self animate:key
+             from:[NSValue valueWithCATransform3D:fromValue]
+               to:[NSValue valueWithCATransform3D:toValue]
+             time:seconds];
+}
+
+-(void)animate:(NSString*)key
+ fromTransform:(CATransform3D)fromValue
+            to:(CATransform3D)toValue
+          time:(NSTimeInterval)seconds
+         eased:(id)easing
+{
+    [self animate:key
+             from:[NSValue valueWithCATransform3D:fromValue]
+               to:[NSValue valueWithCATransform3D:toValue]
+             time:seconds
+            eased:easing];
+}
+
+-(void)animate:(NSString*)key toTransform:(CATransform3D)toValue time:(NSTimeInterval)seconds
+{
+    [self animate:key to:[NSValue valueWithCATransform3D:toValue] time:seconds];
+}
+
+-(void)animate:(NSString*)key toTransform:(CATransform3D)toValue time:(NSTimeInterval)seconds eased:(id)easing
+{
+    [self animate:key to:[NSValue valueWithCATransform3D:toValue] time:seconds eased:easing];
+}
+
+-(void)animate:(NSString*)key
+ fromTransform:(CATransform3D)fromValue
+            to:(CATransform3D)toValue
+          time:(NSTimeInterval)seconds
+    completion:(void (^)())block
+{
+    [self animate:key
+             from:[NSValue valueWithCATransform3D:fromValue]
+               to:[NSValue valueWithCATransform3D:toValue]
+             time:seconds
+       completion:block];
+}
+
+-(void)animate:(NSString*)key
+ fromTransform:(CATransform3D)fromValue
+            to:(CATransform3D)toValue
+          time:(NSTimeInterval)seconds
+         eased:(id)easing
+    completion:(void (^)())block
+{
+    [self animate:key
+             from:[NSValue valueWithCATransform3D:fromValue]
+               to:[NSValue valueWithCATransform3D:toValue]
+             time:seconds
+            eased:easing
+       completion:block];
+}
+
+-(void)animate:(NSString*)key
+   toTransform:(CATransform3D)toValue
+          time:(NSTimeInterval)seconds
+    completion:(void (^)())block
+{
+    [self animate:key to:[NSValue valueWithCATransform3D:toValue] time:seconds completion:block];
+}
+
+-(void)animate:(NSString*)key
+   toTransform:(CATransform3D)toValue
+          time:(NSTimeInterval)seconds
+         eased:(id)easing
+    completion:(void (^)())block
+{
+    [self animate:key to:[NSValue valueWithCATransform3D:toValue] time:seconds eased:easing completion:block];
+}
+
 @end

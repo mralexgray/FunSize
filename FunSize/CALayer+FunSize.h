@@ -1410,6 +1410,137 @@
     completion:(void (^)())block;
 
 #pragma mark -
+#pragma mark Transforms
+/** @name Animation with Transforms */
+/**
+ * Animates a key of the layer from one `CATransform3D` value to another.
+ *
+ * `CABasicAnimation` is used for the animation.
+ *
+ * @param key The key to animate.
+ * @param fromValue The starting value.
+ * @param toValue The ending value.
+ * @param seconds The number of seconds the animation should take.
+ * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
+ * parameter.
+ */
+-(void)animate:(NSString*)key
+ fromTransform:(CATransform3D)fromValue
+            to:(CATransform3D)toValue
+          time:(NSTimeInterval)seconds
+    completion:(void (^)())block;
+
+/**
+ * Animates a key of the layer from one `CATransform3D` value to another with custom easing.
+ *
+ * `CABasicAnimation` is used for the animation.
+ *
+ * @param key The key to animate.
+ * @param fromValue The starting value.
+ * @param toValue The ending value.
+ * @param seconds The number of seconds the animation should take.
+ * @param easing The easing function to use. This can be an instance of `CAMediaTimingFunction` or one of the constants
+ * that can be used to construct an instance of that class.
+ * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
+ * parameter.
+ */
+-(void)animate:(NSString*)key
+ fromTransform:(CATransform3D)fromValue
+            to:(CATransform3D)toValue
+          time:(NSTimeInterval)seconds
+         eased:(id)easing
+    completion:(void (^)())block;
+
+/**
+ * Animates a key of the layer to a `CATransform3D` value.
+ *
+ * `CABasicAnimation` is used for the animation.
+ *
+ * @param key The key to animate.
+ * @param toValue The ending value.
+ * @param seconds The number of seconds the animation should take.
+ * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
+ * parameter.
+ */
+-(void)animate:(NSString*)key
+   toTransform:(CATransform3D)toValue
+          time:(NSTimeInterval)seconds
+    completion:(void (^)())block;
+
+/**
+ * Animates a key of the layer to a `CATransform3D` value with custom easing.
+ *
+ * `CABasicAnimation` is used for the animation.
+ *
+ * @param key The key to animate.
+ * @param toValue The ending value.
+ * @param seconds The number of seconds the animation should take.
+ * @param easing The easing function to use. This can be an instance of `CAMediaTimingFunction` or one of the constants
+ * that can be used to construct an instance of that class.
+ * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
+ * parameter.
+ */
+-(void)animate:(NSString*)key
+   toTransform:(CATransform3D)toValue
+          time:(NSTimeInterval)seconds
+         eased:(id)easing
+    completion:(void (^)())block;
+
+/**
+ * Animates a key of the layer from one `CATransform3D` value to another.
+ *
+ * `CABasicAnimation` is used for the animation.
+ *
+ * @param key The key to animate.
+ * @param fromValue The starting value.
+ * @param toValue The ending value.
+ * @param seconds The number of seconds the animation should take.
+ */
+-(void)animate:(NSString*)key fromTransform:(CATransform3D)fromValue to:(CATransform3D)toValue time:(NSTimeInterval)seconds;
+
+/**
+ * Animates a key of the layer from one `CATransform3D` value to another with custom easing.
+ *
+ * `CABasicAnimation` is used for the animation.
+ *
+ * @param key The key to animate.
+ * @param fromValue The starting value.
+ * @param toValue The ending value.
+ * @param seconds The number of seconds the animation should take.
+ * @param easing The easing function to use. This can be an instance of `CAMediaTimingFunction` or one of the constants
+ * that can be used to construct an instance of that class.
+ */
+-(void)animate:(NSString*)key
+ fromTransform:(CATransform3D)fromValue
+            to:(CATransform3D)toValue
+          time:(NSTimeInterval)seconds
+         eased:(id)easing;
+
+/**
+ * Animates a key of the layer to a `CATransform3D` value.
+ *
+ * `CABasicAnimation` is used for the animation.
+ *
+ * @param key The key to animate.
+ * @param toValue The ending value.
+ * @param seconds The number of seconds the animation should take.
+ */
+-(void)animate:(NSString*)key toTransform:(CATransform3D)toValue time:(NSTimeInterval)seconds;
+
+/**
+ * Animates a key of the layer to a `CATransform3D` value with custom easing.
+ *
+ * `CABasicAnimation` is used for the animation.
+ *
+ * @param key The key to animate.
+ * @param toValue The ending value.
+ * @param seconds The number of seconds the animation should take.
+ * @param easing The easing function to use. This can be an instance of `CAMediaTimingFunction` or one of the constants
+ * that can be used to construct an instance of that class.
+ */
+-(void)animate:(NSString*)key toTransform:(CATransform3D)toValue time:(NSTimeInterval)seconds eased:(id)easing;
+
+#pragma mark -
 #pragma mark Hit Testing
 /** @name Hit Testing */
 
