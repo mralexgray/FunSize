@@ -36,6 +36,7 @@
     else
     {
         [self begin];
+        [self setDisableActions:NO];
         [self setAnimationDuration:length];
         
         // handle easing
