@@ -39,6 +39,7 @@
                                                             NSSizeToCGSize(size),
                                                             &fitRange);
     CFRelease(framesetter);
+    [string release];
     return NSSizeFromCGSize(s);
 }
 
