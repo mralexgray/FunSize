@@ -19,14 +19,26 @@
 
 +(void)drawInContext:(CGContextRef)ctx flipped:(BOOL)flipped actions:(void(^)())actions
 {
-    [NSGraphicsContext saveGraphicsState];
+    [self saveGraphicsState];
     
-    NSGraphicsContext* context = [NSGraphicsContext graphicsContextWithGraphicsPort:ctx flipped:flipped];
-    [NSGraphicsContext setCurrentContext:context];
+    NSGraphicsContext* context = [[self class] graphicsContextWithGraphicsPort:ctx flipped:flipped];
+    [self setCurrentContext:context];
     
     actions();
     
-    [NSGraphicsContext restoreGraphicsState];
+    [self restoreGraphicsState];
+}
+
++(void)state:(void(^)())actions
+{
+    [[self currentContext] state:actions];
+}
+
+-(void)state:(void(^)())actions
+{
+    [self saveGraphicsState];
+    actions();
+    [self restoreGraphicsState];
 }
 
 @end
