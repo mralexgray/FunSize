@@ -26,6 +26,11 @@ I attempted to insert `retain`, `release`, and `autorelease` where applicable,
 I haven't tested it extensively without GC (for this reason, I will not be
 using GC in my next application).
 
+**New Note**: It *seems* to work fine with reference counting now, as I've been
+running Leaks on my current project, which uses manual reference counting and
+makes extensive use of FunSize. If there are any remaining leaks, they would
+show up pretty clearly in Leaks anyways (which I assume everyone runs...right?)
+
 ## Usage
 
 The Xcode project target is a framework. Honestly, I haven't really used it, I
