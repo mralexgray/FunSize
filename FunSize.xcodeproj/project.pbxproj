@@ -111,6 +111,10 @@
 		43E75A96142FDED60018DDB7 /* NSShadow+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E75A93142FDED60018DDB7 /* NSShadow+FunSize.h */; };
 		43E75A97142FDED60018DDB7 /* NSShadow+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E75A94142FDED60018DDB7 /* NSShadow+FunSize.m */; };
 		43E75A98142FDED60018DDB7 /* NSShadow+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E75A94142FDED60018DDB7 /* NSShadow+FunSize.m */; };
+		43F138131498991D0019FB30 /* NSAttributedString+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F138111498991D0019FB30 /* NSAttributedString+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43F138141498991D0019FB30 /* NSAttributedString+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F138111498991D0019FB30 /* NSAttributedString+FunSize.h */; };
+		43F138151498991D0019FB30 /* NSAttributedString+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */; };
+		43F138161498991D0019FB30 /* NSAttributedString+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +182,8 @@
 		43DD7BCB13D9F59600CA78AC /* NSSet+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+FunSize.m"; sourceTree = "<group>"; };
 		43E75A93142FDED60018DDB7 /* NSShadow+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSShadow+FunSize.h"; sourceTree = "<group>"; };
 		43E75A94142FDED60018DDB7 /* NSShadow+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSShadow+FunSize.m"; sourceTree = "<group>"; };
+		43F138111498991D0019FB30 /* NSAttributedString+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+FunSize.h"; sourceTree = "<group>"; };
+		43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+FunSize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +255,8 @@
 				436973A113F259DB007CC51E /* CATransaction+FunSize.m */,
 				4311A75913D7442B00820313 /* NSArray+FunSize.h */,
 				4311A75A13D7442B00820313 /* NSArray+FunSize.m */,
+				43F138111498991D0019FB30 /* NSAttributedString+FunSize.h */,
+				43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */,
 				4343F8AB13EC81010012C361 /* NSBezierPath+FunSize.h */,
 				4343F8AC13EC81010012C361 /* NSBezierPath+FunSize.m */,
 				4311A75B13D7442B00820313 /* NSColor+FunSize.h */,
@@ -345,6 +353,7 @@
 				43845135142D65E0003324C9 /* NSDictionary+FunSize.h in Headers */,
 				43E75A95142FDED60018DDB7 /* NSShadow+FunSize.h in Headers */,
 				4314A860144B528E0071B341 /* NSGraphicsContext+FunSize.h in Headers */,
+				43F138131498991D0019FB30 /* NSAttributedString+FunSize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +385,7 @@
 				4384513A142D65F8003324C9 /* NSDictionary+FunSize.h in Headers */,
 				43E75A96142FDED60018DDB7 /* NSShadow+FunSize.h in Headers */,
 				4314A861144B528E0071B341 /* NSGraphicsContext+FunSize.h in Headers */,
+				43F138141498991D0019FB30 /* NSAttributedString+FunSize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +495,7 @@
 				43845136142D65E0003324C9 /* NSDictionary+FunSize.m in Sources */,
 				43E75A97142FDED60018DDB7 /* NSShadow+FunSize.m in Sources */,
 				4314A862144B528E0071B341 /* NSGraphicsContext+FunSize.m in Sources */,
+				43F138151498991D0019FB30 /* NSAttributedString+FunSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +528,7 @@
 				4384513B142D65F8003324C9 /* NSDictionary+FunSize.m in Sources */,
 				43E75A98142FDED60018DDB7 /* NSShadow+FunSize.m in Sources */,
 				4314A863144B528E0071B341 /* NSGraphicsContext+FunSize.m in Sources */,
+				43F138161498991D0019FB30 /* NSAttributedString+FunSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

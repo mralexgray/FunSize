@@ -13,30 +13,22 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#import "CABasicAnimation+FunSize.h"
-#import "CAKeyframeAnimation+FunSize.h"
-#import "CALayer+FunSize.h"
-#import "CAMediaTimingFunction+FunSize.h"
-#import "CATransaction+FunSize.h"
-
-#import "NSArray+FunSize.h"
 #import "NSAttributedString+FunSize.h"
-#import "NSBezierPath+FunSize.h"
-#import "NSColor+FunSize.h"
-#import "NSDictionary+FunSize.h"
-#import "NSEvent+FunSize.h"
-#import "NSGradient+FunSize.h"
-#import "NSGraphicsContext+FunSize.h"
-#import "NSImage+FunSize.h"
-#import "NSMutableArray+FunSize.h"
-#import "NSNotificationCenter+FunSize.h"
-#import "NSNumber+FunSize.h"
-#import "NSObject+FunSize.h"
-#import "NSSet+FunSize.h"
-#import "NSShadow+FunSize.h"
-#import "NSString+FunSize.h"
-#import "NSTextField+FunSize.h"
-#import "NSTimer+FunSize.h"
-#import "NSURL+FunSize.h"
-#import "NSUserDefaults+FunSize.h"
-#import "NSView+FunSize.h"
+
+@implementation NSAttributedString (FunSize)
+
+-(NSSize)sizeWithSize:(NSSize)size
+{
+    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)self);
+    
+    CFRange fitRange;
+    CGSize s = CTFramesetterSuggestFrameSizeWithConstraints(framesetter,
+                                                            CFRangeMake(0, 0),
+                                                            NULL,
+                                                            NSSizeToCGSize(size),
+                                                            &fitRange);
+    CFRelease(framesetter);
+    return NSSizeFromCGSize(s);
+}
+
+@end
