@@ -433,7 +433,7 @@
 		4311A73A13D7429E00820313 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Nate Stedman";
 			};
 			buildConfigurationList = 4311A73D13D7429E00820313 /* Build configuration list for PBXProject "FunSize" */;
