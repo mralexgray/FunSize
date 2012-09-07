@@ -58,9 +58,9 @@
                                   alpha:components[3]];
 }
 
-+(NSColor*)colorWithCGColor:(CGColorRef)color
-{
-    return [self colorWithCIColor:[CIColor colorWithCGColor:color]];
-}
+//+(NSColor*)colorWithCGColor:(CGColorRef)color
+//{
+//    return [self colorWithCIColor:[CIColor colorWithCGColor:color]];
+//}
 
 @end

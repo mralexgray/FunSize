@@ -26,6 +26,6 @@
  */
 +(NSColor*)colorWithHex:(NSString*)hex;
 
-+(NSColor*)colorWithCGColor:(CGColorRef)color;
+//+(NSColor*)colorWithCGColor:(CGColorRef)color;
 
 @end
