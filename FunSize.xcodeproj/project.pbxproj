@@ -115,6 +115,7 @@
 		43F138141498991D0019FB30 /* NSAttributedString+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F138111498991D0019FB30 /* NSAttributedString+FunSize.h */; };
 		43F138151498991D0019FB30 /* NSAttributedString+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */; };
 		43F138161498991D0019FB30 /* NSAttributedString+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */; };
+		7BE63A0D15FE7A61004BA700 /* AppledocSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BE63A0C15FE7A61004BA700 /* AppledocSettings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +185,7 @@
 		43E75A94142FDED60018DDB7 /* NSShadow+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSShadow+FunSize.m"; sourceTree = "<group>"; };
 		43F138111498991D0019FB30 /* NSAttributedString+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+FunSize.h"; sourceTree = "<group>"; };
 		43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+FunSize.m"; sourceTree = "<group>"; };
+		7BE63A0C15FE7A61004BA700 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 		4311A73813D7429E00820313 = {
 			isa = PBXGroup;
 			children = (
+				7BE63A0C15FE7A61004BA700 /* AppledocSettings.plist */,
 				4311A74D13D7429E00820313 /* FunSize */,
 				4311A74E13D7429E00820313 /* Supporting Files */,
 				4311A74613D7429E00820313 /* Frameworks */,
@@ -460,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4311A75213D7429E00820313 /* InfoPlist.strings in Resources */,
+				7BE63A0D15FE7A61004BA700 /* AppledocSettings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
