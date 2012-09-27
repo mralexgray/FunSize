@@ -197,7 +197,7 @@
  *
  * @param key The key.
  */
--(unsigned unsigned int)unsignedIntForKey:(NSString*)key;
+-(unsigned int)unsignedIntForKey:(NSString*)key;
 
 /**
  * Sets an `unsigned int` value for a specified key.
