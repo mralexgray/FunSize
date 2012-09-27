@@ -158,7 +158,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
 -(NSArray*)superlayers
 {
     if (![self superlayer])
-        return [NSArray array];
+        return @[self];//[NSArray array];
     
     NSMutableArray* array = [NSMutableArray array];
     
