@@ -624,8 +624,6 @@
           time:(NSTimeInterval)seconds
          eased:(id)easing
     completion:(void (^)())block;
-
-
 #pragma mark -
 #pragma mark Rects
 /** @name Animation with Rects */

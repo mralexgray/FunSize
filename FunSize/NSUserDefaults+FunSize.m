@@ -151,8 +151,6 @@
 {
     return [[self standardUserDefaults] URLForKey:defaultName];
 }
-
-
 +(void)setBool:(BOOL)value forKey:(NSString*)defaultName
 {
     [[self standardUserDefaults] setBool:value forKey:defaultName];
