@@ -612,10 +612,7 @@
 					"-Xclang",
 					"-fobjc-runtime-has-weak",
 				);
-				OTHER_LDFLAGS = (
-					"-umbrella",
-					AtoZ,
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -648,10 +645,7 @@
 					"-Xclang",
 					"-fobjc-runtime-has-weak",
 				);
-				OTHER_LDFLAGS = (
-					"-umbrella",
-					AtoZ,
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
