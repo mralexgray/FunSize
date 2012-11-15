@@ -64,7 +64,6 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
 
 @implementation CALayer (FunSize)
 
-#pragma mark -
 #pragma mark Recursive Sublayer Actions
 -(void)sublayersBlock:(void (^)(CALayer*))block
 {
@@ -108,7 +107,6 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     return NO;
 }
 
-#pragma mark -
 #pragma mark Superlayer Actions
 -(void)superlayerBlock:(void (^)(CALayer*))block
 {
@@ -169,7 +167,6 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     return array;
 }
 
-#pragma mark -
 #pragma mark Hit Testing
 -(CALayer*)hitTest:(CGPoint)point forClass:(Class)klass
 {
@@ -183,7 +180,6 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     return layer;
 }
 
-#pragma mark -
 #pragma mark Animations
 -(CAAnimation*)addAndReturnAnimation:(CAAnimation*)animation forKey:(NSString*)key
 {
@@ -293,7 +289,6 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
        completion:block];
 }
 
-#pragma mark -
 #pragma mark Numbers
 -(void)animate:(NSString*)key fromInt:(int)fromValue to:(int)toValue time:(NSTimeInterval)seconds
 {
@@ -522,7 +517,6 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     [self animate:key to:[NSNumber numberWithDouble:toValue] time:seconds eased:easing completion:block];
 }
 
-#pragma mark -
 #pragma mark Points
 -(void)animate:(NSString*)key fromPoint:(NSPoint)fromValue to:(NSPoint)toValue time:(NSTimeInterval)seconds
 {
@@ -680,7 +674,6 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
        completion:block];
 }
 
-#pragma mark -
 #pragma mark Sizes
 -(void)animate:(NSString*)key fromSize:(NSSize)fromValue to:(NSSize)toValue time:(NSTimeInterval)seconds
 {
@@ -838,7 +831,6 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
        completion:block];
 }
 
-#pragma mark -
 #pragma mark Rects
 -(void)animate:(NSString*)key fromRect:(NSRect)fromValue to:(NSRect)toValue time:(NSTimeInterval)seconds
 {
@@ -995,7 +987,6 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
        completion:block];
 }
 
-#pragma mark -
 #pragma mark Transforms
 -(void)animate:(NSString*)key
  fromTransform:(CATransform3D)fromValue

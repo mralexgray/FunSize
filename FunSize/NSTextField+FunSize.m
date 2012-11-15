@@ -17,7 +17,6 @@
 
 @implementation NSTextField (FunSize)
 
-#pragma mark -
 #pragma mark Label Initializers
 -(id)initAsLabelWithFrame:(NSRect)frameRect
 {
@@ -43,7 +42,6 @@
     return self;
 }
 
-#pragma mark -
 #pragma mark Text Field Formatting
 -(void)formatAsField
 {

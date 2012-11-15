@@ -17,7 +17,6 @@
 
 @interface NSTimer (FunSize)
 
-#pragma mark -
 #pragma mark Block Timers
 /** Block Timers */
 

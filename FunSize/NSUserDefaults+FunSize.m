@@ -17,7 +17,6 @@
 
 @implementation NSUserDefaults (FunSize)
 
-#pragma mark -
 #pragma mark Rects
 -(NSRect)rectForKey:(NSString*)defaultName
 {
@@ -39,7 +38,6 @@
     [self setObject:NSStringFromRect(NSRectFromCGRect(value)) forKey:defaultName];
 }
 
-#pragma mark -
 #pragma mark Points
 -(NSPoint)pointForKey:(NSString*)defaultName
 {
@@ -61,7 +59,6 @@
     [self setObject:NSStringFromPoint(NSPointFromCGPoint(value)) forKey:defaultName];
 }
 
-#pragma mark -
 #pragma mark Sizes
 -(NSSize)sizeForKey:(NSString*)defaultName
 {
@@ -83,7 +80,6 @@
     [self setObject:NSStringFromSize(NSSizeFromCGSize(value)) forKey:defaultName];
 }
 
-#pragma mark -
 #pragma mark NSRange
 -(NSRange)rangeForKey:(NSString*)defaultName
 {
@@ -95,7 +91,6 @@
     [self setObject:NSStringFromRange(value) forKey:defaultName];
 }
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts
 +(NSArray*)arrayForKey:(NSString*)defaultName
 {
@@ -181,7 +176,6 @@
     [[self standardUserDefaults] setURL:url forKey:defaultName];
 }
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts for Rects
 +(NSRect)rectForKey:(NSString*)defaultName
 {
@@ -203,7 +197,6 @@
     [[self standardUserDefaults] setObject:NSStringFromRect(NSRectFromCGRect(value)) forKey:defaultName];
 }
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts for Points
 +(NSPoint)pointForKey:(NSString*)defaultName
 {
@@ -225,7 +218,6 @@
     [[self standardUserDefaults] setObject:NSStringFromPoint(NSPointFromCGPoint(value)) forKey:defaultName];
 }
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts for Sizes
 +(NSSize)sizeForKey:(NSString*)defaultName
 {
@@ -247,7 +239,6 @@
     [[self standardUserDefaults] setObject:NSStringFromSize(NSSizeFromCGSize(value)) forKey:defaultName];
 }
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts for NSRange
 +(NSRange)rangeForKey:(NSString*)defaultName
 {

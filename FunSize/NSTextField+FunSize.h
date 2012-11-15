@@ -17,7 +17,6 @@
 
 @interface NSTextField (FunSize)
 
-#pragma mark -
 #pragma mark Label Initializers
 /** @name Label Initializers */
 
@@ -31,7 +30,6 @@
  */
 -(id)initAsSelectableLabelWithFrame:(NSRect)frameRect;
 
-#pragma mark -
 #pragma mark Text Field Formatting
 /** @name Text Field Formatting */
 

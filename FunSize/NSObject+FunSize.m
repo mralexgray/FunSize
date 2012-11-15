@@ -19,7 +19,6 @@
 
 @implementation NSObject (FunSize)
 
-#pragma mark -
 #pragma mark Properties
 -(void)iteratePropertiesWithBlock:(void (^)(NSString*))propertyBlock
 {
@@ -42,7 +41,6 @@
     free(properties);
 }
 
-#pragma mark -
 #pragma mark Floating Point NSNumber valueForKey:/setValue:forKey:
 -(float)floatForKey:(NSString*)key
 {
@@ -64,7 +62,6 @@
     [self setValue:[NSNumber numberWithDouble:value] forKey:key];
 }
 
-#pragma mark -
 #pragma mark Signed NSNumber valueForKey:/setValue:forKey:
 -(BOOL)boolForKey:(NSString*)key
 {
@@ -126,7 +123,6 @@
     [self setValue:[NSNumber numberWithInteger:value] forKey:key];
 }
 
-#pragma mark -
 #pragma mark Unsigned NSNumber valueForKey:/setValue:forKey:
 -(unsigned char)unsignedCharForKey:(NSString*)key
 {
@@ -188,7 +184,6 @@
     [self setValue:[NSNumber numberWithUnsignedLongLong:value] forKey:key];
 }
 
-#pragma mark -
 #pragma mark NSValue valueForKey:/setValue:forKey:
 -(NSSize)sizeForKey:(NSString*)key
 {
@@ -240,7 +235,6 @@
     [self setValue:[NSValue valueWithCATransform3D:value] forKey:key];
 }
 
-#pragma mark -
 #pragma mark Floating Point NSNumber valueForKeyPath:/setValue:forKeyPath:
 -(float)floatForKeyPath:(NSString*)key
 {
@@ -262,7 +256,6 @@
     [self setValue:[NSNumber numberWithDouble:value] forKeyPath:key];
 }
 
-#pragma mark -
 #pragma mark Signed NSNumber valueForKeyPath:/setValue:forKeyPath:
 -(BOOL)boolForKeyPath:(NSString*)key
 {
@@ -324,7 +317,6 @@
     [self setValue:[NSNumber numberWithInteger:value] forKeyPath:key];
 }
 
-#pragma mark -
 #pragma mark Unsigned NSNumber valueForKeyPath:/setValue:forKeyPath:
 -(unsigned char)unsignedCharForKeyPath:(NSString*)key
 {
@@ -386,7 +378,6 @@
     [self setValue:[NSNumber numberWithUnsignedLongLong:value] forKeyPath:key];
 }
 
-#pragma mark -
 #pragma mark NSValue valueForKeyPath:/setValue:forKeyPath:
 -(NSSize)sizeForKeyPath:(NSString*)key
 {

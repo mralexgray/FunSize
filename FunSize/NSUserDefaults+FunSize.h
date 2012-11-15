@@ -17,7 +17,6 @@
 
 @interface NSUserDefaults (FunSize)
 
-#pragma mark -
 #pragma mark Rects
 /** @name Storing Rects */
 
@@ -51,7 +50,6 @@
  */
 -(void)setCGRect:(CGRect)value forKey:(NSString*)defaultName;
 
-#pragma mark -
 #pragma mark Points
 /** @name Storing Points */
 
@@ -85,7 +83,6 @@
  */
 -(void)setCGPoint:(CGPoint)value forKey:(NSString*)defaultName;
 
-#pragma mark -
 #pragma mark Sizes
 /** @name Storing Sizes */
 
@@ -119,7 +116,6 @@
  */
 -(void)setCGSize:(CGSize)value forKey:(NSString*)defaultName;
 
-#pragma mark -
 #pragma mark NSRange
 /** @name Storing Ranges */
 
@@ -138,7 +134,6 @@
  */
 -(void)setRange:(NSRange)value forKey:(NSString*)defaultName;
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts
 /** @name Class-Level Shortcuts */
 
@@ -267,7 +262,6 @@
  */
 +(void)setURL:(NSURL*)url forKey:(NSString*)defaultName;
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts for Rects
 /** @name Class-Level Shortcuts for Rects */
 
@@ -301,7 +295,6 @@
  */
 +(void)setCGRect:(CGRect)value forKey:(NSString*)defaultName;
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts for Points
 /** @name Class-Level Shortcuts for Points */
 
@@ -335,7 +328,6 @@
  */
 +(void)setCGPoint:(CGPoint)value forKey:(NSString*)defaultName;
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts for Sizes
 /** @name Class-Level Shortcuts for Sizes */
 
@@ -369,7 +361,6 @@
  */
 +(void)setCGSize:(CGSize)value forKey:(NSString*)defaultName;
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts for NSRange
 /** @name Class-Level Shortcuts for Ranges */
 

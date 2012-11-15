@@ -17,7 +17,6 @@
 
 @implementation CABasicAnimation (FunSize)
 
-#pragma mark -
 #pragma mark Number Getters
 -(int)fromInt
 {
@@ -49,7 +48,6 @@
     return [[self toValue] doubleValue];
 }
 
-#pragma mark -
 #pragma mark Number Setters
 -(void)setFromInt:(int)from
 {
@@ -81,7 +79,6 @@
     [self setToValue:[NSNumber numberWithDouble:to]];
 }
 
-#pragma mark -
 #pragma mark Point Getters
 -(NSPoint)fromPoint
 {
@@ -103,7 +100,6 @@
     return NSPointToCGPoint([[self toValue] pointValue]);
 }
 
-#pragma mark -
 #pragma mark Point Setters
 -(void)setFromPoint:(NSPoint)from
 {
@@ -125,7 +121,6 @@
     [self setToValue:[NSValue valueWithPoint:NSPointFromCGPoint(to)]];
 }
 
-#pragma mark -
 #pragma mark Rect Getters
 -(NSRect)fromRect
 {
@@ -147,7 +142,6 @@
     return NSRectToCGRect([[self toValue] rectValue]);
 }
 
-#pragma mark -
 #pragma mark Rect Setters
 -(void)setFromRect:(NSRect)from
 {
@@ -169,7 +163,6 @@
     [self setToValue:[NSValue valueWithRect:NSRectFromCGRect(to)]];
 }
 
-#pragma mark -
 #pragma mark Transform Getters
 -(CATransform3D)fromTransform
 {
@@ -181,7 +174,6 @@
     return [[self toValue] CATransform3DValue];
 }
 
-#pragma mark -
 #pragma mark Transform Setters
 -(void)setFromTransform:(CATransform3D)from
 {
@@ -193,7 +185,6 @@
     [self setToValue:[NSValue valueWithCATransform3D:to]];
 }
 
-#pragma mark -
 #pragma mark Timing
 -(void)setTiming:(NSString*)timingFunctionName
 {

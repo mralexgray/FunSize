@@ -17,7 +17,6 @@
 
 @interface NSView (FunSize)
 
-#pragma mark -
 #pragma mark Recursive Subview Operations
 /** @name Recursive Subview Operations */
 
@@ -58,7 +57,6 @@
  */
 -(BOOL)isSubviewOfView:(NSView*)superview;
 
-#pragma mark -
 #pragma mark Superview Operations
 /** @name Superview Operations */
 
@@ -111,7 +109,6 @@
  */
 -(NSArray*)superviews;
 
-#pragma mark -
 #pragma mark Hit Testing
 /** @name Hit Testing */
 
@@ -124,7 +121,6 @@
  */
 -(id)hitTest:(NSPoint)point forClass:(Class)klass;
 
-#pragma mark -
 #pragma mark Bitmap Representations
 /** @name Bitmap Representations */
 

@@ -17,7 +17,6 @@
 
 @interface CALayer (FunSize)
 
-#pragma mark -
 #pragma mark Recursive Sublayer Operations
 /** @name Recursive Sublayer Operations */
 
@@ -51,7 +50,6 @@
  */
 -(BOOL)sublayersBlockWithAbortSkippingSelf:(BOOL (^)(CALayer* layer))block;
 
-#pragma mark -
 #pragma mark Superlayer Actions
 /** @name Superlayer Actions */
 
@@ -98,7 +96,6 @@
  */
 -(NSArray*)superlayers;
 
-#pragma mark -
 #pragma mark Animations
 /** @name Animations */
 
@@ -237,7 +234,6 @@
          eased:(id)easing
     completion:(void (^)())block;
 
-#pragma mark -
 #pragma mark Numbers
 /** @name Animation with Numbers */
 
@@ -624,7 +620,6 @@
           time:(NSTimeInterval)seconds
          eased:(id)easing
     completion:(void (^)())block;
-#pragma mark -
 #pragma mark Rects
 /** @name Animation with Rects */
 
@@ -887,7 +882,6 @@
          eased:(id)easing
     completion:(void (^)())block;
 
-#pragma mark -
 #pragma mark Points
 /** @name Animation with Points */
 
@@ -1147,7 +1141,6 @@
          eased:(id)easing
     completion:(void (^)())block;
 
-#pragma mark -
 #pragma mark Sizes
 /** @name Animation with Sizes */
 
@@ -1407,7 +1400,6 @@
          eased:(id)easing
     completion:(void (^)())block;
 
-#pragma mark -
 #pragma mark Transforms
 /** @name Animation with Transforms */
 /**
@@ -1538,7 +1530,6 @@
  */
 -(void)animate:(NSString*)key toTransform:(CATransform3D)toValue time:(NSTimeInterval)seconds eased:(id)easing;
 
-#pragma mark -
 #pragma mark Hit Testing
 /** @name Hit Testing */
 

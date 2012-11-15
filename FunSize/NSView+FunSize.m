@@ -17,7 +17,6 @@
 
 @implementation NSView (FunSize)
 
-#pragma mark -
 #pragma mark Recursive Subview Operations
 -(void)subviewsBlock:(void (^)(id))block
 {
@@ -69,7 +68,6 @@
     return NO;
 }
 
-#pragma mark -
 #pragma mark Superview Operations
 -(void)superviewBlock:(void (^)(id))block
 {
@@ -138,7 +136,6 @@
     return array;
 }
 
-#pragma mark -
 #pragma mark Hit Testing
 -(id)hitTest:(NSPoint)point forClass:(Class)klass
 {
@@ -152,7 +149,6 @@
     return view;
 }
 
-#pragma mark -
 #pragma mark Bitmap Representations
 -(NSBitmapImageRep*)cachedBitmapImageRep
 {

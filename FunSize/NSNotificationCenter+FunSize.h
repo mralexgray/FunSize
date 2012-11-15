@@ -17,7 +17,6 @@
 
 @interface NSNotificationCenter (FunSize)
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts
 /** @name Class-Level Shortcuts */
 
@@ -89,7 +88,6 @@
  */
 +(void)removeObserver:(id)observer name:(NSString*)aName object:(id)anObject;
 
-#pragma mark -
 #pragma mark Posting Notifications on the Main Thread
 /** @name Posting Notifications on the Main Thread */
 
@@ -161,7 +159,6 @@
                                userInfo:(NSDictionary*)aUserInfo
                           waitUntilDone:(BOOL)wait;
 
-#pragma mark -
 #pragma mark Class-Level Shortcuts for Posting Notifications on the Main Thread
 /** @name Class-Level Shortcuts for Posting Notifications on the Main Thread */
 
