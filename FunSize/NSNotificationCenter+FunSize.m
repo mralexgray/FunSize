@@ -17,8 +17,7 @@
 
 @implementation NSNotificationCenter (FunSize)
 
-#pragma mark -
-#pragma mark Class-Level Shortcuts
+#pragma mark - Class-Level Shortcuts
 +(void)addObserver:(id)observer selector:(SEL)aSelector name:(NSString*)aName object:(id)anObject
 {
     [[self defaultCenter] addObserver:observer selector:aSelector name:aName object:anObject];
@@ -57,8 +56,7 @@
     [[self defaultCenter] removeObserver:observer name:aName object:anObject];
 }
 
-#pragma mark -
-#pragma mark Posting Notifications on the Main Thread
+#pragma mark - Posting Notifications on the Main Thread
 -(void)postNotificationOnMainThread:(NSNotification*)notification
 {
     [self postNotificationOnMainThread:notification waitUntilDone:NO];
@@ -93,8 +91,7 @@
     [self postNotificationOnMainThread:notification waitUntilDone:wait];
 }
 
-#pragma mark -
-#pragma mark Class-Level Shortcuts for Posting Notifications on the Main Thread
+#pragma mark - Class-Level Shortcuts for Posting Notifications on the Main Thread
 +(void)postNotificationOnMainThread:(NSNotification*)notification
 {
     [[self defaultCenter] postNotificationOnMainThread:notification];

@@ -17,8 +17,7 @@
 
 @interface CABasicAnimation (FunSize)
 
-#pragma mark -
-#pragma mark NSNumber Getters
+#pragma mark - NSNumber Getters
 /** @name Number Getters */
 
 /**
@@ -51,8 +50,7 @@
  */
 -(double)toDouble;
 
-#pragma mark -
-#pragma mark NSNumber Setters
+#pragma mark - NSNumber Setters
 /** @name Number Setters */
 
 /**
@@ -97,8 +95,7 @@
  */
 -(void)setToDouble:(double)to;
 
-#pragma mark -
-#pragma mark NSValue Getters
+#pragma mark - NSValue Getters
 /** @name Structure Getters */
 
 /**
@@ -151,8 +148,7 @@
  */
 -(CATransform3D)toTransform;
 
-#pragma mark -
-#pragma mark NSValue Setters
+#pragma mark - NSValue Setters
 /** @name Structure Setters */
 
 /**
@@ -225,8 +221,7 @@
  */
 -(void)setToTransform:(CATransform3D)to;
 
-#pragma mark -
-#pragma mark Easing
+#pragma mark - Easing
 /** @name Easing */
 
 /**
