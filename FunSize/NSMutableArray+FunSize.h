@@ -10,25 +10,20 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Cocoa/Cocoa.h>
 
 @interface NSMutableArray (FunSize)
 
-/**
- * Appends an enumerable set to the array.
+/**	Appends an enumerable set to the array.
  *
- * @param set The set to append.
- */
+ * @param set The set to append.	*/
 -(void)append:(id<NSFastEnumeration>)set;
 
-/**
- * Prepends an enumerable set to the array.
+/**	Prepends an enumerable set to the array.
  *
- * @param set The set to prepend.
- */
+ * @param set The set to prepend.	*/
 -(void)prepend:(id<NSFastEnumeration>)set;
 
 @end

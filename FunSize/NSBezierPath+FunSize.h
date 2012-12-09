@@ -10,19 +10,16 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Foundation/Foundation.h>
 
 @interface NSBezierPath (FunSize)
 
-/**
- * Constructs a rounded rectangle bezier path with equal X and Y radii.
+/**	Constructs a rounded rectangle bezier path with equal X and Y radii.
  *
  * @param rect The rect to build the bezier path inside.
- * @param radius The corner radius.
- */
+ * @param radius The corner radius.	*/
 +(NSBezierPath*)bezierPathWithRoundedRect:(NSRect)rect radius:(CGFloat)radius;
 
 @end

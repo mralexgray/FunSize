@@ -10,8 +10,7 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Cocoa/Cocoa.h>
 
@@ -20,22 +19,18 @@
 #pragma mark Block Timers
 /** Block Timers */
 
-/**
- * Schedules a timer to execute a block at a specified interval.
+/**	Schedules a timer to execute a block at a specified interval.
  * 
  * @param interval The length of the timer.
  * @param yesOrNo Whether or not the timer should repeat.
- * @param block The block to execute when the timer completes.
- */
+ * @param block The block to execute when the timer completes.	*/
 +(NSTimer*)scheduledTimerWithTimeInterval:(NSTimeInterval)interval repeats:(BOOL)yesOrNo block:(void (^)())block;
 
-/**
- * Creates a timer that will execute a block at a specified interval.
+/**	Creates a timer that will execute a block at a specified interval.
  * 
  * @param interval The length of the timer.
  * @param yesOrNo Whether or not the timer should repeat.
- * @param block The block to execute when the timer completes.
- */
+ * @param block The block to execute when the timer completes.	*/
 +(NSTimer*)timerWithTimeInterval:(NSTimeInterval)interval repeats:(BOOL)yesOrNo block:(void (^)())block;
 
 @end

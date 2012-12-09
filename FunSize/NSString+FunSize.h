@@ -10,24 +10,19 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Cocoa/Cocoa.h>
 
 @interface NSString (FunSize)
 
-/**
- * Returns a URL encoded version of the string.
- */
+/**	Returns a URL encoded version of the string.	*/
 -(NSString*)stringByURLEncoding;
 
-/**
- * Measures the size of the string with size constraints and attributes.
+/**	Measures the size of the string with size constraints and attributes.
  * 
  * @param size The size that the string should fit into when drawn.
- * @param attributes The attributes that the string should be measured with.
- */
+ * @param attributes The attributes that the string should be measured with.	*/
 -(NSSize)sizeWithSize:(NSSize)size attributes:(NSDictionary*)attributes;
 
 @end

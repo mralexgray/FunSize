@@ -10,36 +10,25 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Quartz/Quartz.h>
 
 @interface CAMediaTimingFunction (FunSize)
 
-/**
- * Returns a media timing function with the `kCAMediaTimingFunctionEaseIn` name.
- */
+/**	Returns a media timing function with the `kCAMediaTimingFunctionEaseIn` name.	*/
 +(id)easeIn;
 
-/**
- * Returns a media timing function with the `kCAMediaTimingFunctionEaseOut` name.
- */
+/**	Returns a media timing function with the `kCAMediaTimingFunctionEaseOut` name.	*/
 +(id)easeOut;
 
-/**
- * Returns a media timing function with the `kCAMediaTimingFunctionEaseInEaseOut` name.
- */
+/**	Returns a media timing function with the `kCAMediaTimingFunctionEaseInEaseOut` name.	*/
 +(id)easeInEaseOut;
 
-/**
- * Returns a media timing function with the `kCAMediaTimingFunctionEaseLinear` name.
- */
+/**	Returns a media timing function with the `kCAMediaTimingFunctionEaseLinear` name.	*/
 +(id)linear;
 
-/**
- * Returns a media timing function with the `kCAMediaTimingFunctionEaseDefault` name.
- */
+/**	Returns a media timing function with the `kCAMediaTimingFunctionEaseDefault` name.	*/
 +(id)default;
 
 @end

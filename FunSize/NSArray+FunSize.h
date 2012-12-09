@@ -10,132 +10,101 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Cocoa/Cocoa.h>
 
 @interface NSArray (FunSize)
 
-/**
- * Passes each element to the block, and returns `YES` if the block returns `YES` for all elements.
+/**	Passes each element to the block, and returns `YES` if the block returns `YES` for all elements.
  *
- * @param block A block, which will receive each element as a parameter.
- */
+ * @param block A block, which will receive each element as a parameter.	*/
 -(BOOL)all:(BOOL(^)(id object))block;
 
-/**
- * Passes each element to the block, and returns `YES` if the block returns `YES` for any element.
+/**	Passes each element to the block, and returns `YES` if the block returns `YES` for any element.
  *
  * @param block A block, which will receive elements as a parameter until it returns `YES` (or the elements are
- * exhausted).
- */
+ * exhausted).	*/
 -(BOOL)any:(BOOL(^)(id object))block;
 
-/**
- * Returns an array of mapped values.
+/**	Returns an array of mapped values.
  * 
  * @param mapBlock A block to map with. The block will receive each element of
  * the array, and should return a mapped value to be inserted into the returned
- * array.
- */
+ * array.	*/
 -(NSArray*)map:(id(^)(id object))mapBlock;
 
-/**
- * Returns an set of mapped values.
+/**	Returns an set of mapped values.
  * 
  * @param mapBlock A block to map with. The block will receive each element of
  * the array, and should return a mapped value to be inserted into the returned
- * set.
- */
+ * set.	*/
 -(NSSet*)mapToSet:(id(^)(id object))mapBlock;
 
-/**
- * Similar to `map:`, but instead returns a dictionary, where the elements of
+/**	Similar to `map:`, but instead returns a dictionary, where the elements of
  * this array are the keys and the mapped values are the values.
  * 
  * @param mapBlock A block to map with. The block will receive each element of
- * the array, and should return a mapped value to be inserted into the returned dictionary.
- */
+ * the array, and should return a mapped value to be inserted into the returned dictionary.	*/
 -(NSDictionary*)mapToDictionary:(id(^)(id object))mapBlock;
 
-/**
- * Similar to `mapToDictionary:`, except the values of the array are used as the values of the dictionary, while
+/**	Similar to `mapToDictionary:`, except the values of the array are used as the values of the dictionary, while
  * the mapped values are used as keys.
  * 
  * @param mapBlock A block to map with. The block will receive each element of
- * the array, and should return a mapped value to be used as a key in the resulting dictionary.
- */
+ * the array, and should return a mapped value to be used as a key in the resulting dictionary.	*/
 -(NSDictionary*)mapToDictionaryKeys:(id(^)(id object))mapBlock;
 
-/**
- * Filters an array, returning an array with the filtered contents.
+/**	Filters an array, returning an array with the filtered contents.
  * 
  * @param filterBlock A block to filter with. The block will receive each
  * element of this array, and should return `YES` if the element should be
- * included in the filtered array, and `NO` if it should not.
- */
+ * included in the filtered array, and `NO` if it should not.	*/
 -(NSArray*)filter:(BOOL(^)(id object))filterBlock;
 
-/**
- * Filters an array, returning a set with the filtered contents.
+/**	Filters an array, returning a set with the filtered contents.
  * 
  * @param filterBlock A block to filter with. The block will receive each
  * element of this array, and should return `YES` if the element should be
- * included in the filtered set, and `NO` if it should not.
- */
+ * included in the filtered set, and `NO` if it should not.	*/
 -(NSSet*)filterToSet:(BOOL(^)(id object))filterBlock;
 
-/**
- * Produces an array of two-element arrays from the array the message is sent
+/**	Produces an array of two-element arrays from the array the message is sent
  * to and the parameter.
  * 
- * @param array The array to zip with this array.
- */
+ * @param array The array to zip with this array.	*/
 -(NSArray*)zip:(NSArray*)array;
 
-/**
- * Similar to zip:, but uses a block instead of a second array to produce
+/**	Similar to zip:, but uses a block instead of a second array to produce
  * the second value of each pair.
  * 
- * @param zipWithBlock A block, which will receive each element of this array.
- */
+ * @param zipWithBlock A block, which will receive each element of this array.	*/
 -(NSArray*)zipWith:(id(^)(id object))zipWithBlock;
 
-/**
- * Returns a subset of this array from the start until the block returns `NO`.
+/**	Returns a subset of this array from the start until the block returns `NO`.
  * 
  * @param untilBlock A block, which will receive elements of the array until
- * it returns `NO`, at which point the subset will end.
- */
+ * it returns `NO`, at which point the subset will end.	*/
 -(NSArray*)subarrayUntil:(BOOL(^)(id object))untilBlock;
 
-/**
- * Returns a subset of this array from the element where the block returns `YES`
+/**	Returns a subset of this array from the element where the block returns `YES`
  * until the last element of the array.
  * 
  * @param fromBlock A block, which will receive elements of the array until it
- * returns `YES`, at which point the subset will start.
- */
+ * returns `YES`, at which point the subset will start.	*/
 -(NSArray*)subarrayFrom:(BOOL(^)(id object))fromBlock;
 
-/**
- * Returns an reversed array.
- */
+/**	Returns an reversed array.	*/
 -(NSArray*)reversedArray;
 
-/**
- * Returns a copy of this array with a single element removed.
+/**	Returns a copy of this array with a single element removed.
  *
- * @param object The object to remove.
- */
+ * @param object The object to remove.	*/
 -(NSArray*)arrayByRemovingObject:(id)object;
 
-/**
- * Returns a copy of this array with an array of elements removed.
+/**	Returns a copy of this array with an array of elements removed.
  *
- * @param objects An array of objects to remove.
- */
+ * @param objects An array of objects to remove.	*/
 -(NSArray*)arrayByRemovingObjectsFromArray:(NSArray*)objects;
 
 @end

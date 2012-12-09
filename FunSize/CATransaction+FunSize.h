@@ -10,36 +10,29 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Quartz/Quartz.h>
 
 @interface CATransaction (FunSize)
 
-/**
- * Performs the block, giving implicit animations the specified length.
+/**	Performs the block, giving implicit animations the specified length.
  *
  * @param length The length of implicit animations.
- * @param block A block to wrap in a transaction.
- */
+ * @param block A block to wrap in a transaction.	*/
 +(void)transactionWithLength:(NSTimeInterval)length actions:(void (^)())block;
 
-/**
- * Performs the block, giving implicit animations the specified length and easing.
+/**	Performs the block, giving implicit animations the specified length and easing.
  *
  * @param length The length of implicit animations.
  * @param ease The easing function, which may be either an instance of `CAMediaTimingFunction` or one of the constant
  * strings.
- * @param block A block to wrap in a transaction.
- */
+ * @param block A block to wrap in a transaction.	*/
 +(void)transactionWithLength:(NSTimeInterval)length easing:(id)ease actions:(void (^)())block;
 
-/**
- * Performs the block with implicit animations disabled.
+/**	Performs the block with implicit animations disabled.
  *
- * @param block A block to wrap in a transaction.
- */
+ * @param block A block to wrap in a transaction.	*/
 +(void)immediately:(void (^)())block;
 
 @end

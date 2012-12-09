@@ -10,47 +10,38 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Quartz/Quartz.h>
 
 @interface CAKeyframeAnimation (FunSize)
 
-/**
- * Returns an animation with _count_ keyframes. The block will be sent values from 0 to 1, and should return the
+/**	Returns an animation with _count_ keyframes. The block will be sent values from 0 to 1, and should return the
  * desired value for that point of the animation.
  *
  * @param count The number of keyframes.
- * @param block A block to construct and return each keyframe value.
- */
+ * @param block A block to construct and return each keyframe value.	*/
 +(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count function:(id (^)(double fraction))block;
 
-/**
- * Returns an animation with _count_ keyframes. The block will be sent values from 0 to 1, and should return the
+/**	Returns an animation with _count_ keyframes. The block will be sent values from 0 to 1, and should return the
  * desired value for that point of the animation.
  *
  * @param count The number of keyframes.
- * @param block A block to construct and return each keyframe value.
- */
+ * @param block A block to construct and return each keyframe value.	*/
 +(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count doubleFunction:(double (^)(double fraction))block;
 
-/**
- * Returns an animation with _count_ keyframes. The block will be sent values from 0 to 1, and should return the
+/**	Returns an animation with _count_ keyframes. The block will be sent values from 0 to 1, and should return the
  * desired value for that point of the animation.
  *
  * @param count The number of keyframes.
- * @param block A block to construct and return each keyframe value.
- */
+ * @param block A block to construct and return each keyframe value.	*/
 +(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count rectFunction:(CGRect (^)(double fraction))block;
 
-/**
- * Returns an animation with _count_ keyframes. The block will be sent values from 0 to 1, and should return the
+/**	Returns an animation with _count_ keyframes. The block will be sent values from 0 to 1, and should return the
  * desired value for that point of the animation.
  *
  * @param count The number of keyframes.
- * @param block A block to construct and return each keyframe value.
- */
+ * @param block A block to construct and return each keyframe value.	*/
 +(CAKeyframeAnimation*)animationWithKeyframes:(NSUInteger)count
                             transformFunction:(CATransform3D (^)(double fraction))block;
 

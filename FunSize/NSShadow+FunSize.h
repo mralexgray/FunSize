@@ -10,43 +10,34 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <AppKit/AppKit.h>
 
 @interface NSShadow (FunSize)
 
-/**
- * Returns an "inset" shadow, ideal for rendering text. The shadow has a offset of (0, 1) and a radius of 0.
+/**	Returns an "inset" shadow, ideal for rendering text. The shadow has a offset of (0, 1) and a radius of 0.
  *
- * @param color The color to use for the shadow, typically a partially transparent white or black.
- */
+ * @param color The color to use for the shadow, typically a partially transparent white or black.	*/
 +(NSShadow*)shadowInsetUpWithColor:(NSColor*)color;
 
-/**
- * Returns an "inset" shadow, ideal for rendering text. The shadow has a offset of (0, -1) and a radius of 0.
+/**	Returns an "inset" shadow, ideal for rendering text. The shadow has a offset of (0, -1) and a radius of 0.
  *
- * @param color The color to use for the shadow, typically a partially transparent white or black.
- */
+ * @param color The color to use for the shadow, typically a partially transparent white or black.	*/
 +(NSShadow*)shadowInsetDownWithColor:(NSColor*)color;
 
-/**
- * Returns a shadow with the specified color, offset, and radius
+/**	Returns a shadow with the specified color, offset, and radius
  *
  * @param color The color of the shadow
  * @param offset The shadow's offset.
- * @param radius The radius of shadow.
- */
+ * @param radius The radius of shadow.	*/
 +(NSShadow*)shadowWithColor:(NSColor*)color offset:(NSSize)offset radius:(CGFloat)radius;
 
-/**
- * Returns a shadow with the specified hex color, offset, and radius
+/**	Returns a shadow with the specified hex color, offset, and radius
  *
  * @param color A hexadecimal color string.
  * @param offset The shadow's offset.
- * @param radius The radius of shadow.
- */
+ * @param radius The radius of shadow.	*/
 +(NSShadow*)shadowWithHex:(NSString*)hex offset:(NSSize)offset radius:(CGFloat)radius;
 
 @end

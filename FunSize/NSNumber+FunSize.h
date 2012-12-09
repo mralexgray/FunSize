@@ -10,31 +10,22 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Foundation/Foundation.h>
 
 @interface NSNumber (FunSize)
 
-/**
- * Returns an `NSNumber` initialized to zero.
- */
+/**	Returns an `NSNumber` initialized to zero.	*/
 +(id)zero;
 
-/**
- * Returns an `NSNumber` initialized to one.
- */
+/**	Returns an `NSNumber` initialized to one.	*/
 +(id)one;
 
-/**
- * Returns an `NSNumber` initialized to the boolean `YES`.
- */
+/**	Returns an `NSNumber` initialized to the boolean `YES`.	*/
 +(id)yes;
 
-/**
- * Returns an `NSNumber` initialized to the boolean `NO`.
- */
+/**	Returns an `NSNumber` initialized to the boolean `NO`.	*/
 +(id)no;
 
 @end

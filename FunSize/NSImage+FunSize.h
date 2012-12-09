@@ -10,31 +10,24 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Cocoa/Cocoa.h>
 
 @interface NSImage (FunSize)
 
-/**
- * Returns a CGImageRef for the contents of the entire image.
- */
+/**	Returns a CGImageRef for the contents of the entire image.	*/
 -(CGImageRef)CGImage;
 
-/**
- * Simply draws the image in a rect, with "reasonable default" settings.
+/**	Simply draws the image in a rect, with "reasonable default" settings.
  *
- * @param rect The rect to draw in.
- */
+ * @param rect The rect to draw in.	*/
 -(void)drawInRect:(NSRect)rect;
 
-/**
- * Simply draws the image in a rect, with "reasonable default" settings.
+/**	Simply draws the image in a rect, with "reasonable default" settings.
  *
  * @param rect The rect to draw in.
- * @param fraction The transparency to draw the image with.
- */
+ * @param fraction The transparency to draw the image with.	*/
 -(void)drawInRect:(NSRect)rect fraction:(CGFloat)fraction;
 
 @end

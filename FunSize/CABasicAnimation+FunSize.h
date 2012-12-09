@@ -10,8 +10,7 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Quartz/Quartz.h>
 
@@ -20,215 +19,149 @@
 #pragma mark - NSNumber Getters
 /** @name Number Getters */
 
-/**
- * Returns the animation's `-fromValue` as an `int` value.
- */
+/**	Returns the animation's `-fromValue` as an `int` value.	*/
 -(int)fromInt;
 
-/**
- * Returns the animation's `-toValue` as an `int` value.
- */
+/**	Returns the animation's `-toValue` as an `int` value.	*/
 -(int)toInt;
 
-/**
- * Returns the animation's `-fromValue` as a `float` value.
- */
+/**	Returns the animation's `-fromValue` as a `float` value.	*/
 -(float)fromFloat;
 
-/**
- * Returns the animation's `-toValue` as a `float` value.
- */
+/**	Returns the animation's `-toValue` as a `float` value.	*/
 -(float)toFloat;
 
-/**
- * Returns the animation's `-fromValue` as a `double` value.
- */
+/**	Returns the animation's `-fromValue` as a `double` value.	*/
 -(double)fromDouble;
 
-/**
- * Returns the animation's `-toValue` as a `double` value.
- */
+/**	Returns the animation's `-toValue` as a `double` value.	*/
 -(double)toDouble;
 
 #pragma mark - NSNumber Setters
 /** @name Number Setters */
 
-/**
- * Sets the animation's `-fromValue` to an `int` value.
+/**	Sets the animation's `-fromValue` to an `int` value.
  *
- * @param from The new from value.
- */
+ * @param from The new from value.	*/
 -(void)setFromInt:(int)from;
 
-/**
- * Sets the animation's `-toValue` to an `int` value.
+/**	Sets the animation's `-toValue` to an `int` value.
  *
- * @param to The new to value.
- */
+ * @param to The new to value.	*/
 -(void)setToInt:(int)to;
 
-/**
- * Sets the animation's `-fromValue` to a `float` value.
+/**	Sets the animation's `-fromValue` to a `float` value.
  *
- * @param from The new from value.
- */
+ * @param from The new from value.	*/
 -(void)setFromFloat:(float)from;
 
-/**
- * Sets the animation's `-toValue` to a `float` value.
+/**	Sets the animation's `-toValue` to a `float` value.
  *
- * @param to The new to value.
- */
+ * @param to The new to value.	*/
 -(void)setToFloat:(float)to;
 
-/**
- * Sets the animation's `-fromValue` to a `double` value.
+/**	Sets the animation's `-fromValue` to a `double` value.
  *
- * @param from The new from value.
- */
+ * @param from The new from value.	*/
 -(void)setFromDouble:(double)from;
 
-/**
- * Sets the animation's `-toValue` to a `double` value.
+/**	Sets the animation's `-toValue` to a `double` value.
  *
- * @param to The new to value.
- */
+ * @param to The new to value.	*/
 -(void)setToDouble:(double)to;
 
 #pragma mark - NSValue Getters
 /** @name Structure Getters */
 
-/**
- * Returns the animation's `-fromValue` as an `NSPoint` value.
- */
+/**	Returns the animation's `-fromValue` as an `NSPoint` value.	*/
 -(NSPoint)fromPoint;
 
-/**
- * Returns the animation's `-toValue` as an `NSPoint` value.
- */
+/**	Returns the animation's `-toValue` as an `NSPoint` value.	*/
 -(NSPoint)toPoint;
 
-/**
- * Returns the animation's `-fromValue` as a `CGPoint` value.
- */
+/**	Returns the animation's `-fromValue` as a `CGPoint` value.	*/
 -(CGPoint)fromCGPoint;
 
-/**
- * Returns the animation's `-toValue` as a `CGPoint` value.
- */
+/**	Returns the animation's `-toValue` as a `CGPoint` value.	*/
 -(CGPoint)toCGPoint;
 
-/**
- * Returns the animation's `-fromValue` as an `NSRect` value.
- */
+/**	Returns the animation's `-fromValue` as an `NSRect` value.	*/
 -(NSRect)fromRect;
 
-/**
- * Returns the animation's `-toValue` as an `NSRect` value.
- */
+/**	Returns the animation's `-toValue` as an `NSRect` value.	*/
 -(NSRect)toRect;
 
-/**
- * Returns the animation's `-fromValue` as a `CGRect` value.
- */
+/**	Returns the animation's `-fromValue` as a `CGRect` value.	*/
 -(CGRect)fromCGRect;
 
-/**
- * Returns the animation's `-toValue` as a `CGRect` value.
- */
+/**	Returns the animation's `-toValue` as a `CGRect` value.	*/
 -(CGRect)toCGRect;
 
-/**
- * Returns the animation's `-fromValue` as an `CATransform3D` value.
- */
+/**	Returns the animation's `-fromValue` as an `CATransform3D` value.	*/
 -(CATransform3D)fromTransform;
 
-/**
- * Returns the animation's `-toValue` as a `CATransform3D` value.
- */
+/**	Returns the animation's `-toValue` as a `CATransform3D` value.	*/
 -(CATransform3D)toTransform;
 
 #pragma mark - NSValue Setters
 /** @name Structure Setters */
 
-/**
- * Sets the animation's `-fromValue` to an `NSPoint` value.
+/**	Sets the animation's `-fromValue` to an `NSPoint` value.
  *
- * @param from The new from value.
- */
+ * @param from The new from value.	*/
 -(void)setFromPoint:(NSPoint)from;
 
-/**
- * Sets the animation's `-toValue` to an `NSPoint` value.
+/**	Sets the animation's `-toValue` to an `NSPoint` value.
  *
- * @param to The new to value.
- */
+ * @param to The new to value.	*/
 -(void)setToPoint:(NSPoint)to;
 
-/**
- * Sets the animation's `-fromValue` to a `CGPoint` value.
+/**	Sets the animation's `-fromValue` to a `CGPoint` value.
  *
- * @param from The new from value.
- */
+ * @param from The new from value.	*/
 -(void)setFromCGPoint:(CGPoint)from;
 
-/**
- * Sets the animation's `-toValue` to a `CGPoint` value.
+/**	Sets the animation's `-toValue` to a `CGPoint` value.
  *
- * @param to The new to value.
- */
+ * @param to The new to value.	*/
 -(void)setToCGPoint:(CGPoint)to;
 
-/**
- * Sets the animation's `-fromValue` to an `NSRect` value.
+/**	Sets the animation's `-fromValue` to an `NSRect` value.
  *
- * @param from The new from value.
- */
+ * @param from The new from value.	*/
 -(void)setFromRect:(NSRect)from;
 
-/**
- * Sets the animation's `-toValue` to an `NSRect` value.
+/**	Sets the animation's `-toValue` to an `NSRect` value.
  *
- * @param to The new to value.
- */
+ * @param to The new to value.	*/
 -(void)setToRect:(NSRect)to;
 
-/**
- * Sets the animation's `-fromValue` to a `CGRect` value.
+/**	Sets the animation's `-fromValue` to a `CGRect` value.
  *
- * @param from The new from value.
- */
+ * @param from The new from value.	*/
 -(void)setFromCGRect:(CGRect)from;
 
-/**
- * Sets the animation's `-toValue` to a `CGRect` value.
+/**	Sets the animation's `-toValue` to a `CGRect` value.
  *
- * @param to The new to value.
- */
+ * @param to The new to value.	*/
 -(void)setToCGRect:(CGRect)to;
 
-/**
- * Sets the animation's `-fromValue` to an `CATransform3D` value.
+/**	Sets the animation's `-fromValue` to an `CATransform3D` value.
  *
- * @param from The new from value.
- */
+ * @param from The new from value.	*/
 -(void)setFromTransform:(CATransform3D)from;
 
-/**
- * Sets the animation's `-toValue` to a `CATransform3D` value.
+/**	Sets the animation's `-toValue` to a `CATransform3D` value.
  *
- * @param to The new to value.
- */
+ * @param to The new to value.	*/
 -(void)setToTransform:(CATransform3D)to;
 
 #pragma mark - Easing
 /** @name Easing */
 
-/**
- * Sets the animation's timing function to the specified name.
+/**	Sets the animation's timing function to the specified name.
  *
- * @param timingFunctionName The name of the timing function to use.
- */
+ * @param timingFunctionName The name of the timing function to use.	*/
 -(void)setTiming:(NSString*)timingFunctionName;
 
 @end

@@ -10,21 +10,18 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary (FunSize)
 
-/**
- * Creates a new dictionary by adding values and keys from a second dictionary.
+/**	Creates a new dictionary by adding values and keys from a second dictionary.
  *
  * If the other dictionary has any keys in common with this dictionary, the values from the
  * other dictionary will be used.
  *
- * @param other A dictionary to combine with this dictionary.
- */
+ * @param other A dictionary to combine with this dictionary.	*/
 -(NSDictionary*)dictionaryByAddingEntriesFromDictionary:(NSDictionary*)other;
 
 @end

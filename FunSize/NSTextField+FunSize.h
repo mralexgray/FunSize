@@ -10,8 +10,7 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Cocoa/Cocoa.h>
 
@@ -20,34 +19,24 @@
 #pragma mark Label Initializers
 /** @name Label Initializers */
 
-/**
- * Initializes a text field, formatted in "label" style, with the specified frame rect.
- */
+/**	Initializes a text field, formatted in "label" style, with the specified frame rect.	*/
 -(id)initAsLabelWithFrame:(NSRect)frameRect;
 
-/**
- * Initializes a text field, formatted in "selectable label" style, with the specified frame rect.
- */
+/**	Initializes a text field, formatted in "selectable label" style, with the specified frame rect.	*/
 -(id)initAsSelectableLabelWithFrame:(NSRect)frameRect;
 
 #pragma mark Text Field Formatting
 /** @name Text Field Formatting */
 
-/**
- * Modifies the text field so that it appears and acts as a typical interactive
- * text field.
- */
+/**	Modifies the text field so that it appears and acts as a typical interactive
+ * text field.	*/
 -(void)formatAsField;
 
-/**
- * Modifies the text field so that it appears and acts as a typical label.
- */
+/**	Modifies the text field so that it appears and acts as a typical label.	*/
 -(void)formatAsLabel;
 
-/**
- * Modifies the text field so that it appears and acts as a typical label that
- * can be selected.
- */
+/**	Modifies the text field so that it appears and acts as a typical label that
+ * can be selected.	*/
 -(void)formatAsSelectableLabel;
 
 @end

@@ -10,63 +10,52 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- */
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import <Cocoa/Cocoa.h>
 
 @interface NSGradient (FunSize)
 
-/**
- * Creates a gradient with two colors.
+/**	Creates a gradient with two colors.
  *
  * @param start The starting color.
- * @param end The ending hex color.
- */
+ * @param end The ending hex color.	*/
 +(NSGradient*)gradientFrom:(NSColor*)start to:(NSColor*)end;
 
-/**
- * Creates a gradient with hex values, as shown in NSColor(FunSize).
+/**	Creates a gradient with hex values, as shown in NSColor(FunSize).
  *
  * @see NSColor(FunSize)
  *
  * @param start The starting hex value.
- * @param end The ending hex value.
- */
+ * @param end The ending hex value.	*/
 +(NSGradient*)gradientFromHex:(NSString*)start to:(NSString*)end;
 
-/**
- * Initializes a gradient with hex values, as shown in NSColor(FunSize).
+/**	Initializes a gradient with hex values, as shown in NSColor(FunSize).
  *
  * @see NSColor(FunSize)
  *
  * @param start The starting hex value.
- * @param end The ending hex value.
- */
+ * @param end The ending hex value.	*/
 -(id)initWithStartingHex:(NSString*)start endingHex:(NSString*)end;
 
-/**
- * Creates a gradient with hex values and an alpha component.
+/**	Creates a gradient with hex values and an alpha component.
  *
  * @see NSColor(FunSize)
  *
  * @param start The starting hex value.
  * @param startAlpha The starting alpha value.
  * @param end The ending hex value.
- * @param endAlpha The ending alpha value.
- */
+ * @param endAlpha The ending alpha value.	*/
 +(NSGradient*)gradientFromHex:(NSString*)start alpha:(CGFloat)startAlpha to:(NSString*)end alpha:(CGFloat)endAlpha;
 
-/**
- * Initializes a gradient with hex values and an alpha component.
+/**	Initializes a gradient with hex values and an alpha component.
  *
  * @see NSColor(FunSize)
  *
  * @param start The starting hex value.
  * @param startAlpha The starting alpha value.
  * @param end The ending hex value.
- * @param endAlpha The ending alpha value.
- */
+ * @param endAlpha The ending alpha value.	*/
 -(id)initWithStartingHex:(NSString*)start alpha:(CGFloat)startAlpha endingHex:(NSString*)end alpha:(CGFloat)endAlpha;
 
 @end
