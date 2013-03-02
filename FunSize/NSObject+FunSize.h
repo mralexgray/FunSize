@@ -369,7 +369,7 @@
 /**	Retrieves an `unsigned int` value for a specified key path.
  *
  * @param keyPath The key path.	*/
--(unsigned unsigned int)unsignedIntForKeyPath:(NSString*)keyPath;
+-(unsigned  int)unsignedIntForKeyPath:(NSString*)keyPath;
 
 /**	Sets an `unsigned int` value for a specified key path.
  *
