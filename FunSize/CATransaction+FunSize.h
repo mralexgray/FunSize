@@ -34,5 +34,4 @@
  *
  * @param block A block to wrap in a transaction.	*/
 +(void)immediately:(void (^)())block;
-
 @end
