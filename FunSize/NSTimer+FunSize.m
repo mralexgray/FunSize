@@ -32,7 +32,7 @@ typedef void (^FSTimerBlock)();
 -(id)initWithBlock:(void (^)())timerBlock
 {
     self = [super init];
-    if (self) block = Block_copy(timerBlock);
+    if (self) block = [timerBlock copy];//Block_copy();
     return self;
 }
 
@@ -43,13 +43,15 @@ typedef void (^FSTimerBlock)();
 
 -(void)dealloc
 {
-    Block_release(block);
-    [super dealloc];
+//    Block_release(//
+	 block = nil;//);
+//    [super dealloc];
 }
 
 -(void)finalize
 {
-    Block_release(block);
+//    Block_release(
+	 block = nil; //);
     [super finalize];
 }
 
@@ -61,29 +63,27 @@ typedef void (^FSTimerBlock)();
 {
     FSTimerAdditionsHelper* helper = [[FSTimerAdditionsHelper alloc] initWithBlock:block];
     
-    NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval:interval
+  return [NSTimer scheduledTimerWithTimeInterval:interval
                                                       target:helper
                                                     selector:@selector(blockTimerCompleted:)
                                                     userInfo:nil
                                                      repeats:yesOrNo];
     
-    [helper release];
-    
-    return timer;
+//    [helper release];
+//    return timer;
 }
 
 +(NSTimer*)timerWithTimeInterval:(NSTimeInterval)interval repeats:(BOOL)yesOrNo block:(void (^)())block
 {
     FSTimerAdditionsHelper* helper = [[FSTimerAdditionsHelper alloc] initWithBlock:block];
     
-    NSTimer* timer = [NSTimer timerWithTimeInterval:interval
+	return  [NSTimer timerWithTimeInterval:interval
                                              target:helper
                                            selector:@selector(blockTimerCompleted:)
                                            userInfo:nil
                                             repeats:yesOrNo];
-    [helper release];
-    
-    return timer;
+//    [helper release];
+//    return timer;
 }
 
 @end

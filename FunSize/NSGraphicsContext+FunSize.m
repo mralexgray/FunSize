@@ -16,28 +16,18 @@
 
 @implementation NSGraphicsContext (FunSize)
 
-+(void)drawInContext:(CGContextRef)ctx flipped:(BOOL)flipped actions:(void(^)())actions
++(void)drawInContext:(CGContextRef)ctx flipped:(BOOL)flipped actions:(void(^)(void))actions
 {
-    [self saveGraphicsState];
-    
-    NSGraphicsContext* context = [[self class] graphicsContextWithGraphicsPort:ctx flipped:flipped];
-    [self setCurrentContext:context];
-    
-    actions();
-    
-    [self restoreGraphicsState];
+	if (!actions) return;
+	[self saveGraphicsState];
+   NSGraphicsContext* context = [self graphicsContextWithGraphicsPort:ctx flipped:flipped];
+   [self setCurrentContext:context];    actions();    [self restoreGraphicsState];
 }
 
-+(void)state:(void(^)())actions
-{
-    [[self currentContext] state:actions];
-}
++ (void) state:(void(^)(void))actions	{    [self.currentContext state:actions];		}
+- (void) state:(void(^)(void))actions	{
 
--(void)state:(void(^)())actions
-{
-    [self saveGraphicsState];
-    actions();
-    [self restoreGraphicsState];
+    if (!actions) return; [self saveGraphicsState]; actions(); [self restoreGraphicsState];
 }
 
 @end

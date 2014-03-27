@@ -18,18 +18,19 @@
 
 -(NSString*)stringByURLEncoding
 {
-    id result = NSMakeCollectable(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+//    id result =
+	 	return CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
                                                                           (CFStringRef)self,
                                                                           NULL,
                                                                           CFSTR("!*'();:@&=+$,/?%#[]"),
                                                                           kCFStringEncodingUTF8));
-    return [result autorelease];
+//    return [result autorelease];
 }
 
 -(NSSize)sizeWithSize:(NSSize)size attributes:(NSDictionary*)attributes
 {
     NSAttributedString* string = [[NSAttributedString alloc] initWithString:self attributes:attributes];
-    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)string);
+    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((__bridge CFAttributedStringRef)string);
     
     CFRange fitRange;
     CGSize s = CTFramesetterSuggestFrameSizeWithConstraints(framesetter,
@@ -38,7 +39,7 @@
                                                             NSSizeToCGSize(size),
                                                             &fitRange);
     CFRelease(framesetter);
-    [string release];
+//    [string release];
     return NSSizeFromCGSize(s);
 }
 

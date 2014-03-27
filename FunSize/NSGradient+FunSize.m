@@ -18,15 +18,14 @@
 
 @implementation NSGradient (FunSize)
 
-+(NSGradient*)gradientFrom:(NSColor*)start to:(NSColor*)end
-{
-    return [[[self alloc] initWithStartingColor:start endingColor:end] autorelease];
++(NSGradient*)gradientFrom:(NSColor*)start to:(NSColor*)end	{
+    return [self.alloc initWithStartingColor:start endingColor:end];
 }
 
 +(NSGradient*)gradientFromHex:(NSString*)start to:(NSString*)end
 {
-    return [[[self alloc] initWithStartingColor:[NSColor colorWithHex:start]
-                                    endingColor:[NSColor colorWithHex:end]] autorelease];
+    return [self.alloc initWithStartingColor:[NSColor colorWithHex:start]
+                                    endingColor:[NSColor colorWithHex:end]];
 }
 
 -(id)initWithStartingHex:(NSString*)start endingHex:(NSString*)end
@@ -36,7 +35,7 @@
 
 +(NSGradient*)gradientFromHex:(NSString*)start alpha:(CGFloat)startAlpha to:(NSString*)end alpha:(CGFloat)endAlpha;
 {
-    return [[[self alloc] initWithStartingHex:start alpha:startAlpha endingHex:end alpha:endAlpha] autorelease];
+    return [self.alloc initWithStartingHex:start alpha:startAlpha endingHex:end alpha:endAlpha];
 }
 
 -(id)initWithStartingHex:(NSString*)start alpha:(CGFloat)startAlpha endingHex:(NSString*)end alpha:(CGFloat)endAlpha

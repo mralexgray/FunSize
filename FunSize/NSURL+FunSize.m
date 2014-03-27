@@ -22,7 +22,7 @@
     va_start(args, format);
     NSString* string = [[NSString alloc] initWithFormat:format arguments:args];
     NSURL* url = [NSURL URLWithString:string];
-    [string release];
+//    [string release];
     return url;
 }
 

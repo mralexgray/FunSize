@@ -22,20 +22,20 @@
  * @param ctx A Core Graphics context to draw into.
  * @param flipped If the drawing should be flipped vertically.
  * @param actions A block which will be executed while the current `NSGraphicsContext` is targeting `ctx`.	*/
-+(void)drawInContext:(CGContextRef)ctx flipped:(BOOL)flipped actions:(void(^)())actions;
++(void)drawInContext:(CGContextRef)ctx flipped:(BOOL)flipped actions:(void(^)(void))actions;
 
 /**	Renders within the current graphics context. The state is saved before the `actions` block is called. After the 
  * `actions` block is complete, the state is restored. This message can be used instead of `-saveGraphicsState` and
  * `-restoreGraphicsState` to allow a better visual indication of what drawing code the state save and restore cover.
  *
  * @param actions A block which will be executed before restoring the graphics state.	*/
-+(void)state:(void(^)())actions;
++(void)state:(void(^)(void))actions;
 
 /**	Renders within the graphics context it is called on. The state is saved before the `actions` block is called. After 
  * the `actions` block is complete, the state is restored. This message can be used instead of `-saveGraphicsState` and
  * `-restoreGraphicsState` to allow a better visual indication of what drawing code the state save and restore cover.
  *
  * @param actions A block which will be executed before restoring the graphics state.	*/
--(void)state:(void(^)())actions;
+-(void)state:(void(^)(void))actions;
 
 @end

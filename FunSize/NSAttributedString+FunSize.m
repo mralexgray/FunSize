@@ -18,7 +18,7 @@
 
 -(NSSize)sizeWithSize:(NSSize)size
 {
-    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)self);
+    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((__bridge CFAttributedStringRef)self);
     
     CFRange fitRange;
     CGSize s = CTFramesetterSuggestFrameSizeWithConstraints(framesetter,

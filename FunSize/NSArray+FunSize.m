@@ -56,6 +56,10 @@
     return mapped;
 }
 
+/**	Similar to `map:`, but instead returns a dictionary, where the elements of
+ * this array are the keys and the mapped values are the values.
+ * @param mapBlock A block to map with. The block will receive each element of
+ * the array, and should return a mapped value to be inserted into the returned dictionary.	*/
 -(NSDictionary*)mapToDictionary:(id(^)(id))mapBlock
 {
     NSMutableDictionary* dict = [NSMutableDictionary dictionaryWithCapacity:[self count]];
@@ -66,7 +70,12 @@
     return dict;
 }
 
--(NSDictionary*)mapToDictionaryKeys:(id(^)(id))mapBlock
+
+/**	Similar to `mapToDictionary:`, except the values of the array are used as the values of the dictionary, while
+ * the mapped values are used as keys.
+ * @param mapBlock A block to map with. The block will receive each element of
+ * the array, and should return a mapped value to be used as a key in the resulting dictionary.	*/
+-(NSDictionary*)mapToDictionaryKeys:(id(^)(id))mapBlock  //
 {
     NSMutableDictionary* dict = [NSMutableDictionary dictionaryWithCapacity:[self count]];
     

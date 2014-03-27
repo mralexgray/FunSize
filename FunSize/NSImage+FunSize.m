@@ -20,6 +20,9 @@
 {
     return [self CGImageForProposedRect:NULL context:nil hints:nil];
 }
+//#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_9
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
 
 -(void)drawInRect:(NSRect)rect
 {
@@ -30,6 +33,8 @@
       respectFlipped:YES
                hints:nil];
 }
+//#endif
+#pragma clang diagnostic pop
 
 -(void)drawInRect:(NSRect)rect fraction:(CGFloat)fraction
 {

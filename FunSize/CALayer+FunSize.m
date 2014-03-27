@@ -32,20 +32,20 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
 +(FSBlockBasicAnimationHelper*)helperWithBlock:(FSBlockBasicAnimationHelperBlock)blk
 {
     FSBlockBasicAnimationHelper* helper = [[super alloc] init];
-    helper->block = Block_copy(blk);
+    helper->block = [blk copy];//Block_copy(blk);
     
     return helper;
 }
 
 -(void)dealloc
 {
-    Block_release(block);
-    [super dealloc];
+    block = nil;///Block_release(block);
+//    [super dealloc];
 }
 
 -(void)finalize
 {
-    Block_release(block);
+   block = nil;// Block_release(block);
     [super finalize];
 }
 
@@ -56,7 +56,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
         block();
     }
     
-    [self release];
+//    [self release];
 }
 
 @end
@@ -251,7 +251,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     [animation setDuration:seconds];
     
     // set the easing function
-    if ([easing isKindOfClass:[NSString class]])
+    if ([easing isKindOfClass:NSString.class])
         [animation setTimingFunction:[CAMediaTimingFunction functionWithName:easing]];
     else
         [animation setTimingFunction:easing];

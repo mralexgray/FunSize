@@ -25,7 +25,7 @@
     [shadow setShadowColor:color];
     [shadow setShadowOffset:NSMakeSize(0, 1)];
     
-    return [shadow autorelease];
+    return shadow;// autorelease];
 }
 
 +(NSShadow*)shadowInsetDownWithColor:(NSColor*)color
@@ -35,7 +35,7 @@
     [shadow setShadowColor:color];
     [shadow setShadowOffset:NSMakeSize(0, -1)];
     
-    return [shadow autorelease];
+    return shadow;// autorelease];
 }
 
 +(NSShadow*)shadowWithColor:(NSColor*)color offset:(NSSize)offset radius:(CGFloat)radius
@@ -45,7 +45,7 @@
     [shadow setShadowOffset:offset];
     [shadow setShadowBlurRadius:radius];
     
-    return [shadow autorelease];
+    return shadow;//autorelease];
 }
 
 +(NSShadow*)shadowWithHex:(NSString*)hex offset:(NSSize)offset radius:(CGFloat)radius

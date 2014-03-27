@@ -170,7 +170,7 @@
 -(NSImage*)cachedBitmapImageForDisplayInRect:(NSRect)rect
 {
     NSBitmapImageRep* rep = [self cachedBitmapImageRepForDisplayInRect:rect];
-    NSImage* image = [[[NSImage alloc] initWithSize:rect.size] autorelease];
+    NSImage* image = [NSImage.alloc initWithSize:rect.size];
     [image addRepresentation:rep];
     return image;
 }
