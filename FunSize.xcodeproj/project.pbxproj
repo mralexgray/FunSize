@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4304C74E13F477C1002C9888 /* NSEvent+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4304C74C13F477C1002C9888 /* NSEvent+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4304C74F13F477C1002C9888 /* NSEvent+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4304C74D13F477C1002C9888 /* NSEvent+FunSize.m */; };
-		4311A74813D7429E00820313 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4311A74713D7429E00820313 /* Cocoa.framework */; };
 		4311A75213D7429E00820313 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4311A75013D7429E00820313 /* InfoPlist.strings */; };
 		4311A76F13D7442C00820313 /* NSArray+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A75913D7442B00820313 /* NSArray+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4311A77013D7442C00820313 /* NSArray+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A75A13D7442B00820313 /* NSArray+FunSize.m */; };
@@ -40,7 +39,6 @@
 		4314A863144B528E0071B341 /* NSGraphicsContext+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4314A85F144B528E0071B341 /* NSGraphicsContext+FunSize.m */; };
 		432A5AEF140A92ED00E27789 /* NSNumber+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 432A5AED140A92ED00E27789 /* NSNumber+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		432A5AF0140A92ED00E27789 /* NSNumber+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 432A5AEE140A92ED00E27789 /* NSNumber+FunSize.m */; };
-		4339C608142222D300C21E14 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4311A74713D7429E00820313 /* Cocoa.framework */; };
 		4339C6171422233700C21E14 /* CABasicAnimation+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4357FDD813D8FC9E007E580D /* CABasicAnimation+FunSize.m */; };
 		4339C6181422233700C21E14 /* CAKeyframeAnimation+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B531A613F8621F007A521C /* CAKeyframeAnimation+FunSize.h */; };
 		4339C6191422233700C21E14 /* CAKeyframeAnimation+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B531A713F8621F007A521C /* CAKeyframeAnimation+FunSize.m */; };
@@ -90,7 +88,6 @@
 		4357FDAA13D85ED0007E580D /* NSUserDefaults+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4357FDA813D85ED0007E580D /* NSUserDefaults+FunSize.m */; };
 		4357FDD313D8EE9A007E580D /* CALayer+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4357FDD113D8EE96007E580D /* CALayer+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4357FDD413D8EE9A007E580D /* CALayer+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4357FDD213D8EE96007E580D /* CALayer+FunSize.m */; };
-		4357FDD613D8EF72007E580D /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4357FDD513D8EF71007E580D /* Quartz.framework */; };
 		4357FDD913D8FC9F007E580D /* CABasicAnimation+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4357FDD713D8FC9E007E580D /* CABasicAnimation+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4357FDDA13D8FC9F007E580D /* CABasicAnimation+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4357FDD813D8FC9E007E580D /* CABasicAnimation+FunSize.m */; };
 		4357FDDD13D8FCF5007E580D /* CAMediaTimingFunction+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4357FDDB13D8FCF3007E580D /* CAMediaTimingFunction+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -122,9 +119,6 @@
 		4304C74C13F477C1002C9888 /* NSEvent+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEvent+FunSize.h"; sourceTree = "<group>"; };
 		4304C74D13F477C1002C9888 /* NSEvent+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEvent+FunSize.m"; sourceTree = "<group>"; };
 		4311A74413D7429E00820313 /* FunSize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FunSize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4311A74713D7429E00820313 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		4311A74A13D7429E00820313 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		4311A74C13D7429E00820313 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4311A74F13D7429E00820313 /* FunSize-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunSize-Info.plist"; sourceTree = "<group>"; };
 		4311A75113D7429E00820313 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4311A75313D7429E00820313 /* FunSize-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunSize-Prefix.pch"; sourceTree = "<group>"; };
@@ -156,16 +150,12 @@
 		432A5AED140A92ED00E27789 /* NSNumber+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+FunSize.h"; sourceTree = "<group>"; };
 		432A5AEE140A92ED00E27789 /* NSNumber+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+FunSize.m"; sourceTree = "<group>"; };
 		4339C607142222D300C21E14 /* libFunSize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFunSize.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4339C60A142222D300C21E14 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		4339C60B142222D300C21E14 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		4339C60C142222D300C21E14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4343F8AB13EC81010012C361 /* NSBezierPath+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+FunSize.h"; sourceTree = "<group>"; };
 		4343F8AC13EC81010012C361 /* NSBezierPath+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+FunSize.m"; sourceTree = "<group>"; };
 		4357FDA713D85ED0007E580D /* NSUserDefaults+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+FunSize.h"; sourceTree = "<group>"; };
 		4357FDA813D85ED0007E580D /* NSUserDefaults+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+FunSize.m"; sourceTree = "<group>"; };
 		4357FDD113D8EE96007E580D /* CALayer+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "CALayer+FunSize.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		4357FDD213D8EE96007E580D /* CALayer+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FunSize.m"; sourceTree = "<group>"; };
-		4357FDD513D8EF71007E580D /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		4357FDD713D8FC9E007E580D /* CABasicAnimation+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CABasicAnimation+FunSize.h"; sourceTree = "<group>"; };
 		4357FDD813D8FC9E007E580D /* CABasicAnimation+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CABasicAnimation+FunSize.m"; sourceTree = "<group>"; };
 		4357FDDB13D8FCF3007E580D /* CAMediaTimingFunction+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAMediaTimingFunction+FunSize.h"; sourceTree = "<group>"; };
@@ -176,7 +166,6 @@
 		43845134142D65E0003324C9 /* NSDictionary+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FunSize.m"; sourceTree = "<group>"; };
 		43AE837F13E05F2D00FA5A8A /* NSURL+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+FunSize.h"; sourceTree = "<group>"; };
 		43AE838013E05F2D00FA5A8A /* NSURL+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+FunSize.m"; sourceTree = "<group>"; };
-		43B327E513EC4A1900CFECB2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		43B531A613F8621F007A521C /* CAKeyframeAnimation+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAKeyframeAnimation+FunSize.h"; sourceTree = "<group>"; };
 		43B531A713F8621F007A521C /* CAKeyframeAnimation+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAKeyframeAnimation+FunSize.m"; sourceTree = "<group>"; };
 		43DD7BCA13D9F59600CA78AC /* NSSet+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+FunSize.h"; sourceTree = "<group>"; };
@@ -194,8 +183,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4311A74813D7429E00820313 /* Cocoa.framework in Frameworks */,
-				4357FDD613D8EF72007E580D /* Quartz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +190,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4339C608142222D300C21E14 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +203,6 @@
 				7BE63A0C15FE7A61004BA700 /* AppledocSettings.plist */,
 				4311A74D13D7429E00820313 /* FunSize */,
 				4311A74E13D7429E00820313 /* Supporting Files */,
-				4311A74613D7429E00820313 /* Frameworks */,
 				4311A74513D7429E00820313 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -229,19 +214,6 @@
 				4339C607142222D300C21E14 /* libFunSize.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4311A74613D7429E00820313 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4311A74A13D7429E00820313 /* AppKit.framework */,
-				4311A74713D7429E00820313 /* Cocoa.framework */,
-				43B327E513EC4A1900CFECB2 /* CoreData.framework */,
-				4311A74C13D7429E00820313 /* Foundation.framework */,
-				4357FDD513D8EF71007E580D /* Quartz.framework */,
-				4339C609142222D300C21E14 /* Other Frameworks */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4311A74D13D7429E00820313 /* FunSize */ = {
@@ -313,16 +285,6 @@
 			);
 			name = "Supporting Files";
 			path = FunSize;
-			sourceTree = "<group>";
-		};
-		4339C609142222D300C21E14 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4339C60A142222D300C21E14 /* AppKit.framework */,
-				4339C60B142222D300C21E14 /* CoreData.framework */,
-				4339C60C142222D300C21E14 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,7 +400,7 @@
 		4311A73A13D7429E00820313 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Nate Stedman";
 			};
 			buildConfigurationList = 4311A73D13D7429E00820313 /* Build configuration list for PBXProject "FunSize" */;
@@ -560,7 +522,9 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_OBJC_GC = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -587,7 +551,9 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_OBJC_GC = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -630,7 +596,6 @@
 			baseConfigurationReference = 7BCDC125182A42A000C9AE23 /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;

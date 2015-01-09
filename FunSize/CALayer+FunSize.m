@@ -10,7 +10,8 @@
  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
 
 #import <Quartz/Quartz.h>
 
@@ -19,33 +20,22 @@
 typedef void (^FSBlockBasicAnimationHelperBlock)();
 
 @interface FSBlockBasicAnimationHelper : NSObject
-{
-    FSBlockBasicAnimationHelperBlock block;
-}
-
+@property (nonatomic,copy) FSBlockBasicAnimationHelperBlock block;
 +(FSBlockBasicAnimationHelper*)helperWithBlock:(FSBlockBasicAnimationHelperBlock)blk;
-
 @end
 
 @implementation FSBlockBasicAnimationHelper
 
 +(FSBlockBasicAnimationHelper*)helperWithBlock:(FSBlockBasicAnimationHelperBlock)blk
 {
-    FSBlockBasicAnimationHelper* helper = [[super alloc] init];
-    helper->block = [blk copy];//Block_copy(blk);
-    
+    FSBlockBasicAnimationHelper* helper = self.new;
+    helper.block = blk;
     return helper;
-}
-
--(void)dealloc
-{
-    block = nil;///Block_release(block);
-//    [super dealloc];
 }
 
 -(void)finalize
 {
-   block = nil;// Block_release(block);
+    _block = nil;
     [super finalize];
 }
 
@@ -53,16 +43,16 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
 {
     if (flag)
     {
-        block();
+        _block();
     }
-    
-//    [self release];
+
 }
 
 @end
 
 @implementation CALayer (FunSize)
 
+#pragma mark -
 #pragma mark Recursive Sublayer Actions
 -(void)sublayersBlock:(void (^)(CALayer*))block
 {
@@ -106,6 +96,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     return NO;
 }
 
+#pragma mark -
 #pragma mark Superlayer Actions
 -(void)superlayerBlock:(void (^)(CALayer*))block
 {
@@ -155,7 +146,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
 -(NSArray*)superlayers
 {
     if (![self superlayer])
-        return @[self];//[NSArray array];
+        return [NSArray array];
     
     NSMutableArray* array = [NSMutableArray array];
     
@@ -166,6 +157,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     return array;
 }
 
+#pragma mark -
 #pragma mark Hit Testing
 -(CALayer*)hitTest:(CGPoint)point forClass:(Class)klass
 {
@@ -179,6 +171,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     return layer;
 }
 
+#pragma mark -
 #pragma mark Animations
 -(CAAnimation*)addAndReturnAnimation:(CAAnimation*)animation forKey:(NSString*)key
 {
@@ -251,7 +244,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     [animation setDuration:seconds];
     
     // set the easing function
-    if ([easing isKindOfClass:NSString.class])
+    if ([easing isKindOfClass:[NSString class]])
         [animation setTimingFunction:[CAMediaTimingFunction functionWithName:easing]];
     else
         [animation setTimingFunction:easing];
@@ -288,6 +281,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
        completion:block];
 }
 
+#pragma mark -
 #pragma mark Numbers
 -(void)animate:(NSString*)key fromInt:(int)fromValue to:(int)toValue time:(NSTimeInterval)seconds
 {
@@ -516,6 +510,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     [self animate:key to:[NSNumber numberWithDouble:toValue] time:seconds eased:easing completion:block];
 }
 
+#pragma mark -
 #pragma mark Points
 -(void)animate:(NSString*)key fromPoint:(NSPoint)fromValue to:(NSPoint)toValue time:(NSTimeInterval)seconds
 {
@@ -673,6 +668,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
        completion:block];
 }
 
+#pragma mark -
 #pragma mark Sizes
 -(void)animate:(NSString*)key fromSize:(NSSize)fromValue to:(NSSize)toValue time:(NSTimeInterval)seconds
 {
@@ -830,6 +826,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
        completion:block];
 }
 
+#pragma mark -
 #pragma mark Rects
 -(void)animate:(NSString*)key fromRect:(NSRect)fromValue to:(NSRect)toValue time:(NSTimeInterval)seconds
 {
@@ -986,6 +983,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
        completion:block];
 }
 
+#pragma mark -
 #pragma mark Transforms
 -(void)animate:(NSString*)key
  fromTransform:(CATransform3D)fromValue
