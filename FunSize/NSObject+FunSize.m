@@ -12,7 +12,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <objc/objc-class.h>
+@import ObjectiveC;
 
 #import "NSObject+FunSize.h"
 
@@ -184,14 +184,15 @@
 }
 
 #pragma mark NSValue valueForKey:/setValue:forKey:
--(NSSize)sizeForKey:(NSString*)key
+
+-(CGSize)sizeForKey:(NSString*)key
 {
-    return [[self valueForKey:key] sizeValue];
+    return [[self valueForKey:key] CGSizeValue];
 }
 
--(void)setSize:(NSSize)value forKey:(NSString*)key
+-(void)setSize:(CGSize)value forKey:(NSString*)key
 {
-    [self setValue:[NSValue valueWithSize:value] forKey:key];
+    [self setValue:[NSValue valueWithCGSize:value] forKey:key];
 }
 
 -(NSRange)rangeForKey:(NSString*)key
@@ -204,24 +205,24 @@
     [self setValue:[NSValue valueWithRange:value] forKey:key];
 }
 
--(NSRect)rectForKey:(NSString*)key
+-(CGRect)rectForKey:(NSString*)key
 {
-    return [[self valueForKey:key] rectValue];
+    return [[self valueForKey:key] CGRectValue];
 }
 
--(void)setRect:(NSRect)value forKey:(NSString*)key
+-(void)setRect:(CGRect)value forKey:(NSString*)key
 {
-    [self setValue:[NSValue valueWithRect:value] forKey:key];
+    [self setValue:[NSValue valueWithCGRect:value] forKey:key];
 }
 
--(NSPoint)pointForKey:(NSString*)key
+-(CGPoint)pointForKey:(NSString*)key
 {
-    return [[self valueForKey:key] pointValue];
+    return [[self valueForKey:key] CGPointValue];
 }
 
--(void)setPoint:(NSPoint)value forKey:(NSString*)key
+-(void)setPoint:(CGPoint)value forKey:(NSString*)key
 {
-    [self setValue:[NSValue valueWithPoint:value] forKey:key];
+    [self setValue:[NSValue valueWithCGPoint:value] forKey:key];
 }
 
 -(CATransform3D)CATransform3DForKey:(NSString*)key
@@ -378,14 +379,14 @@
 }
 
 #pragma mark NSValue valueForKeyPath:/setValue:forKeyPath:
--(NSSize)sizeForKeyPath:(NSString*)key
+-(CGSize)sizeForKeyPath:(NSString*)key
 {
-    return [[self valueForKeyPath:key] sizeValue];
+    return [[self valueForKeyPath:key] CGSizeValue];
 }
 
--(void)setSize:(NSSize)value forKeyPath:(NSString*)key
+-(void)setSize:(CGSize)value forKeyPath:(NSString*)key
 {
-    [self setValue:[NSValue valueWithSize:value] forKeyPath:key];
+    [self setValue:[NSValue valueWithCGSize:value] forKeyPath:key];
 }
 
 -(NSRange)rangeForKeyPath:(NSString*)key
@@ -398,24 +399,24 @@
     [self setValue:[NSValue valueWithRange:value] forKeyPath:key];
 }
 
--(NSRect)rectForKeyPath:(NSString*)key
+-(CGRect)rectForKeyPath:(NSString*)key
 {
-    return [[self valueForKeyPath:key] rectValue];
+    return [[self valueForKeyPath:key] CGRectValue];
 }
 
--(void)setRect:(NSRect)value forKeyPath:(NSString*)key
+-(void)setRect:(CGRect)value forKeyPath:(NSString*)key
 {
-    [self setValue:[NSValue valueWithRect:value] forKeyPath:key];
+    [self setValue:[NSValue valueWithCGRect:value] forKeyPath:key];
 }
 
--(NSPoint)pointForKeyPath:(NSString*)key
+-(CGPoint)pointForKeyPath:(NSString*)key
 {
-    return [[self valueForKeyPath:key] pointValue];
+    return [[self valueForKeyPath:key] CGPointValue];
 }
 
--(void)setPoint:(NSPoint)value forKeyPath:(NSString*)key
+-(void)setPoint:(CGPoint)value forKeyPath:(NSString*)key
 {
-    [self setValue:[NSValue valueWithPoint:value] forKeyPath:key];
+    [self setValue:[NSValue valueWithCGPoint:value] forKeyPath:key];
 }
 
 -(CATransform3D)CATransform3DForKeyPath:(NSString*)key

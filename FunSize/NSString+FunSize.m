@@ -36,11 +36,11 @@
     CGSize s = CTFramesetterSuggestFrameSizeWithConstraints(framesetter,
                                                             CFRangeMake(0, 0),
                                                             NULL,
-                                                            NSSizeToCGSize(size),
+                                                            size,
                                                             &fitRange);
     CFRelease(framesetter);
 //    [string release];
-    return NSSizeFromCGSize(s);
+    return s;
 }
 
 @end

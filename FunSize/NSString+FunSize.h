@@ -12,7 +12,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <AppKit/AppKit.h>
 
 @interface NSString (FunSize)
 
@@ -23,6 +22,6 @@
  * 
  * @param size The size that the string should fit into when drawn.
  * @param attributes The attributes that the string should be measured with.	*/
--(NSSize)sizeWithSize:(NSSize)size attributes:(NSDictionary*)attributes;
+-(CGSize)sizeWithSize:(CGSize)size attributes:(NSDictionary*)attributes;
 
 @end

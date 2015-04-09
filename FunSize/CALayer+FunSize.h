@@ -12,8 +12,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <AppKit/AppKit.h>
-
 @interface CALayer (FunSize)
 
 #pragma mark Recursive Sublayer Operations
@@ -536,7 +534,7 @@
 #pragma mark Rects
 /** @name Animation with Rects */
 
-/**	Animates a key of the layer from one `NSRect` value to another.
+/**	Animates a key of the layer from one `CGRect` value to another.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -544,9 +542,9 @@
  * @param fromValue The starting value.
  * @param toValue The ending value.
  * @param seconds The number of seconds the animation should take.	*/
--(void)animate:(NSString*)key fromRect:(NSRect)fromValue to:(NSRect)toValue time:(NSTimeInterval)seconds;
+-(void)animate:(NSString*)key fromRect:(CGRect)fromValue to:(CGRect)toValue time:(NSTimeInterval)seconds;
 
-/**	Animates a key of the layer from one `NSRect` value to another with custom easing.
+/**	Animates a key of the layer from one `CGRect` value to another with custom easing.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -557,21 +555,21 @@
  * @param easing The easing function to use. This can be an instance of `CAMediaTimingFunction` or one of the constants
  * that can be used to construct an instance of that class.	*/
 -(void)animate:(NSString*)key
-      fromRect:(NSRect)fromValue
-            to:(NSRect)toValue
+      fromRect:(CGRect)fromValue
+            to:(CGRect)toValue
           time:(NSTimeInterval)seconds
          eased:(id)easing;
 
-/**	Animates a key of the layer to an `NSRect` value.
+/**	Animates a key of the layer to an `CGRect` value.
  *
  * `CABasicAnimation` is used for the animation.
  *
  * @param key The key to animate.
  * @param toValue The ending value.
  * @param seconds The number of seconds the animation should take.	*/
--(void)animate:(NSString*)key toRect:(NSRect)toValue time:(NSTimeInterval)seconds;
+-(void)animate:(NSString*)key toRect:(CGRect)toValue time:(NSTimeInterval)seconds;
 
-/**	Animates a key of the layer to an `NSRect` value with custom easing.
+/**	Animates a key of the layer to an `CGRect` value with custom easing.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -580,7 +578,7 @@
  * @param seconds The number of seconds the animation should take.
  * @param easing The easing function to use. This can be an instance of `CAMediaTimingFunction` or one of the constants
  * that can be used to construct an instance of that class.	*/
--(void)animate:(NSString*)key toRect:(NSRect)toValue time:(NSTimeInterval)seconds eased:(id)easing;
+-(void)animate:(NSString*)key toRect:(CGRect)toValue time:(NSTimeInterval)seconds eased:(id)easing;
 
 /**	Animates a key of the layer from one `CGRect` value to another.
  *
@@ -631,7 +629,7 @@
           time:(NSTimeInterval)seconds
          eased:(id)easing;
 
-/**	Animates a key of the layer from one `NSRect` value to another.
+/**	Animates a key of the layer from one `CGRect` value to another.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -642,12 +640,12 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-      fromRect:(NSRect)fromValue
-            to:(NSRect)toValue
+      fromRect:(CGRect)fromValue
+            to:(CGRect)toValue
           time:(NSTimeInterval)seconds
     completion:(void (^)())block;
 
-/**	Animates a key of the layer from one `NSRect` value to another with custom easing.
+/**	Animates a key of the layer from one `CGRect` value to another with custom easing.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -660,13 +658,13 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-      fromRect:(NSRect)fromValue
-            to:(NSRect)toValue
+      fromRect:(CGRect)fromValue
+            to:(CGRect)toValue
           time:(NSTimeInterval)seconds
          eased:(id)easing
     completion:(void (^)())block;
 
-/**	Animates a key of the layer to an `NSRect` value.
+/**	Animates a key of the layer to an `CGRect` value.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -676,11 +674,11 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-        toRect:(NSRect)toValue
+        toRect:(CGRect)toValue
           time:(NSTimeInterval)seconds
     completion:(void (^)())block;
 
-/**	Animates a key of the layer to an `NSRect` value with custom easing.
+/**	Animates a key of the layer to an `CGRect` value with custom easing.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -692,7 +690,7 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-        toRect:(NSRect)toValue
+        toRect:(CGRect)toValue
           time:(NSTimeInterval)seconds
          eased:(id)easing
     completion:(void (^)())block;
@@ -774,7 +772,7 @@
  * @param fromValue The starting value.
  * @param toValue The ending value.
  * @param seconds The number of seconds the animation should take.	*/
--(void)animate:(NSString*)key fromPoint:(NSPoint)fromValue to:(NSPoint)toValue time:(NSTimeInterval)seconds;
+-(void)animate:(NSString*)key fromPoint:(CGPoint)fromValue to:(CGPoint)toValue time:(NSTimeInterval)seconds;
 
 /**	Animates a key of the layer from one `NSPoint` value to another with custom easing.
  *
@@ -787,8 +785,8 @@
  * @param easing The easing function to use. This can be an instance of `CAMediaTimingFunction` or one of the constants
  * that can be used to construct an instance of that class.	*/
 -(void)animate:(NSString*)key
-     fromPoint:(NSPoint)fromValue
-            to:(NSPoint)toValue
+     fromPoint:(CGPoint)fromValue
+            to:(CGPoint)toValue
           time:(NSTimeInterval)seconds
          eased:(id)easing;
 
@@ -799,7 +797,7 @@
  * @param key The key to animate.
  * @param toValue The ending value.
  * @param seconds The number of seconds the animation should take.	*/
--(void)animate:(NSString*)key toPoint:(NSPoint)toValue time:(NSTimeInterval)seconds;
+-(void)animate:(NSString*)key toPoint:(CGPoint)toValue time:(NSTimeInterval)seconds;
 
 /**	Animates a key of the layer to an `NSPoint` value with custom easing.
  *
@@ -810,7 +808,7 @@
  * @param seconds The number of seconds the animation should take.
  * @param easing The easing function to use. This can be an instance of `CAMediaTimingFunction` or one of the constants
  * that can be used to construct an instance of that class.	*/
--(void)animate:(NSString*)key toPoint:(NSPoint)toValue time:(NSTimeInterval)seconds eased:(id)easing;
+-(void)animate:(NSString*)key toPoint:(CGPoint)toValue time:(NSTimeInterval)seconds eased:(id)easing;
 
 /**	Animates a key of the layer from one `CGPoint` value to another.
  *
@@ -869,8 +867,8 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-     fromPoint:(NSPoint)fromValue
-            to:(NSPoint)toValue
+     fromPoint:(CGPoint)fromValue
+            to:(CGPoint)toValue
           time:(NSTimeInterval)seconds
     completion:(void (^)())block;
 
@@ -887,8 +885,8 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-     fromPoint:(NSPoint)fromValue
-            to:(NSPoint)toValue
+     fromPoint:(CGPoint)fromValue
+            to:(CGPoint)toValue
           time:(NSTimeInterval)seconds
          eased:(id)easing
     completion:(void (^)())block;
@@ -903,7 +901,7 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-       toPoint:(NSPoint)toValue
+       toPoint:(CGPoint)toValue
           time:(NSTimeInterval)seconds
     completion:(void (^)())block;
 
@@ -919,7 +917,7 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-       toPoint:(NSPoint)toValue
+       toPoint:(CGPoint)toValue
           time:(NSTimeInterval)seconds
          eased:(id)easing
     completion:(void (^)())block;
@@ -993,7 +991,7 @@
 #pragma mark Sizes
 /** @name Animation with Sizes */
 
-/**	Animates a key of the layer from one `NSSize` value to another.
+/**	Animates a key of the layer from one `CGSize` value to another.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -1001,9 +999,9 @@
  * @param fromValue The starting value.
  * @param toValue The ending value.
  * @param seconds The number of seconds the animation should take.	*/
--(void)animate:(NSString*)key fromSize:(NSSize)fromValue to:(NSSize)toValue time:(NSTimeInterval)seconds;
+-(void)animate:(NSString*)key fromSize:(CGSize)fromValue to:(CGSize)toValue time:(NSTimeInterval)seconds;
 
-/**	Animates a key of the layer from one `NSSize` value to another with custom easing.
+/**	Animates a key of the layer from one `CGSize` value to another with custom easing.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -1014,21 +1012,21 @@
  * @param easing The easing function to use. This can be an instance of `CAMediaTimingFunction` or one of the constants
  * that can be used to construct an instance of that class.	*/
 -(void)animate:(NSString*)key
-      fromSize:(NSSize)fromValue
-            to:(NSSize)toValue
+      fromSize:(CGSize)fromValue
+            to:(CGSize)toValue
           time:(NSTimeInterval)seconds
          eased:(id)easing;
 
-/**	Animates a key of the layer to an `NSSize` value.
+/**	Animates a key of the layer to an `CGSize` value.
  *
  * `CABasicAnimation` is used for the animation.
  *
  * @param key The key to animate.
  * @param toValue The ending value.
  * @param seconds The number of seconds the animation should take.	*/
--(void)animate:(NSString*)key toSize:(NSSize)toValue time:(NSTimeInterval)seconds;
+-(void)animate:(NSString*)key toSize:(CGSize)toValue time:(NSTimeInterval)seconds;
 
-/**	Animates a key of the layer to an `NSSize` value with custom easing.
+/**	Animates a key of the layer to an `CGSize` value with custom easing.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -1037,7 +1035,7 @@
  * @param seconds The number of seconds the animation should take.
  * @param easing The easing function to use. This can be an instance of `CAMediaTimingFunction` or one of the constants
  * that can be used to construct an instance of that class.	*/
--(void)animate:(NSString*)key toSize:(NSSize)toValue time:(NSTimeInterval)seconds eased:(id)easing;
+-(void)animate:(NSString*)key toSize:(CGSize)toValue time:(NSTimeInterval)seconds eased:(id)easing;
 
 /**	Animates a key of the layer from one `CGSize` value to another.
  *
@@ -1085,7 +1083,7 @@
  * that can be used to construct an instance of that class.	*/
 -(void)animate:(NSString*)key toCGSize:(CGSize)toValue time:(NSTimeInterval)seconds eased:(id)easing;
 
-/**	Animates a key of the layer from one `NSSize` value to another.
+/**	Animates a key of the layer from one `CGSize` value to another.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -1096,12 +1094,12 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-      fromSize:(NSSize)fromValue
-            to:(NSSize)toValue
+      fromSize:(CGSize)fromValue
+            to:(CGSize)toValue
           time:(NSTimeInterval)seconds
     completion:(void (^)())block;
 
-/**	Animates a key of the layer from one `NSSize` value to another with custom easing.
+/**	Animates a key of the layer from one `CGSize` value to another with custom easing.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -1114,13 +1112,13 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-      fromSize:(NSSize)fromValue
-            to:(NSSize)toValue
+      fromSize:(CGSize)fromValue
+            to:(CGSize)toValue
           time:(NSTimeInterval)seconds
          eased:(id)easing
     completion:(void (^)())block;
 
-/**	Animates a key of the layer to an `NSSize` value.
+/**	Animates a key of the layer to an `CGSize` value.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -1130,11 +1128,11 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-        toSize:(NSSize)toValue
+        toSize:(CGSize)toValue
           time:(NSTimeInterval)seconds
     completion:(void (^)())block;
 
-/**	Animates a key of the layer to an `NSSize` value with custom easing.
+/**	Animates a key of the layer to an `CGSize` value with custom easing.
  *
  * `CABasicAnimation` is used for the animation.
  *
@@ -1146,7 +1144,7 @@
  * @param block A block to execute upon completion of the animation. The block will recieve the animation as a
  * parameter.	*/
 -(void)animate:(NSString*)key
-        toSize:(NSSize)toValue
+        toSize:(CGSize)toValue
           time:(NSTimeInterval)seconds
          eased:(id)easing
     completion:(void (^)())block;

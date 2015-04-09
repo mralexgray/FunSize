@@ -52,7 +52,7 @@
     
     for (NSUInteger i = 0; i < count; i++)
     {
-        [values addObject:[NSValue valueWithRect:NSRectFromCGRect(block(((double)i) / (count - 1)))]];
+        [values addObject:[NSValue valueWithCGRect:block(((double)i) / (count - 1))]];
     }
     
     CAKeyframeAnimation* anim = [CAKeyframeAnimation animation];

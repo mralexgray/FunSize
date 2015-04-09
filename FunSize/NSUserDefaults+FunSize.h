@@ -12,7 +12,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <AppKit/AppKit.h>
 
 @interface NSUserDefaults (FunSize)
 
@@ -69,16 +68,16 @@
 #pragma mark Sizes
 /** @name Storing Sizes */
 
-/**	Retrieves a `NSSize` (stored as a string) from the user defaults.
+/**	Retrieves a `CGSize` (stored as a string) from the user defaults.
  * 
  * @param defaultName The key the size is stored under.	*/
--(NSSize)sizeForKey:(NSString*)defaultName;
+-(CGSize)sizeForKey:(NSString*)defaultName;
 
-/**	Stores an `NSSize` (as a string) in the user defaults.
+/**	Stores an `CGSize` (as a string) in the user defaults.
  * 
  * @param value The value to store.
  * @param defaultName The key to store the size under.	*/
--(void)setSize:(NSSize)value forKey:(NSString*)defaultName;
+-(void)setSize:(CGSize)value forKey:(NSString*)defaultName;
 
 /**	Retrieves a `CGSize` (stored as a string) from the user defaults.
  * 
@@ -252,16 +251,16 @@
 #pragma mark Class-Level Shortcuts for Sizes
 /** @name Class-Level Shortcuts for Sizes */
 
-/**	Retrieves a `NSSize` (stored as a string) from the standard user defaults.
+/**	Retrieves a `CGSize` (stored as a string) from the standard user defaults.
  * 
  * @param defaultName The key the size is stored under.	*/
-+(NSSize)sizeForKey:(NSString*)defaultName;
++(CGSize)sizeForKey:(NSString*)defaultName;
 
-/**	Stores an `NSSize` (as a string) in the standard user defaults.
+/**	Stores an `CGSize` (as a string) in the standard user defaults.
  * 
  * @param value The value to store.
  * @param defaultName The key to store the size under.	*/
-+(void)setSize:(NSSize)value forKey:(NSString*)defaultName;
++(void)setSize:(CGSize)value forKey:(NSString*)defaultName;
 
 /**	Retrieves a `CGSize` (stored as a string) from the standard user defaults.
  * 

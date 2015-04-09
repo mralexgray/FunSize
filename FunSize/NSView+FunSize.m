@@ -14,6 +14,8 @@
 
 #import "NSView+FunSize.h"
 
+#if !TARGET_OS_IPHONE
+
 @implementation NSView (FunSize)
 
 #pragma mark Recursive Subview Operations
@@ -176,3 +178,4 @@
 }
 
 @end
+#endif

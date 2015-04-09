@@ -14,6 +14,8 @@
 
 #import "NSTextField+FunSize.h"
 
+#if !TARGET_OS_IPHONE
+
 @implementation NSTextField (FunSize)
 
 #pragma mark Label Initializers
@@ -67,3 +69,4 @@
 }
 
 @end
+#endif

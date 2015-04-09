@@ -12,6 +12,8 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
+#if !TARGET_OS_IPHONE
+
 #import "NSColor+FunSize.h"
 
 @implementation NSColor (FunSize)
@@ -63,3 +65,4 @@
 //}
 
 @end
+#endif

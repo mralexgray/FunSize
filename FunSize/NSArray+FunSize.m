@@ -14,7 +14,7 @@
 
 #import "NSArray+FunSize.h"
 
-#define NSNULL(obj) (obj == nil ? [NSNull null] : obj)
+#define NSNULL(obj) ({ !obj ? [NSNull null] : obj; })
 
 @implementation NSArray (FunSize)
 
@@ -38,11 +38,13 @@
 
 -(NSArray*)map:(id(^)(id))mapBlock
 {
-    NSMutableArray* mapped = [NSMutableArray arrayWithCapacity:[self count]];
+    NSMutableArray* mapped = NSMutableArray.new; //]arrayWithCapacity:[self count]];
     
-    for (id item in self)
-        [mapped addObject:NSNULL(mapBlock(item))];
-    
+    for (id item in self) {
+      id x= NSNULL(mapBlock(item));
+      if (!x) NSLog(@"Inderting null in map for %@'s block", item);
+      [mapped addObject:x];
+    }
     return mapped;
 }
 

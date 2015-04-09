@@ -13,10 +13,11 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import "NSAttributedString+FunSize.h"
+@import CoreText;
 
 @implementation NSAttributedString (FunSize)
 
--(NSSize)sizeWithSize:(NSSize)size
+-(CGSize)sizeWithSize:(NSSize)size
 {
     CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((__bridge CFAttributedStringRef)self);
     
@@ -24,10 +25,10 @@
     CGSize s = CTFramesetterSuggestFrameSizeWithConstraints(framesetter,
                                                             CFRangeMake(0, 0),
                                                             NULL,
-                                                            NSSizeToCGSize(size),
+                                                            size,
                                                             &fitRange);
     CFRelease(framesetter);
-    return NSSizeFromCGSize(s);
+    return s;
 }
 
 @end

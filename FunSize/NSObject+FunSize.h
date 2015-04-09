@@ -12,8 +12,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <AppKit/AppKit.h>
-#import <Quartz/Quartz.h>
+@import QuartzCore;
 
 @interface NSObject (FunSize)
 
@@ -192,16 +191,16 @@
 #pragma mark NSValue valueForKey:/setValue:forKey:
 /** @name NSValue Keys */
 
-/**	Retrieves an `NSSize` value for a specified key.
+/**	Retrieves an `CGSize` value for a specified key.
  *
  * @param key The key.	*/
--(NSSize)sizeForKey:(NSString*)key;
+-(CGSize)sizeForKey:(NSString*)key;
 
-/**	Sets an `NSSize` value for a specified key.
+/**	Sets an `CGSize` value for a specified key.
  *
  * @param value The value to set.
  * @param key The key.	*/
--(void)setSize:(NSSize)value forKey:(NSString*)key;
+-(void)setSize:(CGSize)value forKey:(NSString*)key;
 
 /**	Retrieves an `NSRange` value for a specified key.
  *
@@ -214,27 +213,27 @@
  * @param key The key.	*/
 -(void)setRange:(NSRange)value forKey:(NSString*)key;
 
-/**	Retrieves an `NSRect` value for a specified key.
+/**	Retrieves an `CGRect` value for a specified key.
  *
  * @param key The key.	*/
--(NSRect)rectForKey:(NSString*)key;
+-(CGRect)rectForKey:(NSString*)key;
 
-/**	Sets an `NSRect` value for a specified key.
+/**	Sets an `CGRect` value for a specified key.
  *
  * @param value The value to set.
  * @param key The key.	*/
--(void)setRect:(NSRect)value forKey:(NSString*)key;
+-(void)setRect:(CGRect)value forKey:(NSString*)key;
 
-/**	Retrieves an `NSPoint` value for a specified key.
+/**	Retrieves an `CGPoint` value for a specified key.
  *
  * @param key The key.	*/
--(NSPoint)pointForKey:(NSString*)key;
+-(CGPoint)pointForKey:(NSString*)key;
 
-/**	Sets an `NSPoint` value for a specified key.
+/**	Sets an `CGPoint` value for a specified key.
  *
  * @param value The value to set.
  * @param key The key.	*/
--(void)setPoint:(NSPoint)value forKey:(NSString*)key;
+-(void)setPoint:(CGPoint)value forKey:(NSString*)key;
 
 /**	Retrieves an `CATransform3D` value for a specified key.
  *
@@ -413,16 +412,16 @@
 #pragma mark NSValue valueForKeyPath:/setValue:forKeyPath:
 /** @name NSValue Key Paths */
 
-/**	Retrieves an `NSSize` value for a specified key path.
+/**	Retrieves an `CGSize` value for a specified key path.
  *
  * @param keyPath The key path.	*/
--(NSSize)sizeForKeyPath:(NSString*)keyPath;
+-(CGSize)sizeForKeyPath:(NSString*)keyPath;
 
-/**	Sets an `NSSize` value for a specified key path.
+/**	Sets an `CGSize` value for a specified key path.
  *
  * @param value The value to set.
  * @param keyPath The key path.	*/
--(void)setSize:(NSSize)value forKeyPath:(NSString*)keyPath;
+-(void)setSize:(CGSize)value forKeyPath:(NSString*)keyPath;
 
 /**	Retrieves an `NSRange` value for a specified key path.
  *
@@ -435,27 +434,27 @@
  * @param keyPath The key path.	*/
 -(void)setRange:(NSRange)value forKeyPath:(NSString*)keyPath;
 
-/**	Retrieves an `NSRect` value for a specified key path.
+/**	Retrieves an `CGRect` value for a specified key path.
  *
  * @param keyPath The key path.	*/
--(NSRect)rectForKeyPath:(NSString*)keyPath;
+-(CGRect)rectForKeyPath:(NSString*)keyPath;
 
-/**	Sets an `NSRect` value for a specified key path.
+/**	Sets an `CGRect` value for a specified key path.
  *
  * @param value The value to set.
  * @param keyPath The key path.	*/
--(void)setRect:(NSRect)value forKeyPath:(NSString*)keyPath;
+-(void)setRect:(CGRect)value forKeyPath:(NSString*)keyPath;
 
-/**	Retrieves an `NSPoint` value for a specified key path.
+/**	Retrieves an `CGPoint` value for a specified key path.
  *
  * @param keyPath The key path.	*/
--(NSPoint)pointForKeyPath:(NSString*)keyPath;
+-(CGPoint)pointForKeyPath:(NSString*)keyPath;
 
-/**	Sets an `NSPoint` value for a specified key path.
+/**	Sets an `CGPoint` value for a specified key path.
  *
  * @param value The value to set.
  * @param keyPath The key path.	*/
--(void)setPoint:(NSPoint)value forKeyPath:(NSString*)keyPath;
+-(void)setPoint:(CGPoint)value forKeyPath:(NSString*)keyPath;
 
 /**	Retrieves an `CATransform3D` value for a specified key path.
  *

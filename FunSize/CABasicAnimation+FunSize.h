@@ -12,7 +12,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <Quartz/Quartz.h>
+@import QuartzCore;
 
 @interface CABasicAnimation (FunSize)
 
@@ -74,10 +74,10 @@
 /** @name Structure Getters */
 
 /**	Returns the animation's `-fromValue` as an `NSPoint` value.	*/
--(NSPoint)fromPoint;
+-(CGPoint)fromPoint;
 
 /**	Returns the animation's `-toValue` as an `NSPoint` value.	*/
--(NSPoint)toPoint;
+-(CGPoint)toPoint;
 
 /**	Returns the animation's `-fromValue` as a `CGPoint` value.	*/
 -(CGPoint)fromCGPoint;
@@ -86,10 +86,10 @@
 -(CGPoint)toCGPoint;
 
 /**	Returns the animation's `-fromValue` as an `NSRect` value.	*/
--(NSRect)fromRect;
+-(CGRect)fromRect;
 
 /**	Returns the animation's `-toValue` as an `NSRect` value.	*/
--(NSRect)toRect;
+-(CGRect)toRect;
 
 /**	Returns the animation's `-fromValue` as a `CGRect` value.	*/
 -(CGRect)fromCGRect;
@@ -109,12 +109,12 @@
 /**	Sets the animation's `-fromValue` to an `NSPoint` value.
  *
  * @param from The new from value.	*/
--(void)setFromPoint:(NSPoint)from;
+-(void)setFromPoint:(CGPoint)from;
 
 /**	Sets the animation's `-toValue` to an `NSPoint` value.
  *
  * @param to The new to value.	*/
--(void)setToPoint:(NSPoint)to;
+-(void)setToPoint:(CGPoint)to;
 
 /**	Sets the animation's `-fromValue` to a `CGPoint` value.
  *
@@ -129,12 +129,12 @@
 /**	Sets the animation's `-fromValue` to an `NSRect` value.
  *
  * @param from The new from value.	*/
--(void)setFromRect:(NSRect)from;
+-(void)setFromRect:(CGRect)from;
 
 /**	Sets the animation's `-toValue` to an `NSRect` value.
  *
  * @param to The new to value.	*/
--(void)setToRect:(NSRect)to;
+-(void)setToRect:(CGRect)to;
 
 /**	Sets the animation's `-fromValue` to a `CGRect` value.
  *

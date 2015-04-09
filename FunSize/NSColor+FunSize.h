@@ -12,6 +12,8 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
+#if !TARGET_OS_IPHONE
+
 #import <AppKit/AppKit.h>
 
 @interface NSColor (FunSize)
@@ -26,3 +28,5 @@
 //+(NSColor*)colorWithCGColor:(CGColorRef)color;
 
 @end
+
+#endif

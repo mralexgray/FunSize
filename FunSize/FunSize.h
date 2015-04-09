@@ -12,6 +12,40 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
+@import Foundation;
+
+#if TARGET_OS_IPHONE
+  #define NSSize CGSize
+  #define NSRect CGRect
+  #define NSPoint CGPoint
+
+  @import UIKit;
+  @import CoreText;
+
+#else
+
+  #define valueWithCGRect valueWithRect
+  #define valueWithCGSize valueWithSize
+  #define valueWithCGPoint valueWithPoint
+
+  #define CGSizeValue sizeValue
+  #define CGRectValue rectValue
+  #define CGPointValue pointValue
+
+  #define CGRectFromString NSRectFromString
+  #define CGPointFromString NSPointFromString
+
+
+  #define NSStringFromCGRect NSStringFromRect
+  #define NSStringFromCGPoint NSStringFromPoint
+
+  #define NSStringFromCGSize NSStringFromSize
+  #define CGSizeFromString NSSizeFromString
+  
+  @import AppKit;
+
+#endif
+
 #import "CABasicAnimation+FunSize.h"
 #import "CAKeyframeAnimation+FunSize.h"
 #import "CALayer+FunSize.h"

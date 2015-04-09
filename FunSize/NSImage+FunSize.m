@@ -14,6 +14,8 @@
 
 #import "NSImage+FunSize.h"
 
+#if !TARGET_OS_IPHONE
+
 @implementation NSImage (FunSize)
 
 -(CGImageRef)CGImage
@@ -47,3 +49,4 @@
 }
 
 @end
+#endif

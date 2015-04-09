@@ -19,6 +19,6 @@
 /**	Measures the size of the attributed string with size constraints.
  * 
  * @param size The size that the string should fit into when drawn.	*/
--(NSSize)sizeWithSize:(NSSize)size;
+-(CGSize)sizeWithSize:(CGSize)size;
 
 @end

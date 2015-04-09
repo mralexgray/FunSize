@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4304C74E13F477C1002C9888 /* NSEvent+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4304C74C13F477C1002C9888 /* NSEvent+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4304C74F13F477C1002C9888 /* NSEvent+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4304C74D13F477C1002C9888 /* NSEvent+FunSize.m */; };
-		4311A75213D7429E00820313 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4311A75013D7429E00820313 /* InfoPlist.strings */; };
 		4311A76F13D7442C00820313 /* NSArray+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A75913D7442B00820313 /* NSArray+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4311A77013D7442C00820313 /* NSArray+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4311A75A13D7442B00820313 /* NSArray+FunSize.m */; };
 		4311A77113D7442C00820313 /* NSColor+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4311A75B13D7442B00820313 /* NSColor+FunSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -112,7 +111,6 @@
 		43F138141498991D0019FB30 /* NSAttributedString+FunSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F138111498991D0019FB30 /* NSAttributedString+FunSize.h */; };
 		43F138151498991D0019FB30 /* NSAttributedString+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */; };
 		43F138161498991D0019FB30 /* NSAttributedString+FunSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */; };
-		7BE63A0D15FE7A61004BA700 /* AppledocSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BE63A0C15FE7A61004BA700 /* AppledocSettings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,8 +118,7 @@
 		4304C74D13F477C1002C9888 /* NSEvent+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEvent+FunSize.m"; sourceTree = "<group>"; };
 		4311A74413D7429E00820313 /* FunSize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FunSize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4311A74F13D7429E00820313 /* FunSize-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunSize-Info.plist"; sourceTree = "<group>"; };
-		4311A75113D7429E00820313 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4311A75313D7429E00820313 /* FunSize-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunSize-Prefix.pch"; sourceTree = "<group>"; };
+		4311A75313D7429E00820313 /* FunSize-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "FunSize-Prefix.pch"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4311A75913D7442B00820313 /* NSArray+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FunSize.h"; sourceTree = "<group>"; };
 		4311A75A13D7442B00820313 /* NSArray+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FunSize.m"; sourceTree = "<group>"; };
 		4311A75B13D7442B00820313 /* NSColor+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+FunSize.h"; sourceTree = "<group>"; };
@@ -136,15 +133,15 @@
 		4311A76413D7442B00820313 /* NSNotificationCenter+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+FunSize.m"; sourceTree = "<group>"; };
 		4311A76513D7442B00820313 /* NSObject+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FunSize.h"; sourceTree = "<group>"; };
 		4311A76613D7442C00820313 /* NSObject+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FunSize.m"; sourceTree = "<group>"; };
-		4311A76713D7442C00820313 /* NSString+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FunSize.h"; sourceTree = "<group>"; };
-		4311A76813D7442C00820313 /* NSString+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FunSize.m"; sourceTree = "<group>"; };
+		4311A76713D7442C00820313 /* NSString+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSString+FunSize.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4311A76813D7442C00820313 /* NSString+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSString+FunSize.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4311A76913D7442C00820313 /* NSTextField+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextField+FunSize.h"; sourceTree = "<group>"; };
 		4311A76A13D7442C00820313 /* NSTextField+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextField+FunSize.m"; sourceTree = "<group>"; };
 		4311A76B13D7442C00820313 /* NSTimer+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FunSize.h"; sourceTree = "<group>"; };
 		4311A76C13D7442C00820313 /* NSTimer+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FunSize.m"; sourceTree = "<group>"; };
 		4311A76D13D7442C00820313 /* NSView+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+FunSize.h"; sourceTree = "<group>"; };
 		4311A76E13D7442C00820313 /* NSView+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+FunSize.m"; sourceTree = "<group>"; };
-		4311A78513D7444200820313 /* FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunSize.h; sourceTree = "<group>"; };
+		4311A78513D7444200820313 /* FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FunSize.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		4314A85E144B528E0071B341 /* NSGraphicsContext+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSGraphicsContext+FunSize.h"; sourceTree = "<group>"; };
 		4314A85F144B528E0071B341 /* NSGraphicsContext+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSGraphicsContext+FunSize.m"; sourceTree = "<group>"; };
 		432A5AED140A92ED00E27789 /* NSNumber+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+FunSize.h"; sourceTree = "<group>"; };
@@ -152,10 +149,10 @@
 		4339C607142222D300C21E14 /* libFunSize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFunSize.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4343F8AB13EC81010012C361 /* NSBezierPath+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+FunSize.h"; sourceTree = "<group>"; };
 		4343F8AC13EC81010012C361 /* NSBezierPath+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+FunSize.m"; sourceTree = "<group>"; };
-		4357FDA713D85ED0007E580D /* NSUserDefaults+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+FunSize.h"; sourceTree = "<group>"; };
+		4357FDA713D85ED0007E580D /* NSUserDefaults+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSUserDefaults+FunSize.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		4357FDA813D85ED0007E580D /* NSUserDefaults+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+FunSize.m"; sourceTree = "<group>"; };
 		4357FDD113D8EE96007E580D /* CALayer+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "CALayer+FunSize.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		4357FDD213D8EE96007E580D /* CALayer+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FunSize.m"; sourceTree = "<group>"; };
+		4357FDD213D8EE96007E580D /* CALayer+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "CALayer+FunSize.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4357FDD713D8FC9E007E580D /* CABasicAnimation+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CABasicAnimation+FunSize.h"; sourceTree = "<group>"; };
 		4357FDD813D8FC9E007E580D /* CABasicAnimation+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CABasicAnimation+FunSize.m"; sourceTree = "<group>"; };
 		4357FDDB13D8FCF3007E580D /* CAMediaTimingFunction+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAMediaTimingFunction+FunSize.h"; sourceTree = "<group>"; };
@@ -170,22 +167,15 @@
 		43B531A713F8621F007A521C /* CAKeyframeAnimation+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAKeyframeAnimation+FunSize.m"; sourceTree = "<group>"; };
 		43DD7BCA13D9F59600CA78AC /* NSSet+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+FunSize.h"; sourceTree = "<group>"; };
 		43DD7BCB13D9F59600CA78AC /* NSSet+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+FunSize.m"; sourceTree = "<group>"; };
-		43E75A93142FDED60018DDB7 /* NSShadow+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSShadow+FunSize.h"; sourceTree = "<group>"; };
-		43E75A94142FDED60018DDB7 /* NSShadow+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSShadow+FunSize.m"; sourceTree = "<group>"; };
+		43E75A93142FDED60018DDB7 /* NSShadow+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSShadow+FunSize.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		43E75A94142FDED60018DDB7 /* NSShadow+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSShadow+FunSize.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		43F138111498991D0019FB30 /* NSAttributedString+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+FunSize.h"; sourceTree = "<group>"; };
-		43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+FunSize.m"; sourceTree = "<group>"; };
-		7BCDC125182A42A000C9AE23 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Mac-Framework.xcconfig"; path = "/a2z/xcconfigs/Mac OS X/Mac-Framework.xcconfig"; sourceTree = "<absolute>"; };
+		43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSAttributedString+FunSize.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7BCDC125182A42A000C9AE23 /* Universal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Universal.xcconfig; path = /Volumes/2T/ServiceData/AtoZ.framework/xcconfigs/Base/Universal.xcconfig; sourceTree = "<absolute>"; };
 		7BE63A0C15FE7A61004BA700 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4311A74013D7429E00820313 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4339C604142222D300C21E14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,7 +189,7 @@
 		4311A73813D7429E00820313 = {
 			isa = PBXGroup;
 			children = (
-				7BCDC125182A42A000C9AE23 /* Mac-Framework.xcconfig */,
+				7BCDC125182A42A000C9AE23 /* Universal.xcconfig */,
 				7BE63A0C15FE7A61004BA700 /* AppledocSettings.plist */,
 				4311A74D13D7429E00820313 /* FunSize */,
 				4311A74E13D7429E00820313 /* Supporting Files */,
@@ -280,7 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				4311A74F13D7429E00820313 /* FunSize-Info.plist */,
-				4311A75013D7429E00820313 /* InfoPlist.strings */,
 				4311A75313D7429E00820313 /* FunSize-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -364,9 +353,8 @@
 			buildConfigurationList = 4311A75613D7429E00820313 /* Build configuration list for PBXNativeTarget "FunSize" */;
 			buildPhases = (
 				4311A73F13D7429E00820313 /* Sources */,
-				4311A74013D7429E00820313 /* Frameworks */,
 				4311A74113D7429E00820313 /* Headers */,
-				4311A74213D7429E00820313 /* Resources */,
+				7BCD26331ABE582900F1D563 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -400,7 +388,7 @@
 		4311A73A13D7429E00820313 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Nate Stedman";
 			};
 			buildConfigurationList = 4311A73D13D7429E00820313 /* Build configuration list for PBXProject "FunSize" */;
@@ -421,17 +409,21 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		4311A74213D7429E00820313 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		7BCD26331ABE582900F1D563 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4311A75213D7429E00820313 /* InfoPlist.strings in Resources */,
-				7BE63A0D15FE7A61004BA700 /* AppledocSettings.plist in Resources */,
+			);
+			inputPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /a2z/Scripts/INSTALL_FW_ON_DEVICE.zsh;
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4311A73F13D7429E00820313 /* Sources */ = {
@@ -502,17 +494,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		4311A75013D7429E00820313 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4311A75113D7429E00820313 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		4311A75413D7429E00820313 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -525,21 +506,15 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_ENABLE_OBJC_GC = "";
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
@@ -554,62 +529,40 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_ENABLE_OBJC_GC = "";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				SDKROOT = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		4311A75713D7429E00820313 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BCDC125182A42A000C9AE23 /* Mac-Framework.xcconfig */;
+			baseConfigurationReference = 7BCDC125182A42A000C9AE23 /* Universal.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FunSize/FunSize-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = NO;
-				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = "FunSize/FunSize-Info.plist";
-				OTHER_CFLAGS = (
-					"-Xclang",
-					"-fobjc-runtime-has-weak",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_CFLAGS = "";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
 		};
 		4311A75813D7429E00820313 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BCDC125182A42A000C9AE23 /* Mac-Framework.xcconfig */;
+			baseConfigurationReference = 7BCDC125182A42A000C9AE23 /* Universal.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FunSize/FunSize-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = NO;
-				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = "FunSize/FunSize-Info.plist";
-				OTHER_CFLAGS = (
-					"-Xclang",
-					"-fobjc-runtime-has-weak",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_CFLAGS = "";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;

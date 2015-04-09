@@ -13,6 +13,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import "NSEvent+FunSize.h"
+#if !TARGET_OS_IPHONE
 
 @implementation NSEvent (FunSize)
 
@@ -63,3 +64,4 @@
 }
 
 @end
+#endif

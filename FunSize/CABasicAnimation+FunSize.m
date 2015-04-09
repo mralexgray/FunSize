@@ -79,87 +79,87 @@
 }
 
 #pragma mark Point Getters
--(NSPoint)fromPoint
+-(CGPoint)fromPoint
 {
-    return [[self fromValue] pointValue];
+    return [[self fromValue] CGPointValue];
 }
 
 -(CGPoint)fromCGPoint
 {
-    return NSPointToCGPoint([[self fromValue] pointValue]);
+    return [[self fromValue] CGPointValue];
 }
 
--(NSPoint)toPoint
+-(CGPoint)toPoint
 {
-    return [[self toValue] pointValue];
+    return [[self toValue] CGPointValue];
 }
 
 -(CGPoint)toCGPoint
 {
-    return NSPointToCGPoint([[self toValue] pointValue]);
+    return [[self toValue] CGPointValue];
 }
 
 #pragma mark Point Setters
 -(void)setFromPoint:(NSPoint)from
 {
-    [self setFromValue:[NSValue valueWithPoint:from]];
+    [self setFromValue:[NSValue valueWithCGPoint:from]];
 }
 
 -(void)setToPoint:(NSPoint)to
 {
-    [self setToValue:[NSValue valueWithPoint:to]];
+    [self setToValue:[NSValue valueWithCGPoint:to]];
 }
 
 -(void)setFromCGPoint:(CGPoint)from
 {
-    [self setFromValue:[NSValue valueWithPoint:NSPointFromCGPoint(from)]];
+    [self setFromValue:[NSValue valueWithCGPoint:from]];
 }
 
 -(void)setToCGPoint:(CGPoint)to
 {
-    [self setToValue:[NSValue valueWithPoint:NSPointFromCGPoint(to)]];
+    [self setToValue:[NSValue valueWithCGPoint:to]];
 }
 
 #pragma mark Rect Getters
 -(NSRect)fromRect
 {
-    return [[self fromValue] rectValue];
+    return [[self fromValue] CGRectValue];
 }
 
 -(CGRect)fromCGRect
 {
-    return NSRectToCGRect([[self fromValue] rectValue]);
+    return [[self fromValue] CGRectValue];
 }
 
 -(NSRect)toRect
 {
-    return [[self toValue] rectValue];
+    return [[self toValue] CGRectValue];
 }
 
 -(CGRect)toCGRect
 {
-    return NSRectToCGRect([[self toValue] rectValue]);
+    return [[self toValue] CGRectValue];
 }
 
 #pragma mark Rect Setters
 -(void)setFromRect:(NSRect)from
 {
-    [self setFromValue:[NSValue valueWithRect:from]];
+    [self setFromValue:[NSValue valueWithCGRect:from]];
 }
 
 -(void)setToRect:(NSRect)to
 {
-    [self setToValue:[NSValue valueWithRect:to]];
+    [self setToValue:[NSValue valueWithCGRect:to]];
 }
 
 -(void)setFromCGRect:(CGRect)from
 {
-    [self setFromValue:[NSValue valueWithRect:NSRectFromCGRect(from)]];
+    [self setFromValue:[NSValue valueWithCGRect:from]];
 }
 
 -(void)setToCGRect:(CGRect)to
 {
-    [self setToValue:[NSValue valueWithRect:NSRectFromCGRect(to)]];
+    [self setToValue:[NSValue valueWithCGRect:to]];
 }
 
 #pragma mark Transform Getters

@@ -12,8 +12,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <AppKit/AppKit.h>
-
 @interface NSMutableArray (FunSize)
 
 /**	Appends an enumerable set to the array.

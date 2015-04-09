@@ -12,6 +12,8 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
+#if !TARGET_OS_IPHONE
+
 #import <AppKit/AppKit.h>
 
 @interface NSShadow (FunSize)
@@ -35,9 +37,10 @@
 
 /**	Returns a shadow with the specified hex color, offset, and radius
  *
- * @param color A hexadecimal color string.
+ * @param hex A hexadecimal color string.
  * @param offset The shadow's offset.
  * @param radius The radius of shadow.	*/
 +(NSShadow*)shadowWithHex:(NSString*)hex offset:(NSSize)offset radius:(CGFloat)radius;
 
 @end
+#endif
