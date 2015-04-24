@@ -14,6 +14,8 @@
 
 #import "NSGradient+FunSize.h"
 
+#if !TARGET_OS_IPHONE
+
 #import "NSColor+FunSize.h"
 
 @implementation NSGradient (FunSize)
@@ -45,3 +47,4 @@
 }
 
 @end
+#endif

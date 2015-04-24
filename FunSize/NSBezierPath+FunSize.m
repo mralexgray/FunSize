@@ -18,7 +18,12 @@
 
 +(NSBezierPath*)bezierPathWithRoundedRect:(NSRect)rect radius:(CGFloat)radius
 {
-    return [self bezierPathWithRoundedRect:rect xRadius:radius yRadius:radius];
+    return
+    #if MAC_ONLY
+    [self bezierPathWithRoundedRect:rect xRadius:radius yRadius:radius];
+    #else
+    [self bezierPathWithRoundedRect:rect cornerRadius:radius];
+    #endif
 }
 
 @end

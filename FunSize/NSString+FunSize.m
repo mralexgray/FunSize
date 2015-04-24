@@ -26,6 +26,7 @@
                                                                           kCFStringEncodingUTF8));
 //    return [result autorelease];
 }
+#if MAC_ONLY
 
 -(NSSize)sizeWithSize:(NSSize)size attributes:(NSDictionary*)attributes
 {
@@ -40,7 +41,8 @@
                                                             &fitRange);
     CFRelease(framesetter);
 //    [string release];
-    return NSSizeFromCGSize(s);
+    return s;
 }
+#endif
 
 @end

@@ -86,7 +86,7 @@
 
 -(CGPoint)fromCGPoint
 {
-    return NSPointToCGPoint([[self fromValue] pointValue]);
+    return [[self fromValue] pointValue];
 }
 
 -(NSPoint)toPoint
@@ -96,7 +96,7 @@
 
 -(CGPoint)toCGPoint
 {
-    return NSPointToCGPoint([[self toValue] pointValue]);
+    return [[self toValue] pointValue];
 }
 
 #pragma mark Point Setters
@@ -112,12 +112,12 @@
 
 -(void)setFromCGPoint:(CGPoint)from
 {
-    [self setFromValue:[NSValue valueWithPoint:NSPointFromCGPoint(from)]];
+    [self setFromValue:[NSValue valueWithPoint:from]];
 }
 
 -(void)setToCGPoint:(CGPoint)to
 {
-    [self setToValue:[NSValue valueWithPoint:NSPointFromCGPoint(to)]];
+    [self setToValue:[NSValue valueWithPoint:to]];
 }
 
 #pragma mark Rect Getters
@@ -128,7 +128,7 @@
 
 -(CGRect)fromCGRect
 {
-    return NSRectToCGRect([[self fromValue] rectValue]);
+    return [[self fromValue] rectValue];
 }
 
 -(NSRect)toRect
@@ -138,7 +138,7 @@
 
 -(CGRect)toCGRect
 {
-    return NSRectToCGRect([[self toValue] rectValue]);
+    return [[self toValue] rectValue];
 }
 
 #pragma mark Rect Setters
@@ -154,12 +154,12 @@
 
 -(void)setFromCGRect:(CGRect)from
 {
-    [self setFromValue:[NSValue valueWithRect:NSRectFromCGRect(from)]];
+    [self setFromValue:[NSValue valueWithRect:from]];
 }
 
 -(void)setToCGRect:(CGRect)to
 {
-    [self setToValue:[NSValue valueWithRect:NSRectFromCGRect(to)]];
+    [self setToValue:[NSValue valueWithRect:to]];
 }
 
 #pragma mark Transform Getters

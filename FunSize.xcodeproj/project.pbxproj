@@ -84,7 +84,7 @@
 		4311A76513D7442B00820313 /* NSObject+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+FunSize.h"; path = "FunSize/NSObject+FunSize.h"; sourceTree = "<group>"; };
 		4311A76613D7442C00820313 /* NSObject+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+FunSize.m"; path = "FunSize/NSObject+FunSize.m"; sourceTree = "<group>"; };
 		4311A76713D7442C00820313 /* NSString+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+FunSize.h"; path = "FunSize/NSString+FunSize.h"; sourceTree = "<group>"; };
-		4311A76813D7442C00820313 /* NSString+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+FunSize.m"; path = "FunSize/NSString+FunSize.m"; sourceTree = "<group>"; };
+		4311A76813D7442C00820313 /* NSString+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "NSString+FunSize.m"; path = "FunSize/NSString+FunSize.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4311A76913D7442C00820313 /* NSTextField+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTextField+FunSize.h"; path = "FunSize/NSTextField+FunSize.h"; sourceTree = "<group>"; };
 		4311A76A13D7442C00820313 /* NSTextField+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTextField+FunSize.m"; path = "FunSize/NSTextField+FunSize.m"; sourceTree = "<group>"; };
 		4311A76B13D7442C00820313 /* NSTimer+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTimer+FunSize.h"; path = "FunSize/NSTimer+FunSize.h"; sourceTree = "<group>"; };
@@ -99,11 +99,11 @@
 		4343F8AB13EC81010012C361 /* NSBezierPath+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+FunSize.h"; path = "FunSize/NSBezierPath+FunSize.h"; sourceTree = "<group>"; };
 		4343F8AC13EC81010012C361 /* NSBezierPath+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+FunSize.m"; path = "FunSize/NSBezierPath+FunSize.m"; sourceTree = "<group>"; };
 		4357FDA713D85ED0007E580D /* NSUserDefaults+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+FunSize.h"; path = "FunSize/NSUserDefaults+FunSize.h"; sourceTree = "<group>"; };
-		4357FDA813D85ED0007E580D /* NSUserDefaults+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+FunSize.m"; path = "FunSize/NSUserDefaults+FunSize.m"; sourceTree = "<group>"; };
+		4357FDA813D85ED0007E580D /* NSUserDefaults+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "NSUserDefaults+FunSize.m"; path = "FunSize/NSUserDefaults+FunSize.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4357FDD113D8EE96007E580D /* CALayer+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = "CALayer+FunSize.h"; path = "FunSize/CALayer+FunSize.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		4357FDD213D8EE96007E580D /* CALayer+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CALayer+FunSize.m"; path = "FunSize/CALayer+FunSize.m"; sourceTree = "<group>"; };
+		4357FDD213D8EE96007E580D /* CALayer+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "CALayer+FunSize.m"; path = "FunSize/CALayer+FunSize.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4357FDD713D8FC9E007E580D /* CABasicAnimation+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CABasicAnimation+FunSize.h"; path = "FunSize/CABasicAnimation+FunSize.h"; sourceTree = "<group>"; };
-		4357FDD813D8FC9E007E580D /* CABasicAnimation+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CABasicAnimation+FunSize.m"; path = "FunSize/CABasicAnimation+FunSize.m"; sourceTree = "<group>"; };
+		4357FDD813D8FC9E007E580D /* CABasicAnimation+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "CABasicAnimation+FunSize.m"; path = "FunSize/CABasicAnimation+FunSize.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4357FDDB13D8FCF3007E580D /* CAMediaTimingFunction+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CAMediaTimingFunction+FunSize.h"; path = "FunSize/CAMediaTimingFunction+FunSize.h"; sourceTree = "<group>"; };
 		4357FDDC13D8FCF4007E580D /* CAMediaTimingFunction+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CAMediaTimingFunction+FunSize.m"; path = "FunSize/CAMediaTimingFunction+FunSize.m"; sourceTree = "<group>"; };
 		436973A013F259DB007CC51E /* CATransaction+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CATransaction+FunSize.h"; path = "FunSize/CATransaction+FunSize.h"; sourceTree = "<group>"; };
@@ -113,13 +113,13 @@
 		43AE837F13E05F2D00FA5A8A /* NSURL+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+FunSize.h"; path = "FunSize/NSURL+FunSize.h"; sourceTree = "<group>"; };
 		43AE838013E05F2D00FA5A8A /* NSURL+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+FunSize.m"; path = "FunSize/NSURL+FunSize.m"; sourceTree = "<group>"; };
 		43B531A613F8621F007A521C /* CAKeyframeAnimation+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CAKeyframeAnimation+FunSize.h"; path = "FunSize/CAKeyframeAnimation+FunSize.h"; sourceTree = "<group>"; };
-		43B531A713F8621F007A521C /* CAKeyframeAnimation+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CAKeyframeAnimation+FunSize.m"; path = "FunSize/CAKeyframeAnimation+FunSize.m"; sourceTree = "<group>"; };
+		43B531A713F8621F007A521C /* CAKeyframeAnimation+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "CAKeyframeAnimation+FunSize.m"; path = "FunSize/CAKeyframeAnimation+FunSize.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		43DD7BCA13D9F59600CA78AC /* NSSet+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSet+FunSize.h"; path = "FunSize/NSSet+FunSize.h"; sourceTree = "<group>"; };
 		43DD7BCB13D9F59600CA78AC /* NSSet+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+FunSize.m"; path = "FunSize/NSSet+FunSize.m"; sourceTree = "<group>"; };
 		43E75A93142FDED60018DDB7 /* NSShadow+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSShadow+FunSize.h"; path = "FunSize/NSShadow+FunSize.h"; sourceTree = "<group>"; };
 		43E75A94142FDED60018DDB7 /* NSShadow+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSShadow+FunSize.m"; path = "FunSize/NSShadow+FunSize.m"; sourceTree = "<group>"; };
 		43F138111498991D0019FB30 /* NSAttributedString+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+FunSize.h"; path = "FunSize/NSAttributedString+FunSize.h"; sourceTree = "<group>"; };
-		43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+FunSize.m"; path = "FunSize/NSAttributedString+FunSize.m"; sourceTree = "<group>"; };
+		43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "NSAttributedString+FunSize.m"; path = "FunSize/NSAttributedString+FunSize.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7BE63A0C15FE7A61004BA700 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppledocSettings.plist; path = ../AppledocSettings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -397,6 +397,9 @@
 		4311A75713D7429E00820313 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD_64_BIT)";
+				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -409,12 +412,22 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/dd/Xcode-beta.6.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(BUILT_PRODUCTS_DIR)",
+				);
 				INFOPLIST_FILE = "FunSize/FunSize-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CFLAGS = (
 					"-Xclang",
 					"-fobjc-runtime-has-weak",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				"VALID_ARCHS[sdk=iphoneos*]" = "armv7 armv7s arm64";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = "i386 x86_64";
+				"VALID_ARCHS[sdk=macosx*]" = x86_64;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -435,12 +448,20 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/dd/Xcode-beta.6.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(BUILT_PRODUCTS_DIR)",
+				);
 				INFOPLIST_FILE = "FunSize/FunSize-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CFLAGS = (
 					"-Xclang",
 					"-fobjc-runtime-has-weak",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s arm64";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;

@@ -13,6 +13,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #import "NSView+FunSize.h"
+#if !TARGET_OS_IPHONE
 
 @implementation NSView (FunSize)
 
@@ -176,3 +177,4 @@
 }
 
 @end
+#endif

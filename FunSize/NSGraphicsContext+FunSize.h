@@ -12,8 +12,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <AppKit/AppKit.h>
-
+#if MAC_ONLY
 @interface NSGraphicsContext (FunSize)
 
 /**	Creates and sets as the current `NSGraphicsContext`, for the duration of the `actions` block,
@@ -39,3 +38,4 @@
 -(void)state:(void(^)(void))actions;
 
 @end
+#endif

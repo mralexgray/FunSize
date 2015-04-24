@@ -14,6 +14,7 @@
 
 #import "NSGraphicsContext+FunSize.h"
 
+#if MAC_ONLY
 @implementation NSGraphicsContext (FunSize)
 
 +(void)drawInContext:(CGContextRef)ctx flipped:(BOOL)flipped actions:(void(^)(void))actions
@@ -31,3 +32,4 @@
 }
 
 @end
+#endif

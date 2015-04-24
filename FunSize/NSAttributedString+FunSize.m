@@ -15,7 +15,7 @@
 #import "NSAttributedString+FunSize.h"
 
 @implementation NSAttributedString (FunSize)
-
+#if MAC_ONLY
 -(NSSize)sizeWithSize:(NSSize)size
 {
     CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((__bridge CFAttributedStringRef)self);
@@ -27,7 +27,7 @@
                                                             NSSizeToCGSize(size),
                                                             &fitRange);
     CFRelease(framesetter);
-    return NSSizeFromCGSize(s);
+    return s;
 }
-
+#endif
 @end

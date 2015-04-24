@@ -29,12 +29,12 @@
 
 -(CGRect)CGRectForKey:(NSString*)defaultName
 {
-    return NSRectToCGRect(NSRectFromString([self stringForKey:defaultName]));
+    return NSRectFromString([self stringForKey:defaultName]);
 }
 
 -(void)setCGRect:(CGRect)value forKey:(NSString*)defaultName
 {
-    [self setObject:NSStringFromRect(NSRectFromCGRect(value)) forKey:defaultName];
+    [self setObject:NSStringFromRect(value) forKey:defaultName];
 }
 
 #pragma mark Points
@@ -50,12 +50,12 @@
 
 -(CGPoint)CGPointForKey:(NSString*)defaultName
 {
-    return NSPointToCGPoint(NSPointFromString([self stringForKey:defaultName]));
+    return NSPointFromString([self stringForKey:defaultName]);
 }
 
 -(void)setCGPoint:(CGPoint)value forKey:(NSString*)defaultName
 {
-    [self setObject:NSStringFromPoint(NSPointFromCGPoint(value)) forKey:defaultName];
+    [self setObject:NSStringFromPoint(value) forKey:defaultName];
 }
 
 #pragma mark Sizes
@@ -71,12 +71,12 @@
 
 -(CGSize)CGSizeForKey:(NSString*)defaultName
 {
-    return NSSizeToCGSize(NSSizeFromString([self stringForKey:defaultName]));
+    return NSSizeFromString([self stringForKey:defaultName]);
 }
 
 -(void)setCGSize:(CGSize)value forKey:(NSString*)defaultName
 {
-    [self setObject:NSStringFromSize(NSSizeFromCGSize(value)) forKey:defaultName];
+    [self setObject:NSStringFromSize(value) forKey:defaultName];
 }
 
 #pragma mark NSRange
@@ -188,12 +188,12 @@
 
 +(CGRect)CGRectForKey:(NSString*)defaultName
 {
-    return NSRectToCGRect(NSRectFromString([[self standardUserDefaults] stringForKey:defaultName]));
+    return NSRectFromString([[self standardUserDefaults] stringForKey:defaultName]);
 }
 
 +(void)setCGRect:(CGRect)value forKey:(NSString*)defaultName
 {
-    [[self standardUserDefaults] setObject:NSStringFromRect(NSRectFromCGRect(value)) forKey:defaultName];
+    [[self standardUserDefaults] setObject:NSStringFromRect(value) forKey:defaultName];
 }
 
 #pragma mark Class-Level Shortcuts for Points
@@ -209,12 +209,12 @@
 
 +(CGPoint)CGPointForKey:(NSString*)defaultName
 {
-    return NSPointToCGPoint(NSPointFromString([[self standardUserDefaults] stringForKey:defaultName]));
+    return NSPointFromString([[self standardUserDefaults] stringForKey:defaultName]);
 }
 
 +(void)setCGPoint:(CGPoint)value forKey:(NSString*)defaultName
 {
-    [[self standardUserDefaults] setObject:NSStringFromPoint(NSPointFromCGPoint(value)) forKey:defaultName];
+    [[self standardUserDefaults] setObject:NSStringFromPoint(value) forKey:defaultName];
 }
 
 #pragma mark Class-Level Shortcuts for Sizes
@@ -230,12 +230,12 @@
 
 +(CGSize)CGSizeForKey:(NSString*)defaultName
 {
-    return NSSizeToCGSize(NSSizeFromString([[self standardUserDefaults] stringForKey:defaultName]));
+    return NSSizeFromString([[self standardUserDefaults] stringForKey:defaultName]);
 }
 
 +(void)setCGSize:(CGSize)value forKey:(NSString*)defaultName
 {
-    [[self standardUserDefaults] setObject:NSStringFromSize(NSSizeFromCGSize(value)) forKey:defaultName];
+    [[self standardUserDefaults] setObject:NSStringFromSize(value) forKey:defaultName];
 }
 
 #pragma mark Class-Level Shortcuts for NSRange

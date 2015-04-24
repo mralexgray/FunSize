@@ -12,8 +12,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <Cocoa/Cocoa.h>
-
 @interface NSColor (FunSize)
 
 /**	Creates a color with a hex string.
@@ -26,3 +24,4 @@
 //+(NSColor*)colorWithCGColor:(CGColorRef)color;
 
 @end
+

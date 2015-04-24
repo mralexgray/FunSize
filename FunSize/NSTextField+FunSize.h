@@ -12,7 +12,8 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <Cocoa/Cocoa.h>
+
+#if !TARGET_OS_IPHONE
 
 @interface NSTextField (FunSize)
 
@@ -40,3 +41,5 @@
 -(void)formatAsSelectableLabel;
 
 @end
+
+#endif

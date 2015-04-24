@@ -12,17 +12,20 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <Cocoa/Cocoa.h>
+
+
 
 @interface NSString (FunSize)
 
 /**	Returns a URL encoded version of the string.	*/
 -(NSString*)stringByURLEncoding;
 
+#if MAC_ONLY
 /**	Measures the size of the string with size constraints and attributes.
  * 
  * @param size The size that the string should fit into when drawn.
  * @param attributes The attributes that the string should be measured with.	*/
 -(NSSize)sizeWithSize:(NSSize)size attributes:(NSDictionary*)attributes;
+#endif
 
 @end

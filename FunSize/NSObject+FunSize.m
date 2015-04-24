@@ -211,7 +211,7 @@
 
 -(void)setRect:(NSRect)value forKey:(NSString*)key
 {
-    [self setValue:[NSValue valueWithRect:value] forKey:key];
+    [self setValue:V_Rect(value) forKey:key];
 }
 
 -(NSPoint)pointForKey:(NSString*)key

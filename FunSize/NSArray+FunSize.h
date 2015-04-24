@@ -12,8 +12,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <Cocoa/Cocoa.h>
-
 @interface NSArray (FunSize)
 
 /**	Passes each element to the block, and returns `YES` if the block returns `YES` for all elements.

@@ -12,7 +12,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <Cocoa/Cocoa.h>
+#if !TARGET_OS_IPHONE
 
 @interface NSView (FunSize)
 
@@ -78,7 +78,7 @@
 
 /**	Returns whether or not the view is a superview of the specified view.
  *
- * @param superview The possible superview.	*/
+ * @param subview The possible superview.	*/
 -(BOOL)isSuperviewOfView:(NSView*)subview;
 
 /**	Returns an array of the view's superviews, with the immediate superview as the first element.	*/
@@ -114,3 +114,4 @@
 -(NSImage*)cachedBitmapImageForDisplayInRect:(NSRect)rect;
 
 @end
+#endif

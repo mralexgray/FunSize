@@ -13,5 +13,12 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
 #ifdef __OBJC__
-    #import <AppKit/AppKit.h>
+
+  #import <_ObjC.h>
+//  #import <TargetConditionals.h>
+//  #if !TARGET_OS_IPHONE
+//    #import <AppKit/AppKit.h>
+//  #else
+//    #import <UIKit/UIKit.h>
+//  #endif
 #endif

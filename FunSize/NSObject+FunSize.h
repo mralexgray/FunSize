@@ -12,8 +12,9 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <Cocoa/Cocoa.h>
-#import <Quartz/Quartz.h>
+
+#import <QuartzCore/QuartzCore.h>
+#import <_ObjC.h>
 
 @interface NSObject (FunSize)
 

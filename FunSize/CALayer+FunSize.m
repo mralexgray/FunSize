@@ -12,7 +12,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <Quartz/Quartz.h>
+#import <QuartzCore/QuartzCore.h>
 
 #import "CALayer+FunSize.h"
 
@@ -551,8 +551,8 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
 -(void)animate:(NSString*)key fromCGPoint:(CGPoint)fromValue to:(CGPoint)toValue time:(NSTimeInterval)seconds
 {
     [self animate:key
-             from:[NSValue valueWithPoint:NSPointFromCGPoint(fromValue)]
-               to:[NSValue valueWithPoint:NSPointFromCGPoint(toValue)]
+             from:[NSValue valueWithPoint:fromValue]
+               to:[NSValue valueWithPoint:toValue]
              time:seconds];
 }
 
@@ -563,20 +563,20 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
          eased:(id)easing
 {
     [self animate:key
-             from:[NSValue valueWithPoint:NSPointFromCGPoint(fromValue)]
-               to:[NSValue valueWithPoint:NSPointFromCGPoint(toValue)]
+             from:[NSValue valueWithPoint:fromValue]
+               to:[NSValue valueWithPoint:toValue]
              time:seconds
             eased:easing];
 }
 
 -(void)animate:(NSString*)key toCGPoint:(CGPoint)toValue time:(NSTimeInterval)seconds
 {
-    [self animate:key to:[NSValue valueWithPoint:NSPointFromCGPoint(toValue)] time:seconds];
+    [self animate:key to:[NSValue valueWithPoint:toValue] time:seconds];
 }
 
 -(void)animate:(NSString*)key toCGPoint:(CGPoint)toValue time:(NSTimeInterval)seconds eased:(id)easing
 {
-    [self animate:key to:[NSValue valueWithPoint:NSPointFromCGPoint(toValue)] time:seconds eased:easing];
+    [self animate:key to:[NSValue valueWithPoint:toValue] time:seconds eased:easing];
 }
 
 -(void)animate:(NSString*)key
@@ -631,8 +631,8 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     completion:(void (^)())block
 {
     [self animate:key
-             from:[NSValue valueWithPoint:NSPointFromCGPoint(fromValue)]
-               to:[NSValue valueWithPoint:NSPointFromCGPoint(toValue)]
+             from:[NSValue valueWithPoint:fromValue]
+               to:[NSValue valueWithPoint:toValue]
              time:seconds
        completion:block];
 }
@@ -645,8 +645,8 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     completion:(void (^)())block
 {
     [self animate:key
-             from:[NSValue valueWithPoint:NSPointFromCGPoint(fromValue)]
-               to:[NSValue valueWithPoint:NSPointFromCGPoint(toValue)]
+             from:[NSValue valueWithPoint:fromValue]
+               to:[NSValue valueWithPoint:toValue]
              time:seconds
             eased:easing
        completion:block];
@@ -657,7 +657,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
           time:(NSTimeInterval)seconds
     completion:(void (^)())block
 {
-    [self animate:key to:[NSValue valueWithPoint:NSPointFromCGPoint(toValue)] time:seconds completion:block];
+    [self animate:key to:[NSValue valueWithPoint:toValue] time:seconds completion:block];
 }
 
 -(void)animate:(NSString*)key
@@ -667,7 +667,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     completion:(void (^)())block
 {
     [self animate:key
-               to:[NSValue valueWithPoint:NSPointFromCGPoint(toValue)]
+               to:[NSValue valueWithPoint:toValue]
              time:seconds
             eased:easing
        completion:block];
@@ -708,8 +708,8 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
 -(void)animate:(NSString*)key fromCGSize:(CGSize)fromValue to:(CGSize)toValue time:(NSTimeInterval)seconds
 {
     [self animate:key
-             from:[NSValue valueWithSize:NSSizeFromCGSize(fromValue)]
-               to:[NSValue valueWithSize:NSSizeFromCGSize(toValue)]
+             from:[NSValue valueWithSize:fromValue]
+               to:[NSValue valueWithSize:toValue]
              time:seconds];
 }
 
@@ -720,20 +720,20 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
          eased:(id)easing
 {
     [self animate:key
-             from:[NSValue valueWithSize:NSSizeFromCGSize(fromValue)]
-               to:[NSValue valueWithSize:NSSizeFromCGSize(toValue)]
+             from:[NSValue valueWithSize:fromValue]
+               to:[NSValue valueWithSize:toValue]
              time:seconds
             eased:easing];
 }
 
 -(void)animate:(NSString*)key toCGSize:(CGSize)toValue time:(NSTimeInterval)seconds
 {
-    [self animate:key to:[NSValue valueWithSize:NSSizeFromCGSize(toValue)] time:seconds];
+    [self animate:key to:[NSValue valueWithSize:toValue] time:seconds];
 }
 
 -(void)animate:(NSString*)key toCGSize:(CGSize)toValue time:(NSTimeInterval)seconds eased:(id)easing
 {
-    [self animate:key to:[NSValue valueWithSize:NSSizeFromCGSize(toValue)] time:seconds eased:easing];
+    [self animate:key to:[NSValue valueWithSize:toValue] time:seconds eased:easing];
 }
 
 -(void)animate:(NSString*)key
@@ -788,8 +788,8 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     completion:(void (^)())block
 {
     [self animate:key
-             from:[NSValue valueWithSize:NSSizeFromCGSize(fromValue)]
-               to:[NSValue valueWithSize:NSSizeFromCGSize(toValue)]
+             from:[NSValue valueWithSize:fromValue]
+               to:[NSValue valueWithSize:toValue]
              time:seconds
        completion:block];
 }
@@ -802,8 +802,8 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     completion:(void (^)())block
 {
     [self animate:key
-             from:[NSValue valueWithSize:NSSizeFromCGSize(fromValue)]
-               to:[NSValue valueWithSize:NSSizeFromCGSize(toValue)]
+             from:[NSValue valueWithSize:fromValue]
+               to:[NSValue valueWithSize:toValue]
              time:seconds
             eased:easing
        completion:block];
@@ -814,7 +814,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
           time:(NSTimeInterval)seconds
     completion:(void (^)())block
 {
-    [self animate:key to:[NSValue valueWithSize:NSSizeFromCGSize(toValue)] time:seconds completion:block];
+    [self animate:key to:[NSValue valueWithSize:toValue] time:seconds completion:block];
 }
 
 -(void)animate:(NSString*)key
@@ -824,7 +824,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     completion:(void (^)())block
 {
     [self animate:key
-               to:[NSValue valueWithSize:NSSizeFromCGSize(toValue)]
+               to:[NSValue valueWithSize:toValue]
              time:seconds
             eased:easing
        completion:block];
@@ -865,8 +865,8 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
 -(void)animate:(NSString*)key fromCGRect:(CGRect)fromValue to:(CGRect)toValue time:(NSTimeInterval)seconds
 {
     [self animate:key
-             from:[NSValue valueWithRect:NSRectFromCGRect(fromValue)]
-               to:[NSValue valueWithRect:NSRectFromCGRect(toValue)]
+             from:[NSValue valueWithRect:fromValue]
+               to:[NSValue valueWithRect:toValue]
              time:seconds];
 }
 
@@ -877,20 +877,20 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
          eased:(id)easing
 {
     [self animate:key
-             from:[NSValue valueWithRect:NSRectFromCGRect(fromValue)]
-               to:[NSValue valueWithRect:NSRectFromCGRect(toValue)]
+             from:[NSValue valueWithRect:fromValue]
+               to:[NSValue valueWithRect:toValue]
              time:seconds
             eased:easing];
 }
 
 -(void)animate:(NSString*)key toCGRect:(CGRect)toValue time:(NSTimeInterval)seconds
 {
-    [self animate:key to:[NSValue valueWithRect:NSRectFromCGRect(toValue)] time:seconds];
+    [self animate:key to:[NSValue valueWithRect:toValue] time:seconds];
 }
 
 -(void)animate:(NSString*)key toCGRect:(CGRect)toValue time:(NSTimeInterval)seconds eased:(id)easing
 {
-    [self animate:key to:[NSValue valueWithRect:NSRectFromCGRect(toValue)] time:seconds eased:easing];
+    [self animate:key to:[NSValue valueWithRect:toValue] time:seconds eased:easing];
 }
 
 -(void)animate:(NSString*)key
@@ -945,8 +945,8 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     completion:(void (^)())block
 {
     [self animate:key
-             from:[NSValue valueWithRect:NSRectFromCGRect(fromValue)]
-               to:[NSValue valueWithRect:NSRectFromCGRect(toValue)]
+             from:[NSValue valueWithRect:fromValue]
+               to:[NSValue valueWithRect:toValue]
              time:seconds
        completion:block];
 }
@@ -958,8 +958,8 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
          eased:(id)easing completion:(void (^)())block
 {
     [self animate:key
-             from:[NSValue valueWithRect:NSRectFromCGRect(fromValue)]
-               to:[NSValue valueWithRect:NSRectFromCGRect(toValue)]
+             from:[NSValue valueWithRect:fromValue]
+               to:[NSValue valueWithRect:toValue]
              time:seconds
             eased:easing
        completion:block];
@@ -970,7 +970,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
           time:(NSTimeInterval)seconds
     completion:(void (^)())block
 {
-    [self animate:key to:[NSValue valueWithRect:NSRectFromCGRect(toValue)] time:seconds completion:block];
+    [self animate:key to:[NSValue valueWithRect:toValue] time:seconds completion:block];
 }
 
 -(void)animate:(NSString*)key
@@ -980,7 +980,7 @@ typedef void (^FSBlockBasicAnimationHelperBlock)();
     completion:(void (^)())block
 {
     [self animate:key
-               to:[NSValue valueWithRect:NSRectFromCGRect(toValue)]
+               to:[NSValue valueWithRect:toValue]
              time:seconds
             eased:easing
        completion:block];

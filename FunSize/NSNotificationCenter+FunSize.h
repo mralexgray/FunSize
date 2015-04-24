@@ -12,8 +12,6 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import <Cocoa/Cocoa.h>
-
 @interface NSNotificationCenter (FunSize)
 
 #pragma mark Class-Level Shortcuts
@@ -187,3 +185,4 @@
                           waitUntilDone:(BOOL)wait;
 
 @end
+
