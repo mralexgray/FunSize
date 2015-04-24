@@ -14,6 +14,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+
 @interface CABasicAnimation (FunSize)
 
 #pragma mark - NSNumber Getters
@@ -70,14 +71,16 @@
  * @param to The new to value.	*/
 -(void)setToDouble:(double)to;
 
+#if MAC_ONLY
+
 #pragma mark - NSValue Getters
 /** @name Structure Getters */
 
 /**	Returns the animation's `-fromValue` as an `NSPoint` value.	*/
--(NSPoint)fromPoint;
+- _Cord_ fromPoint;
 
 /**	Returns the animation's `-toValue` as an `NSPoint` value.	*/
--(NSPoint)toPoint;
+- _Cord_ toPoint;
 
 /**	Returns the animation's `-fromValue` as a `CGPoint` value.	*/
 -(CGPoint)fromCGPoint;
@@ -86,10 +89,10 @@
 -(CGPoint)toCGPoint;
 
 /**	Returns the animation's `-fromValue` as an `NSRect` value.	*/
--(NSRect)fromRect;
+- _Rect_ fromRect;
 
 /**	Returns the animation's `-toValue` as an `NSRect` value.	*/
--(NSRect)toRect;
+- _Rect_ toRect;
 
 /**	Returns the animation's `-fromValue` as a `CGRect` value.	*/
 -(CGRect)fromCGRect;
@@ -164,4 +167,5 @@
  * @param timingFunctionName The name of the timing function to use.	*/
 -(void)setTiming:(NSString*)timingFunctionName;
 
+#endif
 @end

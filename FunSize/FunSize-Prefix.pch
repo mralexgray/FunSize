@@ -14,7 +14,8 @@
 
 #ifdef __OBJC__
 
-  #import <_ObjC.h>
+  #import <FunSize/_ObjC.h>
+
 //  #import <TargetConditionals.h>
 //  #if !TARGET_OS_IPHONE
 //    #import <AppKit/AppKit.h>

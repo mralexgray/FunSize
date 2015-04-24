@@ -12,30 +12,31 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
-#import "CABasicAnimation+FunSize.h"
-#import "CAKeyframeAnimation+FunSize.h"
-#import "CALayer+FunSize.h"
-#import "CAMediaTimingFunction+FunSize.h"
-#import "CATransaction+FunSize.h"
+#import <FunSize/_ObjC.h>
+#import <FunSize/CABasicAnimation+FunSize.h>
+#import <FunSize/CAKeyframeAnimation+FunSize.h>
+#import <FunSize/CALayer+FunSize.h>
+#import <FunSize/CAMediaTimingFunction+FunSize.h>
+#import <FunSize/CATransaction+FunSize.h>
 
-#import "NSArray+FunSize.h"
-#import "NSAttributedString+FunSize.h"
-#import "NSBezierPath+FunSize.h"
-#import "NSColor+FunSize.h"
-#import "NSDictionary+FunSize.h"
-#import "NSEvent+FunSize.h"
-#import "NSGradient+FunSize.h"
-#import "NSGraphicsContext+FunSize.h"
-#import "NSImage+FunSize.h"
-#import "NSMutableArray+FunSize.h"
-#import "NSNotificationCenter+FunSize.h"
-#import "NSNumber+FunSize.h"
-#import "NSObject+FunSize.h"
-#import "NSSet+FunSize.h"
-#import "NSShadow+FunSize.h"
-#import "NSString+FunSize.h"
-#import "NSTextField+FunSize.h"
-#import "NSTimer+FunSize.h"
-#import "NSURL+FunSize.h"
-#import "NSUserDefaults+FunSize.h"
-#import "NSView+FunSize.h"
+#import <FunSize/NSArray+FunSize.h>
+#import <FunSize/NSAttributedString+FunSize.h>
+#import <FunSize/NSBezierPath+FunSize.h>
+#import <FunSize/NSColor+FunSize.h>
+#import <FunSize/NSDictionary+FunSize.h>
+#import <FunSize/NSEvent+FunSize.h>
+#import <FunSize/NSGradient+FunSize.h>
+#import <FunSize/NSGraphicsContext+FunSize.h>
+#import <FunSize/NSImage+FunSize.h>
+#import <FunSize/NSMutableArray+FunSize.h>
+#import <FunSize/NSNotificationCenter+FunSize.h>
+#import <FunSize/NSNumber+FunSize.h>
+#import <FunSize/NSObject+FunSize.h>
+#import <FunSize/NSSet+FunSize.h>
+#import <FunSize/NSShadow+FunSize.h>
+#import <FunSize/NSString+FunSize.h>
+#import <FunSize/NSTextField+FunSize.h>
+#import <FunSize/NSTimer+FunSize.h>
+#import <FunSize/NSURL+FunSize.h>
+#import <FunSize/NSUserDefaults+FunSize.h>
+#import <FunSize/NSView+FunSize.h>

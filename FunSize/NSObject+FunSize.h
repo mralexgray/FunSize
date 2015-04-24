@@ -14,7 +14,7 @@
 
 
 #import <QuartzCore/QuartzCore.h>
-#import <_ObjC.h>
+#import "_ObjC.h"
 
 @interface NSObject (FunSize)
 

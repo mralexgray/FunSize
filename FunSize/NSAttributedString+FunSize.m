@@ -15,19 +15,16 @@
 #import "NSAttributedString+FunSize.h"
 
 @implementation NSAttributedString (FunSize)
+-(NSSize)sizeWithSize:(NSSize)size {
+
 #if MAC_ONLY
--(NSSize)sizeWithSize:(NSSize)size
-{
-    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((__bridge CFAttributedStringRef)self);
-    
     CFRange fitRange;
-    CGSize s = CTFramesetterSuggestFrameSizeWithConstraints(framesetter,
-                                                            CFRangeMake(0, 0),
-                                                            NULL,
-                                                            NSSizeToCGSize(size),
-                                                            &fitRange);
-    CFRelease(framesetter);
-    return s;
-}
+    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((__bridge CFAttributedStringRef)self);
+    CGSize s = CTFramesetterSuggestFrameSizeWithConstraints(framesetter, CFRangeMake(0, 0), NULL,
+                                                            NSSizeToCGSize(size), &fitRange);
+    return CFRelease(framesetter), s;
+#else
+  return [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil].size;
 #endif
+}
 @end
