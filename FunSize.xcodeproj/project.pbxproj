@@ -419,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B4ECA221AEA3F6300FB1023 /* Universal.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -427,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B4ECA221AEA3F6300FB1023 /* Universal.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
