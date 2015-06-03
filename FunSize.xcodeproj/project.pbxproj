@@ -357,16 +357,17 @@
 /* Begin PBXShellScriptBuildPhase section */
 		7B0E208C1AEAA27E00C955CF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "[[ -x ${X=../XCodeHelpers/XC_Install_Helper.zsh} ]] || chmod +x $X\n\n$X\n";
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/zsh;
+			shellScript = "X=\"../XCodeHelpers/XC_Install_Helper.zsh\"\n[[ -x \"$X\" ]] || chmod +x \"$X\"\n\n\"$X\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
