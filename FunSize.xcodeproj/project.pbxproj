@@ -145,9 +145,9 @@
 		43F138111498991D0019FB30 /* NSAttributedString+FunSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+FunSize.h"; path = "FunSize/NSAttributedString+FunSize.h"; sourceTree = "<group>"; };
 		43F138121498991D0019FB30 /* NSAttributedString+FunSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "NSAttributedString+FunSize.m"; path = "FunSize/NSAttributedString+FunSize.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7B0E207B1AEA4DDE00C955CF /* _ObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ObjC.h; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B4ECA221AEA3F6300FB1023 /* Universal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Universal.xcconfig; path = ../XCodeHelpers/Universal.xcconfig; sourceTree = "<group>"; };
-		7B4ECA231AEA3F6300FB1023 /* UniversalFW.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = UniversalFW.xcconfig; path = ../XCodeHelpers/UniversalFW.xcconfig; sourceTree = "<group>"; };
 		7B4ECA241AEA469900FB1023 /* _ObjC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = _ObjC.xcodeproj; path = ../_ObjC/_ObjC.xcodeproj; sourceTree = "<group>"; };
+		7BD5C58F1B20AC7D0057E1D7 /* Universal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Universal.xcconfig; path = ../_ObjC/Universal/Universal.xcconfig; sourceTree = "<group>"; };
+		7BD5C5901B20AC7D0057E1D7 /* UniversalFW.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = UniversalFW.xcconfig; path = ../_ObjC/Universal/UniversalFW.xcconfig; sourceTree = "<group>"; };
 		7BE63A0C15FE7A61004BA700 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppledocSettings.plist; path = ../AppledocSettings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,10 +155,10 @@
 		4311A73813D7429E00820313 = {
 			isa = PBXGroup;
 			children = (
+				7BD5C58F1B20AC7D0057E1D7 /* Universal.xcconfig */,
+				7BD5C5901B20AC7D0057E1D7 /* UniversalFW.xcconfig */,
 				7B0E207B1AEA4DDE00C955CF /* _ObjC.h */,
 				7B4ECA241AEA469900FB1023 /* _ObjC.xcodeproj */,
-				7B4ECA221AEA3F6300FB1023 /* Universal.xcconfig */,
-				7B4ECA231AEA3F6300FB1023 /* UniversalFW.xcconfig */,
 				4311A78513D7444200820313 /* FunSize.h */,
 				4357FDD713D8FC9E007E580D /* CABasicAnimation+FunSize.h */,
 				4357FDD813D8FC9E007E580D /* CABasicAnimation+FunSize.m */,
@@ -293,7 +293,7 @@
 			buildPhases = (
 				4311A73F13D7429E00820313 /* Sources */,
 				4311A74113D7429E00820313 /* Headers */,
-				7B0E208C1AEAA27E00C955CF /* ShellScript */,
+				7B0E208C1AEAA27E00C955CF /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -355,18 +355,19 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7B0E208C1AEAA27E00C955CF /* ShellScript */ = {
+		7B0E208C1AEAA27E00C955CF /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/zsh;
-			shellScript = "X=\"../XCodeHelpers/XC_Install_Helper.zsh\"\n[[ -x \"$X\" ]] || chmod +x \"$X\"\n\n\"$X\"\n";
+			shellScript = "\nX=\"../_ObjC/Universal/XC_Install_Helper.zsh\"\n[[ -x \"$X\" ]] || chmod +x \"$X\"\n\n\"$X\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -418,7 +419,7 @@
 /* Begin XCBuildConfiguration section */
 		4311A75413D7429E00820313 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B4ECA221AEA3F6300FB1023 /* Universal.xcconfig */;
+			baseConfigurationReference = 7BD5C58F1B20AC7D0057E1D7 /* Universal.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				SDKROOT = macosx;
@@ -427,7 +428,7 @@
 		};
 		4311A75513D7429E00820313 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B4ECA221AEA3F6300FB1023 /* Universal.xcconfig */;
+			baseConfigurationReference = 7BD5C58F1B20AC7D0057E1D7 /* Universal.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				SDKROOT = macosx;
@@ -436,7 +437,7 @@
 		};
 		4311A75713D7429E00820313 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B4ECA231AEA3F6300FB1023 /* UniversalFW.xcconfig */;
+			baseConfigurationReference = 7BD5C5901B20AC7D0057E1D7 /* UniversalFW.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FunSize/FunSize-Prefix.pch";
@@ -446,7 +447,7 @@
 		};
 		4311A75813D7429E00820313 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B4ECA231AEA3F6300FB1023 /* UniversalFW.xcconfig */;
+			baseConfigurationReference = 7BD5C5901B20AC7D0057E1D7 /* UniversalFW.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FunSize/FunSize-Prefix.pch";
