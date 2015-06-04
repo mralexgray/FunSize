@@ -367,7 +367,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/zsh;
-			shellScript = "\nX=\"../_ObjC/Universal/XC_Install_Helper.zsh\"\n[[ -x \"$X\" ]] || chmod +x \"$X\"\n\n\"$X\"\n";
+			shellScript = "\nX=\"../_ObjC/Universal/XC_Install_Helper.zsh\"\n[[ -x \"$X\" ]] || chmod +x \"$X\"\n\"$X\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
