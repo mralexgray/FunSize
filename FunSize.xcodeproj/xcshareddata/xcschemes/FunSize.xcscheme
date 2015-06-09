@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4311A74313D7429E00820313"
-               BuildableName = ".framework"
+               BuildableName = "FunSize.framework"
                BlueprintName = "FunSize"
                ReferencedContainer = "container:FunSize.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4311A74313D7429E00820313"
-            BuildableName = ".framework"
+            BuildableName = "FunSize.framework"
             BlueprintName = "FunSize"
             ReferencedContainer = "container:FunSize.xcodeproj">
          </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4311A74313D7429E00820313"
-            BuildableName = ".framework"
+            BuildableName = "FunSize.framework"
             BlueprintName = "FunSize"
             ReferencedContainer = "container:FunSize.xcodeproj">
          </BuildableReference>

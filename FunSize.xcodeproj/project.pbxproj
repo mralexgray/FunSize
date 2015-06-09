@@ -357,7 +357,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		7B0E208C1AEAA27E00C955CF /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -365,9 +365,9 @@
 			name = "Run Script";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/zsh;
-			shellScript = "\nX=\"../_ObjC/Universal/XC_Install_Helper.zsh\"\n[[ -x \"$X\" ]] || chmod +x \"$X\"\n\"$X\"\n";
+			shellScript = "\nX=\"../_ObjC/Universal/XC_Install_Helper.zsh\"\n[[ ! -f \"$X\" ]] && say \"Cannot run Ex Code Install Helper for ${PRODUCT_NAME}\"\nchmod +x \"$X\" && \"$X\"\n\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

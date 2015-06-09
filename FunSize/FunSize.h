@@ -14,6 +14,12 @@
 
 #import <FunSize/_ObjC.h>
 
+#    if MAC_ONLY
+#import <AppKit/AppKit.h>
+#  elif IOS_ONLY
+#import <UIKit/UIKit.h>
+#endif
+
 #import <FunSize/CABasicAnimation+FunSize.h>
 #import <FunSize/CAKeyframeAnimation+FunSize.h>
 #import <FunSize/CALayer+FunSize.h>
