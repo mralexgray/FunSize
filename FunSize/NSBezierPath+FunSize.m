@@ -14,6 +14,7 @@
 
 #import "NSBezierPath+FunSize.h"
 
+#if MAC_ONLY
 @implementation NSBezierPath (FunSize)
 
 +(NSBezierPath*)bezierPathWithRoundedRect:(NSRect)rect radius:(CGFloat)radius
@@ -27,3 +28,4 @@
 }
 
 @end
+#endif

@@ -12,6 +12,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.	*/
 
+#if MAC_ONLY
 #import <AppKit/AppKit.h>
 
 @interface NSBezierPath (FunSize)
@@ -23,3 +24,5 @@
 +(NSBezierPath*)bezierPathWithRoundedRect:(NSRect)rect radius:(CGFloat)radius;
 
 @end
+
+#endif
