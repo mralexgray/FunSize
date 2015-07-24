@@ -311,7 +311,7 @@
 		4311A73A13D7429E00820313 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Nate Stedman";
 			};
 			buildConfigurationList = 4311A73D13D7429E00820313 /* Build configuration list for PBXProject "FunSize" */;
@@ -422,6 +422,8 @@
 			baseConfigurationReference = 7BD5C58F1B20AC7D0057E1D7 /* Universal.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -442,6 +444,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FunSize/FunSize-Prefix.pch";
 				INFOPLIST_FILE = "FunSize/FunSize-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natestedman.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Debug;
 		};
@@ -452,6 +455,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FunSize/FunSize-Prefix.pch";
 				INFOPLIST_FILE = "FunSize/FunSize-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natestedman.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Release;
 		};
